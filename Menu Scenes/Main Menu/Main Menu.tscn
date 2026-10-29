@@ -1,0 +1,131 @@
+[gd_scene format=3 uid="uid://ofmadmqvrr2"]
+
+[ext_resource type="StyleBox" uid="uid://fq6byrdmxp3u" path="res://UI/Button Styles/disabled button.tres" id="1_81ws6"]
+[ext_resource type="StyleBox" uid="uid://daf5d030rdp0p" path="res://UI/Button Styles/hover button.tres" id="2_xcwhx"]
+[ext_resource type="StyleBox" uid="uid://p6od3ecfwmeu" path="res://UI/Button Styles/normal button.tres" id="3_u6fsf"]
+[ext_resource type="StyleBox" uid="uid://bhayakbt0laqv" path="res://UI/Button Styles/pressed button.tres" id="4_65dq7"]
+[ext_resource type="Script" uid="uid://d0a3oawug40c1" path="res://Menu Scenes/Main Menu/badge select button.gd" id="5_d7n13"]
+
+[sub_resource type="Theme" id="Theme_hfdpl"]
+Button/styles/disabled = ExtResource("1_81ws6")
+Button/styles/hover = ExtResource("2_xcwhx")
+Button/styles/normal = ExtResource("3_u6fsf")
+Button/styles/pressed = ExtResource("4_65dq7")
+
+[node name="Main Menu" type="Control" unique_id=1868886345]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1809322864]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 50
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer" unique_id=1962551857]
+layout_mode = 2
+theme = SubResource("Theme_hfdpl")
+theme_override_constants/h_separation = 50
+theme_override_constants/v_separation = 50
+columns = 5
+
+[node name="Voting and Elections" type="Button" parent="MarginContainer/GridContainer" unique_id=1747882869]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Voting and Elections"
+script = ExtResource("5_d7n13")
+scene = "res://Badge Scenes/voting and elections.tscn"
+metadata/_custom_type_script = "uid://d0a3oawug40c1"
+
+[node name="American Symbols" type="Button" parent="MarginContainer/GridContainer" unique_id=1378992253]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "American Symbols"
+script = ExtResource("5_d7n13")
+scene = "res://Badge Scenes/american symbols.tscn"
+metadata/_custom_type_script = "uid://d0a3oawug40c1"
+
+[node name="Debating the Constitution" type="Button" parent="MarginContainer/GridContainer" unique_id=1244788667]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Debating the Constitution"
+script = ExtResource("5_d7n13")
+scene = "res://Badge Scenes/debating the constitution.tscn"
+metadata/_custom_type_script = "uid://d0a3oawug40c1"
+
+[node name="American Literature" type="Button" parent="MarginContainer/GridContainer" unique_id=1486288020]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "American Literature"
+script = ExtResource("5_d7n13")
+scene = "res://Badge Scenes/american literature.tscn"
+metadata/_custom_type_script = "uid://d0a3oawug40c1"
+
+[node name="American Music and Movies" type="Button" parent="MarginContainer/GridContainer" unique_id=705002698]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "American Music and Movies"
+script = ExtResource("5_d7n13")
+scene = "res://Badge Scenes/american music and movies.tscn"
+metadata/_custom_type_script = "uid://d0a3oawug40c1"
+
+[node name="Power of Democracy" type="Button" parent="MarginContainer/GridContainer" unique_id=924246572]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Power of Democracy"
+script = ExtResource("5_d7n13")
+scene = "res://Badge Scenes/power of democracy.tscn"
+metadata/_custom_type_script = "uid://d0a3oawug40c1"
+
+[node name="Pivotal Points in American History" type="Button" parent="MarginContainer/GridContainer" unique_id=669029421]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Pivotal Points
+in American History"
+script = ExtResource("5_d7n13")
+scene = "res://Badge Scenes/pivotal points in american history.tscn"
+metadata/_custom_type_script = "uid://d0a3oawug40c1"
+
+[node name="Media Literacy" type="Button" parent="MarginContainer/GridContainer" unique_id=525162166]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Media Literacy"
+script = ExtResource("5_d7n13")
+scene = "res://Badge Scenes/media literacy.tscn"
+metadata/_custom_type_script = "uid://d0a3oawug40c1"
+
+[node name="American Outdoors" type="Button" parent="MarginContainer/GridContainer" unique_id=438362197]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "American Outdoors"
+script = ExtResource("5_d7n13")
+scene = "res://Badge Scenes/american outdoors.tscn"
+metadata/_custom_type_script = "uid://d0a3oawug40c1"
+
+[node name="Citizenship" type="Button" parent="MarginContainer/GridContainer" unique_id=1413998609]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Citizenship"
+script = ExtResource("5_d7n13")
+scene = "res://Badge Scenes/citizenship.tscn"
+metadata/_custom_type_script = "uid://d0a3oawug40c1"
