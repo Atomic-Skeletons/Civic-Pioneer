@@ -13,10 +13,18 @@ config_version=5
 config/name="Civic Pioneer"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 
+[autoload]
+
+InkRuntime="*uid://cyg2v18h4mvjf"
+
 [display]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PackedStringArray()
 
 [gui]
 
