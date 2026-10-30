@@ -1,0 +1,15 @@
+[remap]
+
+importer="inkgd.ink.json"
+type="Resource"
+uid="uid://nu66dcruucie"
+path="res://.godot/imported/crime_scene.ink.json-f71f8f849e6d89da7a8aef63a63286bc.res"
+
+[deps]
+
+source_file="res://inkgd-godot4/examples/ink/crime_scene/crime_scene.ink.json"
+dest_files=["res://.godot/imported/crime_scene.ink.json-f71f8f849e6d89da7a8aef63a63286bc.res"]
+
+[params]
+
+compress=true

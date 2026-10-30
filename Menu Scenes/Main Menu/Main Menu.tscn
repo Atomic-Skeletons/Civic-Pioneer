@@ -129,3 +129,17 @@ text = "Citizenship"
 script = ExtResource("5_d7n13")
 scene = "res://Badge Scenes/citizenship.tscn"
 metadata/_custom_type_script = "uid://d0a3oawug40c1"
+
+[node name="LinkButton" type="LinkButton" parent="." unique_id=37977608]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -76.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "inkgd link"
+uri = "https://github.com/ephread/inkgd#installation--getting-started"
