@@ -1,0 +1,14 @@
+[remap]
+
+importer="inkgd.ink"
+type="Resource"
+uid="uid://brl4slnicpu0x"
+path="res://.godot/imported/ld41_emoji.ink-9ac00f366b79fa00f6b623bce68ee0d3.res"
+
+[deps]
+
+source_file="res://inkgd-godot4/examples/ink/ld41_emoji/ld41_emoji.ink"
+dest_files=["res://.godot/imported/ld41_emoji.ink-9ac00f366b79fa00f6b623bce68ee0d3.res"]
+
+[params]
+

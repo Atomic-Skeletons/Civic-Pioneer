@@ -1,0 +1,14 @@
+[remap]
+
+importer="inkgd.ink"
+type="Resource"
+uid="uid://xbk7tjs33lur"
+path="res://.godot/imported/the_intercept.ink-366fe471f193768ed06ae4424144a5b1.res"
+
+[deps]
+
+source_file="res://inkgd-godot4/examples/ink/the_intercept/the_intercept.ink"
+dest_files=["res://.godot/imported/the_intercept.ink-366fe471f193768ed06ae4424144a5b1.res"]
+
+[params]
+

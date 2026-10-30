@@ -1,0 +1,14 @@
+[remap]
+
+importer="inkgd.ink"
+type="Resource"
+uid="uid://dprro1vra8ljd"
+path="res://.godot/imported/bob.ink-8660e887f644bcb5bd1b80774e9e0711.res"
+
+[deps]
+
+source_file="res://inkgd-godot4/examples/ink/not_a_halloween_game/includes/bob.ink"
+dest_files=["res://.godot/imported/bob.ink-8660e887f644bcb5bd1b80774e9e0711.res"]
+
+[params]
+

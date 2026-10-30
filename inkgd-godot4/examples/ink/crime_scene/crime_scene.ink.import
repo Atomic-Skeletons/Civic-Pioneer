@@ -1,0 +1,14 @@
+[remap]
+
+importer="inkgd.ink"
+type="Resource"
+uid="uid://chi3pv4utnmeg"
+path="res://.godot/imported/crime_scene.ink-e454ff4fc4f13b1d5662a81fc0fdc537.res"
+
+[deps]
+
+source_file="res://inkgd-godot4/examples/ink/crime_scene/crime_scene.ink"
+dest_files=["res://.godot/imported/crime_scene.ink-e454ff4fc4f13b1d5662a81fc0fdc537.res"]
+
+[params]
+
