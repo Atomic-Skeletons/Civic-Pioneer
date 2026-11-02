@@ -1,0 +1,23 @@
+class_name Utilities extends Node
+
+
+static func center_control(control_node: Control) -> void:
+	control_node.pivot_offset_ratio = Vector2(0.5, 0.5)
+
+static func clear_all_children(parent: Node) -> void:
+	for child: Node in parent.get_children():
+		child.queue_free()
+
+static func reset_tween(tween: Tween, parent: Node) -> Tween:
+	if tween and tween.is_valid():
+		tween.kill()
+	
+	return parent.create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CUBIC)
+
+static func disable_enemy_collision(node: CollisionObject2D):
+	node.set_collision_layer_value(1, false)
+	node.set_collision_mask_value(2, false)
+
+static func enable_enemy_collision(node: CollisionObject2D):
+	node.set_collision_layer_value(1, true)
+	node.set_collision_mask_value(2, true)
