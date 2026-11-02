@@ -10,9 +10,10 @@
 [node name="Dragging Controller" type="Node2D" parent="." unique_id=10877943]
 script = ExtResource("1_11ar6")
 
-[node name="Magazine Draggable" type="Area2D" parent="Dragging Controller" unique_id=327320585 groups=["draggable"]]
+[node name="Magazine Draggable" type="Area2D" parent="Dragging Controller" unique_id=1477059643]
 position = Vector2(731, 324)
 script = ExtResource("2_f34lm")
+metadata/_custom_type_script = "uid://b2e1i2d1qymf7"
 
 [node name="Magazine" type="Sprite2D" parent="Dragging Controller/Magazine Draggable" unique_id=554345925]
 texture = ExtResource("3_v1oe4")
@@ -20,12 +21,13 @@ texture = ExtResource("3_v1oe4")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Dragging Controller/Magazine Draggable" unique_id=577281135]
 polygon = PackedVector2Array(72, 143, 14, 126, -150, 113, -127, -131, -32, -124, -22, -145, 152, -86)
 
-[node name="Newspaper Draggable" type="Area2D" parent="Dragging Controller" unique_id=2046665395 groups=["draggable"]]
+[node name="Newspaper Draggable" type="Area2D" parent="Dragging Controller" unique_id=1049848213]
 position = Vector2(557, 320)
 script = ExtResource("2_f34lm")
+metadata/_custom_type_script = "uid://b2e1i2d1qymf7"
 
 [node name="Newspaper" type="Sprite2D" parent="Dragging Controller/Newspaper Draggable" unique_id=1895227014]
-rotation = 0.7355284
+rotation = 0.73552835
 scale = Vector2(0.46, 0.46)
 texture = ExtResource("4_in32r")
 

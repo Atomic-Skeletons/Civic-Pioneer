@@ -6,6 +6,9 @@ var is_inside_dropable = false
 
 var juice_tween: Tween
 
+func _init() -> void:
+	add_to_group("draggable")
+
 func _ready() -> void:
 	pass
 	#mouse_entered.connect(_on_area_2d_mouse_entered)

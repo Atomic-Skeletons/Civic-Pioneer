@@ -13,28 +13,36 @@ func _ready() -> void:
 	for draggable: Draggable in get_tree().get_nodes_in_group("draggable"):
 		draggable.z_index = z_counter
 		z_counter += 1
+		draggable.mouse_entered.connect(update_hover)
+		draggable.mouse_exited.connect(update_hover)
 
-func _process(delta: float) -> void:
-	if not dragging:
-		uptdate_hovering_body()
+func _process(_delta: float) -> void:
+	if dragging:
+		if Input.is_action_just_released("drag"):
+			dragging = false
+			dragging_body.on_unhover()
+			dragging_body = null
+			update_hover()
+		else:
+			var dir = get_global_mouse_position() - prev_mouse_pos
+			dragging_body.global_position += dir
+	else:
 		if Input.is_action_just_pressed("drag"):
+			update_hovering_body()
 			if hovering_body:
 				dragging = true
 				dragging_body = hovering_body
 				hovering_body = null
-	else:
-		if Input.is_action_just_released("drag"):
-			dragging = false
-			dragging_body = null
-		else:
-			var dir = get_global_mouse_position() - prev_mouse_pos
-			dragging_body.global_position += dir
 	
 	prev_mouse_pos = get_global_mouse_position()
 
 ## whenever the mouse enters or exits an area 2d node
-## recalculate what area 2d is the top most one 
-func uptdate_hovering_body():
+## recalculate what area 2d is the top most one
+func update_hover():
+	if not dragging:
+		update_hovering_body()
+
+func update_hovering_body():
 	var new_hovering_body := get_top_draggable_at_mouse_position()
 	if new_hovering_body != hovering_body:
 		if new_hovering_body:
