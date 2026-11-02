@@ -13,6 +13,10 @@ config_version=5
 config/name="Civic Pioneer"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 
+[autoload]
+
+DialogueManager="*uid://c3rodes2l3gxb"
+
 [display]
 
 window/stretch/mode="canvas_items"
@@ -20,7 +24,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/inkgd/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://addons/inkgd/plugin.cfg")
 
 [gui]
 
