@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://d21ex8x1aelve"]
+
+[ext_resource type="Script" uid="uid://rbdn6jhob2e2" path="res://Resources/Drag and Drop/draggable_scene_singleton.gd" id="1_11ar6"]
+[ext_resource type="Script" uid="uid://b2e1i2d1qymf7" path="res://Resources/Drag and Drop/draggable.gd" id="2_f34lm"]
+[ext_resource type="Texture2D" uid="uid://csoov36ilf0bu" path="res://Resources/Drag and Drop/magazine transparent.png" id="3_v1oe4"]
+[ext_resource type="Texture2D" uid="uid://u6aktunyk5qs" path="res://Resources/Drag and Drop/newspaper transparent.png" id="4_in32r"]
+
+[node name="Dragging test" type="Node2D" unique_id=8597500]
+
+[node name="Dragging Controller" type="Node2D" parent="." unique_id=10877943]
+script = ExtResource("1_11ar6")
+
+[node name="Magazine Draggable" type="Area2D" parent="Dragging Controller" unique_id=1477059643]
+position = Vector2(731, 324)
+script = ExtResource("2_f34lm")
+metadata/_custom_type_script = "uid://b2e1i2d1qymf7"
+
+[node name="Magazine" type="Sprite2D" parent="Dragging Controller/Magazine Draggable" unique_id=554345925]
+texture = ExtResource("3_v1oe4")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Dragging Controller/Magazine Draggable" unique_id=577281135]
+polygon = PackedVector2Array(72, 143, 14, 126, -150, 113, -127, -131, -32, -124, -22, -145, 152, -86)
+
+[node name="Newspaper Draggable" type="Area2D" parent="Dragging Controller" unique_id=1049848213]
+position = Vector2(557, 320)
+script = ExtResource("2_f34lm")
+metadata/_custom_type_script = "uid://b2e1i2d1qymf7"
+
+[node name="Newspaper" type="Sprite2D" parent="Dragging Controller/Newspaper Draggable" unique_id=1895227014]
+rotation = 0.73552835
+scale = Vector2(0.46, 0.46)
+texture = ExtResource("4_in32r")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Dragging Controller/Newspaper Draggable" unique_id=2038661871]
+polygon = PackedVector2Array(-62, 102, -63, 88, -74, 78, -64, -124, 76, -87, 98, 87, 76, 122)

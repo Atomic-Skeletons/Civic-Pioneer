@@ -19,12 +19,12 @@ DialogueManager="*uid://c3rodes2l3gxb"
 
 [dialogue_manager]
 
-runtime/balloon_path="res://Dialogue/Dialogue Balloons/balloon.tscn"
+runtime/balloon_path="res://Resources/Dialogue/Dialogue Balloons/balloon.tscn"
 
 [display]
 
-window/size/viewport_width=1280
-window/size/viewport_height=720
+window/size/viewport_width=640
+window/size/viewport_height=360
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
@@ -50,7 +50,7 @@ drag={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://Dialogue/Dialogue Files/test.dialogue")
+locale/translations_pot_files=PackedStringArray("res://Resources/Dialogue/Dialogue Files/test.dialogue")
 
 [physics]
 
