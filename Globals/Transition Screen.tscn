@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cmma2isyp1imn"]
+
+[sub_resource type="Animation" id="Animation_5mtdy"]
+resource_name = "fade out"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e4m28"]
+_data = {
+&"fade out": SubResource("Animation_5mtdy")
+}
+
+[node name="TransitionScreen" type="CanvasLayer" unique_id=1906159751]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1005763069]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1533643290]
+libraries/ = SubResource("AnimationLibrary_e4m28")
