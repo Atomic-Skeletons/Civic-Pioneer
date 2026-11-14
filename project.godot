@@ -13,6 +13,12 @@ config_version=5
 config/name="Civic Pioneer"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 
+[autoload]
+
+Global="*uid://chi8lsr8ipe6o"
+TransitionScreen="*uid://cmma2isyp1imn"
+SaveDataController="*uid://ftta6oouue40"
+
 [dialogue_manager]
 
 runtime/balloon_path="res://Resources/Dialogue/Dialogue Balloons/balloon.tscn"
