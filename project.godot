@@ -15,7 +15,9 @@ config/features=PackedStringArray("4.7", "GL Compatibility")
 
 [autoload]
 
-DialogueManager="*uid://c3rodes2l3gxb"
+Global="*uid://chi8lsr8ipe6o"
+TransitionScreen="*uid://cmma2isyp1imn"
+SaveDataController="*uid://ftta6oouue40"
 
 [dialogue_manager]
 
@@ -23,8 +25,8 @@ runtime/balloon_path="res://Resources/Dialogue/Dialogue Balloons/balloon.tscn"
 
 [display]
 
-window/size/viewport_width=640
-window/size/viewport_height=360
+window/size/viewport_width=1280
+window/size/viewport_height=720
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
@@ -34,7 +36,7 @@ project/assembly_name="Civic Pioneer"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+enabled=PackedStringArray()
 
 [gui]
 
@@ -46,9 +48,14 @@ register_templates=true
 
 [input]
 
-drag={
+"left click"={
 "deadzone": 0.2,
 "events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
+]
+}
+"right click"={
+"deadzone": 0.2,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":2,"canceled":false,"pressed":false,"double_click":false,"script":null)
 ]
 }
 
