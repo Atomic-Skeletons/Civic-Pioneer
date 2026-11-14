@@ -17,7 +17,7 @@ func _ready() -> void:
 		draggable.mouse_exited.connect(update_hover)
 
 func _process(_delta: float) -> void:
-	if dragging:
+	if dragging and is_instance_valid(dragging_body):
 		if Input.is_action_just_released("drag"):
 			dragging = false
 			dragging_body.on_unhover()

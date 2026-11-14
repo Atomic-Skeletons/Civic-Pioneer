@@ -1,0 +1,132 @@
+[gd_scene format=3 uid="uid://mrn1qtmgykqp"]
+
+[ext_resource type="PackedScene" uid="uid://ber87ifiyyw5j" path="res://Badge Work/American Outdoors/findable.tscn" id="1_538qm"]
+[ext_resource type="Texture2D" uid="uid://djpg8b0ap1ra6" path="res://Badge Work/American Outdoors/PlaceholderAssets/trash-can.png" id="2_71y5j"]
+[ext_resource type="Script" uid="uid://dtv7lsikv2qfy" path="res://Badge Work/American Outdoors/trash_can_area.gd" id="3_dd7fb"]
+[ext_resource type="Script" uid="uid://rbdn6jhob2e2" path="res://Resources/Drag and Drop/draggable_scene_singleton.gd" id="4_gnfy3"]
+[ext_resource type="Script" uid="uid://b2e1i2d1qymf7" path="res://Resources/Drag and Drop/draggable.gd" id="5_3vxec"]
+[ext_resource type="Texture2D" uid="uid://csoov36ilf0bu" path="res://Resources/Drag and Drop/magazine transparent.png" id="6_xgxf1"]
+[ext_resource type="Texture2D" uid="uid://u6aktunyk5qs" path="res://Resources/Drag and Drop/newspaper transparent.png" id="7_df7fe"]
+
+[node name="OutdoorsTest" type="Node2D" unique_id=157864007]
+
+[node name="OutdoorsUI" type="Control" parent="." unique_id=718122533]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="OutdoorsUI" unique_id=834132773]
+
+[node name="MarginContainer" type="MarginContainer" parent="OutdoorsUI/CanvasLayer" unique_id=1277107423]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Control" type="Control" parent="OutdoorsUI/CanvasLayer/MarginContainer" unique_id=2014926573]
+layout_mode = 2
+
+[node name="FindablesBox" type="HBoxContainer" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control" unique_id=122343153]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -200.0
+offset_bottom = 40.0
+grow_horizontal = 0
+theme_override_constants/separation = 1
+
+[node name="Findable" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox" unique_id=196439760 instance=ExtResource("1_538qm")]
+layout_mode = 2
+
+[node name="Findable2" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox" unique_id=1451551535 instance=ExtResource("1_538qm")]
+layout_mode = 2
+
+[node name="Findable3" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox" unique_id=1852350791 instance=ExtResource("1_538qm")]
+layout_mode = 2
+
+[node name="Findable4" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox" unique_id=882078344 instance=ExtResource("1_538qm")]
+layout_mode = 2
+
+[node name="Findable5" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox" unique_id=821321194 instance=ExtResource("1_538qm")]
+layout_mode = 2
+
+[node name="TrashCanBox" type="VBoxContainer" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control" unique_id=901368647]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -72.0
+offset_right = 68.0
+offset_bottom = 53.0
+grow_vertical = 0
+scale = Vector2(0.68, 0.68)
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/TrashCanBox" unique_id=2069512557]
+layout_mode = 2
+stretch_mode = 3
+
+[node name="TrashCan" type="TextureRect" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/TrashCanBox/AspectRatioContainer" unique_id=311215801]
+layout_mode = 2
+texture = ExtResource("2_71y5j")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="TrashCanArea" type="Area2D" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/TrashCanBox/AspectRatioContainer/TrashCan" unique_id=1903503137]
+position = Vector2(1, -4)
+script = ExtResource("3_dd7fb")
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/TrashCanBox/AspectRatioContainer/TrashCan/TrashCanArea" unique_id=240275143]
+position = Vector2(-1.1920929e-07, 1.0000057)
+scale = Vector2(1.671875, 1.5851561)
+polygon = PackedVector2Array(0, 0, 40, 0, 40, 50, 0, 50)
+
+[node name="TrashCounter" type="Label" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/TrashCanBox" unique_id=226401909]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 1
+text = "0/2"
+horizontal_alignment = 1
+
+[node name="Dragging Controller" type="Node2D" parent="." unique_id=316427456]
+script = ExtResource("4_gnfy3")
+
+[node name="Trash" type="Node2D" parent="Dragging Controller" unique_id=1528747992]
+position = Vector2(446.99997, 292.00003)
+scale = Vector2(0.2, 0.2)
+
+[node name="Magazine Draggable" type="Area2D" parent="Dragging Controller/Trash" unique_id=1627224161 groups=["Trash"]]
+script = ExtResource("5_3vxec")
+metadata/_custom_type_script = "uid://b2e1i2d1qymf7"
+
+[node name="Magazine" type="Sprite2D" parent="Dragging Controller/Trash/Magazine Draggable" unique_id=72695835]
+texture = ExtResource("6_xgxf1")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Dragging Controller/Trash/Magazine Draggable" unique_id=1558291498]
+polygon = PackedVector2Array(72, 143, 14, 126, -150, 113, -127, -131, -32, -124, -22, -145, 152, -86)
+
+[node name="Trash2" type="Node2D" parent="Dragging Controller" unique_id=1437272710]
+position = Vector2(603.99994, 251.99998)
+scale = Vector2(0.2, 0.2)
+
+[node name="Newspaper Draggable" type="Area2D" parent="Dragging Controller/Trash2" unique_id=1115727061 groups=["Trash"]]
+script = ExtResource("5_3vxec")
+metadata/_custom_type_script = "uid://b2e1i2d1qymf7"
+
+[node name="Newspaper" type="Sprite2D" parent="Dragging Controller/Trash2/Newspaper Draggable" unique_id=321050249]
+rotation = 0.73552835
+scale = Vector2(0.46, 0.46)
+texture = ExtResource("7_df7fe")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Dragging Controller/Trash2/Newspaper Draggable" unique_id=1373035643]
+polygon = PackedVector2Array(-62, 102, -63, 88, -74, 78, -64, -124, 76, -87, 98, 87, 76, 122)

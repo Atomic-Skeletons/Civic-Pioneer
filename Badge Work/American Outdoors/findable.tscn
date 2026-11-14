@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://ber87ifiyyw5j"]
+
+[ext_resource type="Script" uid="uid://ce63d6rg3fnqn" path="res://Badge Work/American Outdoors/findable.gd" id="1_x3ubb"]
+[ext_resource type="Texture2D" uid="uid://cp3ldgpmxqqve" path="res://Badge Work/American Outdoors/PlaceholderAssets/icon.svg" id="2_wdtow"]
+
+[node name="Findable" type="AspectRatioContainer" unique_id=196439760]
+size_flags_horizontal = 3
+script = ExtResource("1_x3ubb")
+
+[node name="Icon" type="TextureRect" parent="." unique_id=1421499025]
+layout_mode = 2
+texture = ExtResource("2_wdtow")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="GreyOut" type="ColorRect" parent="." unique_id=1154212353]
+visible = false
+layout_mode = 2
+color = Color(0.11858138, 0.11858138, 0.11858138, 1)
