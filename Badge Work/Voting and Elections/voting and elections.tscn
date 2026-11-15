@@ -3,8 +3,9 @@
 [ext_resource type="Script" uid="uid://bx15pvb5ulk48" path="res://Badge Work/Voting and Elections/Town Info/town_controller.gd" id="1_35tyh"]
 [ext_resource type="Script" uid="uid://3r04emm6141e" path="res://Badge Work/Voting and Elections/Town Info/town_variables.gd" id="2_r5qlb"]
 [ext_resource type="Script" uid="uid://c32aflxfoureo" path="res://Badge Work/Voting and Elections/Town Info/town_events.gd" id="3_x02kr"]
-[ext_resource type="Script" uid="uid://dchfam2c1nk3y" path="res://Badge Work/Voting and Elections/Town Info/Voting Ballots/ballot_button.gd" id="4_6x7ow"]
-[ext_resource type="Script" uid="uid://8r1lnmgx42ky" path="res://Badge Work/Voting and Elections/Town Info/Voting Ballots/voting_ballot_controller.gd" id="5_uj6sv"]
+[ext_resource type="Script" uid="uid://lmpb7e01x706" path="res://Badge Work/Voting and Elections/Ballot/ballot_choice_controller.gd" id="4_3eps0"]
+[ext_resource type="Script" uid="uid://dchfam2c1nk3y" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/ballot_button.gd" id="4_6x7ow"]
+[ext_resource type="Script" uid="uid://8r1lnmgx42ky" path="res://Badge Work/Voting and Elections/Ballot/voting_ballot_controller.gd" id="5_uj6sv"]
 
 [node name="Town Controller" type="Node2D" unique_id=1314251985]
 script = ExtResource("1_35tyh")
@@ -31,15 +32,17 @@ color = Color(0.45490196, 1, 0.32156864, 1)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=822260490]
 
-[node name="Control" type="Control" parent="CanvasLayer" unique_id=897316481]
+[node name="Ballot Controller" type="Control" parent="CanvasLayer" unique_id=897316481]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("4_3eps0")
+ballot_choices_path = "res://Badge Work/Voting and Elections/Ballot/Ballot Choices"
 
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control" unique_id=505911022]
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Ballot Controller" unique_id=505911022]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -47,16 +50,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 offset_transform_enabled = true
-offset_transform_position = Vector2(0, -600)
 theme_override_constants/margin_left = 200
 theme_override_constants/margin_top = 200
 theme_override_constants/margin_right = 200
 theme_override_constants/margin_bottom = 200
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control/MarginContainer" unique_id=275958992]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Ballot Controller/MarginContainer" unique_id=275958992]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="CanvasLayer/Control/MarginContainer/HBoxContainer" unique_id=776863990]
+[node name="Button" type="Button" parent="CanvasLayer/Ballot Controller/MarginContainer/HBoxContainer" unique_id=776863990]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 29
@@ -65,7 +67,7 @@ text = "
 autowrap_mode = 2
 script = ExtResource("4_6x7ow")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Control/MarginContainer/HBoxContainer/Button" unique_id=360492806]
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/MarginContainer/HBoxContainer/Button" unique_id=360492806]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -80,7 +82,7 @@ scroll_active = false
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button2" type="Button" parent="CanvasLayer/Control/MarginContainer/HBoxContainer" unique_id=1039181736]
+[node name="Button2" type="Button" parent="CanvasLayer/Ballot Controller/MarginContainer/HBoxContainer" unique_id=1039181736]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 29
@@ -88,7 +90,7 @@ text = "
 "
 autowrap_mode = 2
 
-[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Control/MarginContainer/HBoxContainer/Button2" unique_id=450314297]
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/MarginContainer/HBoxContainer/Button2" unique_id=450314297]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -103,7 +105,7 @@ scroll_active = false
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button3" type="Button" parent="CanvasLayer/Control/MarginContainer/HBoxContainer" unique_id=413081621]
+[node name="Button3" type="Button" parent="CanvasLayer/Ballot Controller/MarginContainer/HBoxContainer" unique_id=413081621]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 29
@@ -111,7 +113,7 @@ text = "
 "
 autowrap_mode = 2
 
-[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Control/MarginContainer/HBoxContainer/Button3" unique_id=561621047]
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/MarginContainer/HBoxContainer/Button3" unique_id=561621047]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -126,7 +128,7 @@ scroll_active = false
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Control" unique_id=978262563]
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Ballot Controller" unique_id=978262563]
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -134,9 +136,9 @@ offset_bottom = 8.0
 grow_horizontal = 2
 script = ExtResource("5_uj6sv")
 
-[node name="Toggle Ballot" type="Button" parent="CanvasLayer/Control/CenterContainer" unique_id=1153047804]
+[node name="Toggle Ballot" type="Button" parent="CanvasLayer/Ballot Controller/CenterContainer" unique_id=1153047804]
 layout_mode = 2
 text = "show ballot "
 
-[connection signal="pressed" from="CanvasLayer/Control/MarginContainer/HBoxContainer/Button" to="CanvasLayer/Control/MarginContainer/HBoxContainer/Button" method="_on_pressed"]
-[connection signal="pressed" from="CanvasLayer/Control/CenterContainer/Toggle Ballot" to="CanvasLayer/Control/CenterContainer" method="_on_toggle_ballot_pressed"]
+[connection signal="pressed" from="CanvasLayer/Ballot Controller/MarginContainer/HBoxContainer/Button" to="CanvasLayer/Ballot Controller/MarginContainer/HBoxContainer/Button" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Ballot Controller/CenterContainer/Toggle Ballot" to="CanvasLayer/Ballot Controller/CenterContainer" method="_on_toggle_ballot_pressed"]

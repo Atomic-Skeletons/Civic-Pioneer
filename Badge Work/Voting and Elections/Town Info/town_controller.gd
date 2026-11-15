@@ -8,8 +8,6 @@ var event_queue: Array[Callable] = []
 
 var event_delay_seconds := 2
 
-var ballot_history : Array[String] = []
-
 var ballot_choice: BallotChoice
 
 

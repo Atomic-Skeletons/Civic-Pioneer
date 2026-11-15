@@ -25,6 +25,5 @@ func _on_pressed() -> void:
 	var town_controller: TownController = $"../../../../.."
 	
 	town_controller.event_queue = event_queue
-	town_controller.ballot_history.append(choice_text)
 	
 	town_controller.do_next_event()
