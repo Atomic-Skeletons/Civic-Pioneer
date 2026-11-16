@@ -11,7 +11,7 @@
 script = ExtResource("1_11ar6")
 
 [node name="Magazine Draggable" type="Area2D" parent="Dragging Controller" unique_id=1477059643]
-position = Vector2(731, 324)
+position = Vector2(918, 278)
 script = ExtResource("2_f34lm")
 metadata/_custom_type_script = "uid://b2e1i2d1qymf7"
 
