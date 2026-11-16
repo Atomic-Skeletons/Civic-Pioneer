@@ -7,13 +7,15 @@ const TRASH = preload("uid://d2g3f5yo38kj2")
 @export_category("Trash")
 @export var has_trash = false
 @export var trash_num = 2
+
+@export_category("Findable")
+@export var Findable = false
+@export var Name:String
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
 
-#can be rewritten in any nodes using this class
-func clicked():
-	if has_trash:
+func trashy_time():
 		if trash_num > 0:
 			var trash = TRASH.instantiate()
 			add_sibling(trash)
@@ -22,6 +24,16 @@ func clicked():
 			trash.scale.y = .2
 			trash_num-=1
 		else:has_trash = false
+
+func findy_time():
+	var Box = %FindablesBox
+	var Box_list = Box.get_children()
+	for child in Box_list:
+		child.check_name(Name)
+#can be rewritten in any nodes using this class
+func clicked():
+	if has_trash:trashy_time()
+	if Findable:findy_time()
 	print("I just got clicked")
 	
 func check_mouse_inside() -> bool:

@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://mrn1qtmgykqp"]
 
-[ext_resource type="PackedScene" uid="uid://ber87ifiyyw5j" path="res://Badge Work/American Outdoors/Prefabs/findable.tscn" id="1_538qm"]
 [ext_resource type="Texture2D" uid="uid://dldf2r6js3ymo" path="res://Badge Work/American Outdoors/PlaceholderAssets/istockphoto-1190221041-1024x1024.jpg" id="1_gnfy3"]
+[ext_resource type="Script" uid="uid://ce63d6rg3fnqn" path="res://Badge Work/American Outdoors/Scripts/findable.gd" id="1_k4hh4"]
 [ext_resource type="Texture2D" uid="uid://bil60tn1270y" path="res://Badge Work/American Outdoors/PlaceholderAssets/AdobeStock_029c135b-bf27-44a7-bf62-ab7e6e625c8b.png" id="2_3vxec"]
 [ext_resource type="Texture2D" uid="uid://djpg8b0ap1ra6" path="res://Badge Work/American Outdoors/PlaceholderAssets/trash-can.png" id="2_71y5j"]
 [ext_resource type="Script" uid="uid://c2pobmbea3exc" path="res://Badge Work/American Outdoors/Scripts/clickable_enviroment.gd" id="2_xgxf1"]
+[ext_resource type="Texture2D" uid="uid://cp3ldgpmxqqve" path="res://Badge Work/American Outdoors/PlaceholderAssets/icon.svg" id="3_4ojts"]
 [ext_resource type="Script" uid="uid://dtv7lsikv2qfy" path="res://Badge Work/American Outdoors/Scripts/trash_can_area.gd" id="3_dd7fb"]
 [ext_resource type="Script" uid="uid://rbdn6jhob2e2" path="res://Resources/Drag and Drop/draggable_scene_singleton.gd" id="4_gnfy3"]
 [ext_resource type="Script" uid="uid://b2e1i2d1qymf7" path="res://Resources/Drag and Drop/draggable.gd" id="5_3vxec"]
@@ -47,6 +48,7 @@ offset_right = 1271.0
 offset_bottom = 54.0
 
 [node name="FindablesBox" type="HBoxContainer" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control" unique_id=122343153]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -56,20 +58,86 @@ offset_bottom = 40.0
 grow_horizontal = 0
 theme_override_constants/separation = 1
 
-[node name="Findable" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox" unique_id=196439760 instance=ExtResource("1_538qm")]
+[node name="Findable" type="AspectRatioContainer" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox" unique_id=196439760]
 layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("1_k4hh4")
+Name = "Flower"
 
-[node name="Findable2" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox" unique_id=1451551535 instance=ExtResource("1_538qm")]
+[node name="Icon" type="TextureRect" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox/Findable" unique_id=1421499025]
 layout_mode = 2
+texture = ExtResource("2_3vxec")
+expand_mode = 1
+stretch_mode = 4
 
-[node name="Findable3" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox" unique_id=1852350791 instance=ExtResource("1_538qm")]
+[node name="GreyOut" type="ColorRect" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox/Findable" unique_id=1154212353]
+visible = false
 layout_mode = 2
+color = Color(0.11858138, 0.11858138, 0.11858138, 1)
 
-[node name="Findable4" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox" unique_id=882078344 instance=ExtResource("1_538qm")]
+[node name="Findable2" type="AspectRatioContainer" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox" unique_id=533662543]
 layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("1_k4hh4")
 
-[node name="Findable5" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox" unique_id=821321194 instance=ExtResource("1_538qm")]
+[node name="Icon" type="TextureRect" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox/Findable2" unique_id=1517633766]
 layout_mode = 2
+texture = ExtResource("3_4ojts")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="GreyOut" type="ColorRect" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox/Findable2" unique_id=782777080]
+visible = false
+layout_mode = 2
+color = Color(0.11858138, 0.11858138, 0.11858138, 1)
+
+[node name="Findable3" type="AspectRatioContainer" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox" unique_id=527421617]
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("1_k4hh4")
+
+[node name="Icon" type="TextureRect" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox/Findable3" unique_id=1514005689]
+layout_mode = 2
+texture = ExtResource("3_4ojts")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="GreyOut" type="ColorRect" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox/Findable3" unique_id=414885427]
+visible = false
+layout_mode = 2
+color = Color(0.11858138, 0.11858138, 0.11858138, 1)
+
+[node name="Findable4" type="AspectRatioContainer" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox" unique_id=431830268]
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("1_k4hh4")
+
+[node name="Icon" type="TextureRect" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox/Findable4" unique_id=1262794320]
+layout_mode = 2
+texture = ExtResource("3_4ojts")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="GreyOut" type="ColorRect" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox/Findable4" unique_id=385747147]
+visible = false
+layout_mode = 2
+color = Color(0.11858138, 0.11858138, 0.11858138, 1)
+
+[node name="Findable5" type="AspectRatioContainer" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox" unique_id=197765064]
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("1_k4hh4")
+
+[node name="Icon" type="TextureRect" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox/Findable5" unique_id=596016641]
+layout_mode = 2
+texture = ExtResource("3_4ojts")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="GreyOut" type="ColorRect" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox/Findable5" unique_id=1244244965]
+visible = false
+layout_mode = 2
+color = Color(0.11858138, 0.11858138, 0.11858138, 1)
 
 [node name="Panel" type="Panel" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control" unique_id=422300904]
 layout_mode = 0
@@ -129,6 +197,8 @@ texture = ExtResource("1_gnfy3")
 [node name="Flower" type="Area2D" parent="OutdoorScene" unique_id=1537926038]
 position = Vector2(285, 604)
 script = ExtResource("2_xgxf1")
+Findable = true
+Name = "Flower"
 
 [node name="Sprite2D" type="Sprite2D" parent="OutdoorScene/Flower" unique_id=1386927832]
 scale = Vector2(0.1, 0.1)
