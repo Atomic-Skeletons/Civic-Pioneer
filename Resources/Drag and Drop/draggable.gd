@@ -15,11 +15,11 @@ func _ready() -> void:
 	#mouse_exited.connect(_on_area_2d_mouse_exited)
 
 
-func _on_area_2d_mouse_entered():
+func _on_mouse_shape_entered():
 	draggable = true
 	on_hover()
 
-func _on_area_2d_mouse_exited():
+func _on_mouse_shaped_exited():
 	draggable = false
 	on_unhover()
 
