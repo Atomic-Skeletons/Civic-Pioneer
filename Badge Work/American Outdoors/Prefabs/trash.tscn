@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://d2g3f5yo38kj2"]
+
+[ext_resource type="Script" uid="uid://cstr0p0tsdvan" path="res://Badge Work/American Outdoors/Scripts/FallingDraggables.gd" id="1_onq5r"]
+[ext_resource type="Texture2D" uid="uid://u6aktunyk5qs" path="res://Resources/Drag and Drop/newspaper transparent.png" id="2_xium0"]
+
+[node name="Trash" type="Node2D" unique_id=1483634623]
+
+[node name="Newspaper Draggable" type="Area2D" parent="." unique_id=131951 groups=["Trash"]]
+collision_mask = 3
+script = ExtResource("1_onq5r")
+metadata/_custom_type_script = "uid://b2e1i2d1qymf7"
+
+[node name="Newspaper" type="Sprite2D" parent="Newspaper Draggable" unique_id=34260518]
+rotation = 0.73552835
+scale = Vector2(0.46, 0.46)
+texture = ExtResource("2_xium0")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Newspaper Draggable" unique_id=1679809409]
+polygon = PackedVector2Array(-62, 102, -63, 88, -74, 78, -64, -124, 76, -87, 98, 87, 76, 122)

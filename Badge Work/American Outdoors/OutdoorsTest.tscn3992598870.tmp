@@ -1,0 +1,230 @@
+[gd_scene format=3 uid="uid://mrn1qtmgykqp"]
+
+[ext_resource type="PackedScene" uid="uid://ber87ifiyyw5j" path="res://Badge Work/American Outdoors/Prefabs/findable.tscn" id="1_538qm"]
+[ext_resource type="Texture2D" uid="uid://dldf2r6js3ymo" path="res://Badge Work/American Outdoors/PlaceholderAssets/istockphoto-1190221041-1024x1024.jpg" id="1_gnfy3"]
+[ext_resource type="Texture2D" uid="uid://bil60tn1270y" path="res://Badge Work/American Outdoors/PlaceholderAssets/AdobeStock_029c135b-bf27-44a7-bf62-ab7e6e625c8b.png" id="2_3vxec"]
+[ext_resource type="Texture2D" uid="uid://djpg8b0ap1ra6" path="res://Badge Work/American Outdoors/PlaceholderAssets/trash-can.png" id="2_71y5j"]
+[ext_resource type="Script" uid="uid://c2pobmbea3exc" path="res://Badge Work/American Outdoors/Scripts/clickable_enviroment.gd" id="2_xgxf1"]
+[ext_resource type="Script" uid="uid://dtv7lsikv2qfy" path="res://Badge Work/American Outdoors/Scripts/trash_can_area.gd" id="3_dd7fb"]
+[ext_resource type="Script" uid="uid://rbdn6jhob2e2" path="res://Resources/Drag and Drop/draggable_scene_singleton.gd" id="4_gnfy3"]
+[ext_resource type="Texture2D" uid="uid://csoov36ilf0bu" path="res://Resources/Drag and Drop/magazine transparent.png" id="6_xgxf1"]
+[ext_resource type="Texture2D" uid="uid://s1qwfjfsvb8o" path="res://Badge Work/American Outdoors/PlaceholderAssets/lush-evergreen-conifer-tree-isolated-transparent-background.png" id="7_2noah"]
+[ext_resource type="Texture2D" uid="uid://u6aktunyk5qs" path="res://Resources/Drag and Drop/newspaper transparent.png" id="7_df7fe"]
+[ext_resource type="PackedScene" uid="uid://c2c0jhh5db2ei" path="res://Badge Work/American Outdoors/ground_line.tscn" id="8_2noah"]
+
+[sub_resource type="GDScript" id="GDScript_df7fe"]
+script/source = "class_name Draggable
+extends Area2D
+
+var draggable = false
+var is_inside_dropable = false
+
+var juice_tween: Tween
+
+func _init() -> void:
+	add_to_group(\"draggable\")
+
+func _ready() -> void:
+	pass
+	#mouse_entered.connect(_on_area_2d_mouse_entered)
+	#mouse_exited.connect(_on_area_2d_mouse_exited)
+
+
+func _on_mouse_shape_entered():
+	draggable = true
+	on_hover()
+
+func _on_mouse_shaped_exited():
+	draggable = false
+	on_unhover()
+
+
+func on_hover():
+	juice_tween = Utilities.reset_tween(juice_tween, self)
+	juice_tween.tween_property(self, \"scale\", Vector2(1.05, 1.05), .2)
+
+func on_unhover():
+	juice_tween = Utilities.reset_tween(juice_tween, self)
+	juice_tween.tween_property(self, \"scale\", Vector2(1, 1), .2)
+"
+
+[node name="OutdoorsTest" type="Node2D" unique_id=157864007]
+
+[node name="OutdoorsUI" type="Control" parent="." unique_id=718122533]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="OutdoorsUI" unique_id=834132773]
+
+[node name="MarginContainer" type="MarginContainer" parent="OutdoorsUI/CanvasLayer" unique_id=1277107423]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Control" type="Control" parent="OutdoorsUI/CanvasLayer/MarginContainer" unique_id=2014926573]
+layout_mode = 2
+
+[node name="Panel2" type="Panel" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control" unique_id=884204254]
+layout_mode = 0
+offset_left = 1012.0
+offset_top = -16.0
+offset_right = 1271.0
+offset_bottom = 54.0
+
+[node name="FindablesBox" type="HBoxContainer" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control" unique_id=122343153]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -200.0
+offset_bottom = 40.0
+grow_horizontal = 0
+theme_override_constants/separation = 1
+
+[node name="Findable" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox" unique_id=196439760 instance=ExtResource("1_538qm")]
+layout_mode = 2
+
+[node name="Findable2" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox" unique_id=1451551535 instance=ExtResource("1_538qm")]
+layout_mode = 2
+
+[node name="Findable3" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox" unique_id=1852350791 instance=ExtResource("1_538qm")]
+layout_mode = 2
+
+[node name="Findable4" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox" unique_id=882078344 instance=ExtResource("1_538qm")]
+layout_mode = 2
+
+[node name="Findable5" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/FindablesBox" unique_id=821321194 instance=ExtResource("1_538qm")]
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control" unique_id=422300904]
+layout_mode = 0
+offset_left = -10.000001
+offset_top = 537.0
+offset_right = 92.0
+offset_bottom = 651.0
+scale = Vector2(1.3199999, 1.4799988)
+
+[node name="TrashCanBox" type="VBoxContainer" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control" unique_id=901368647]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 9.999999
+offset_top = -127.0
+offset_right = 78.0
+offset_bottom = -2.0
+grow_vertical = 0
+scale = Vector2(1.1424001, 1.1424001)
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/TrashCanBox" unique_id=2069512557]
+layout_mode = 2
+stretch_mode = 3
+
+[node name="TrashCan" type="TextureRect" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/TrashCanBox/AspectRatioContainer" unique_id=311215801]
+layout_mode = 2
+texture = ExtResource("2_71y5j")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="TrashCanArea" type="Area2D" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/TrashCanBox/AspectRatioContainer/TrashCan" unique_id=1903503137]
+position = Vector2(1, -4)
+script = ExtResource("3_dd7fb")
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/TrashCanBox/AspectRatioContainer/TrashCan/TrashCanArea" unique_id=240275143]
+position = Vector2(-1.1920929e-07, 1.0000057)
+scale = Vector2(1.671875, 1.5851561)
+polygon = PackedVector2Array(0, 0, 40, 0, 40, 50, 0, 50)
+
+[node name="TrashCounter" type="Label" parent="OutdoorsUI/CanvasLayer/MarginContainer/Control/TrashCanBox" unique_id=226401909]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 1
+text = "0/2"
+horizontal_alignment = 1
+
+[node name="OutdoorScene" type="Node2D" parent="." unique_id=285064465]
+
+[node name="Sprite2D" type="Sprite2D" parent="OutdoorScene" unique_id=1455945197]
+position = Vector2(640.8739, 346)
+scale = Vector2(1.2478006, 1.2478006)
+texture = ExtResource("1_gnfy3")
+
+[node name="Flower" type="Area2D" parent="OutdoorScene" unique_id=1537926038]
+position = Vector2(285, 604)
+script = ExtResource("2_xgxf1")
+
+[node name="Sprite2D" type="Sprite2D" parent="OutdoorScene/Flower" unique_id=1386927832]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_3vxec")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="OutdoorScene/Flower" unique_id=171467043]
+scale = Vector2(0.9771948, 0.9853983)
+polygon = PackedVector2Array(26.606781, 0, 9.210022, 45.66681, -11.256714, 41.607544, -33.77014, 0, -24.56009, -41.607544, 18.420074, -44.651978)
+
+[node name="Tree" type="Area2D" parent="OutdoorScene" unique_id=490003258]
+position = Vector2(555, 526)
+script = ExtResource("2_xgxf1")
+has_trash = true
+
+[node name="Sprite2D" type="Sprite2D" parent="OutdoorScene/Tree" unique_id=1973125400]
+position = Vector2(0, -81.00001)
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("7_2noah")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="OutdoorScene/Tree" unique_id=1932459202]
+rotation = -0.04242615
+scale = Vector2(0.9771948, 0.9853983)
+polygon = PackedVector2Array(126.56256, 10.406677, 27.61499, 96.64136, -23.462402, 93.47534, -133.08777, -1.539856, -5.9226685, -268.4026, 18.398376, -262.30005)
+
+[node name="GroundLine" parent="OutdoorScene" unique_id=1025239932 instance=ExtResource("8_2noah")]
+position = Vector2(508, 625)
+
+[node name="Dragging Controller" type="Node2D" parent="." unique_id=316427456]
+script = ExtResource("4_gnfy3")
+
+[node name="Trash" type="Node2D" parent="Dragging Controller" unique_id=1528747992]
+position = Vector2(965, 634)
+scale = Vector2(0.2, 0.2)
+
+[node name="Magazine Draggable" type="Area2D" parent="Dragging Controller/Trash" unique_id=1627224161 groups=["Trash"]]
+script = SubResource("GDScript_df7fe")
+metadata/_custom_type_script = "uid://b2e1i2d1qymf7"
+
+[node name="Magazine" type="Sprite2D" parent="Dragging Controller/Trash/Magazine Draggable" unique_id=72695835]
+texture = ExtResource("6_xgxf1")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Dragging Controller/Trash/Magazine Draggable" unique_id=1558291498]
+polygon = PackedVector2Array(72, 143, 14, 126, -150, 113, -127, -131, -32, -124, -22, -145, 152, -86)
+
+[node name="Trash2" type="Node2D" parent="Dragging Controller" unique_id=1437272710]
+position = Vector2(1141, 546.99994)
+scale = Vector2(0.2, 0.2)
+
+[node name="Newspaper Draggable" type="Area2D" parent="Dragging Controller/Trash2" unique_id=1115727061 groups=["Trash"]]
+script = SubResource("GDScript_df7fe")
+metadata/_custom_type_script = "uid://b2e1i2d1qymf7"
+
+[node name="Newspaper" type="Sprite2D" parent="Dragging Controller/Trash2/Newspaper Draggable" unique_id=321050249]
+rotation = 0.73552835
+scale = Vector2(0.46, 0.46)
+texture = ExtResource("7_df7fe")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Dragging Controller/Trash2/Newspaper Draggable" unique_id=1373035643]
+polygon = PackedVector2Array(-62, 102, -63, 88, -74, 78, -64, -124, 76, -87, 98, 87, 76, 122)
+
+[connection signal="mouse_entered" from="OutdoorScene/Flower" to="OutdoorScene/Flower" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="OutdoorScene/Flower" to="OutdoorScene/Flower" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="OutdoorScene/Tree" to="OutdoorScene/Tree" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="OutdoorScene/Tree" to="OutdoorScene/Tree" method="_on_mouse_exited"]

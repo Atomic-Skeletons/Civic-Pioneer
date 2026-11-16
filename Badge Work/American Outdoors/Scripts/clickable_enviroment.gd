@@ -2,13 +2,26 @@ class_name Clickable
 extends Area2D
 
 var mouse_inside = false
+const TRASH = preload("uid://d2g3f5yo38kj2")
 
+@export_category("Trash")
+@export var has_trash = false
+@export var trash_num = 2
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
 
 #can be rewritten in any nodes using this class
 func clicked():
+	if has_trash:
+		if trash_num > 0:
+			var trash = TRASH.instantiate()
+			add_sibling(trash)
+			trash.global_position = global_position
+			trash.scale.x = .2
+			trash.scale.y = .2
+			trash_num-=1
+		else:has_trash = false
 	print("I just got clicked")
 	
 func check_mouse_inside() -> bool:

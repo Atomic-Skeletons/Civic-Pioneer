@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c2c0jhh5db2ei"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_bhunq"]
+b = Vector2(100, 0)
+
+[node name="GroundLine" type="Area2D" unique_id=1025239932 groups=["Ground"]]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1926817805]
+shape = SubResource("SegmentShape2D_bhunq")
