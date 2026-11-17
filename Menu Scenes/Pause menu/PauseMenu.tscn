@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://d4gwa7i4t8jsc"]
+
+[ext_resource type="Script" uid="uid://ost365r4uk8e" path="res://Menu Scenes/Pause menu/pause_menu.gd" id="1_ikxlh"]
+
+[node name="PauseMenu" type="Control" unique_id=1062958088]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ikxlh")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2050184938]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.6509804)
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1199862129]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -29.5
+offset_right = 20.0
+offset_bottom = 29.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=1832403403]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer" unique_id=1899026053]
+layout_mode = 2
+text = "PAUSED"
+horizontal_alignment = 1
+
+[node name="ResumeButton" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1701677651]
+layout_mode = 2
+text = "Resume"
+
+[node name="RestartButton" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1884385233]
+layout_mode = 2
+text = "Restart"
+
+[node name="MainMenuButton" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1227181880]
+layout_mode = 2
+text = "Main Menu"
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]

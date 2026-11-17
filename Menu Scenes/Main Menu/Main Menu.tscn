@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ofmadmqvrr2"]
 
 [ext_resource type="StyleBox" uid="uid://fq6byrdmxp3u" path="res://UI/Button Styles/disabled button.tres" id="1_81ws6"]
+[ext_resource type="Script" uid="uid://d31vm7nvshigd" path="res://Menu Scenes/Main Menu/main_menu_controller.gd" id="1_xcwhx"]
 [ext_resource type="StyleBox" uid="uid://daf5d030rdp0p" path="res://UI/Button Styles/hover button.tres" id="2_xcwhx"]
 [ext_resource type="StyleBox" uid="uid://p6od3ecfwmeu" path="res://UI/Button Styles/normal button.tres" id="3_u6fsf"]
 [ext_resource type="StyleBox" uid="uid://bhayakbt0laqv" path="res://UI/Button Styles/pressed button.tres" id="4_65dq7"]
@@ -19,6 +20,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_xcwhx")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1809322864]
 layout_mode = 1

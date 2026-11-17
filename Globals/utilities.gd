@@ -14,10 +14,13 @@ static func reset_tween(tween: Tween, parent: Node) -> Tween:
 	
 	return parent.create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CUBIC)
 
-static func disable_enemy_collision(node: CollisionObject2D):
-	node.set_collision_layer_value(1, false)
-	node.set_collision_mask_value(2, false)
-
-static func enable_enemy_collision(node: CollisionObject2D):
-	node.set_collision_layer_value(1, true)
-	node.set_collision_mask_value(2, true)
+static func get_project_files(path: String) -> PackedStringArray:
+	# Returns all file names in the directory (subdirectories end with "/")
+	var items: PackedStringArray = ResourceLoader.list_directory(path)
+	var files: PackedStringArray = []
+	
+	for item in items:
+		if not item.ends_with("/"):
+			files.append(path.path_join(item))
+			
+	return files
