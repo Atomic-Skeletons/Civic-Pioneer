@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://fkf3g2woqgn1"]
+
+[ext_resource type="Script" uid="uid://cwl11wgbwikos" path="res://Badge Work/Pivotal Points in American Hitsory/PivotalPointsScripts/pivotal_points_title_screen.gd" id="1_26mmq"]
+
+[node name="PivotalPointsTitleScreen" type="Node2D" unique_id=1585194411]
+script = ExtResource("1_26mmq")
+minigames_folder_path = null

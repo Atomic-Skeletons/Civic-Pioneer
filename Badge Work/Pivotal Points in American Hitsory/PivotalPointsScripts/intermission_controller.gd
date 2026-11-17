@@ -11,7 +11,6 @@ const FULL_HEART_TEST = preload("uid://cvxw7elxqu7a3")
 #Display stuff. 
 @onready var score_display: Label = $ScoreDisplay
 @onready var ready_text: Label = $ReadyText
-@export_dir var minigames_folder_path: String
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -35,5 +34,7 @@ func _process(delta: float) -> void:
 
 func _on_timer_timeout() -> void:
 	randomize()
-	#Utilities.
+	PivotalPointsGlobals.minigame_scenes.shuffle()
+	var next_game = PivotalPointsGlobals.minigame_scenes.get(0)
+	get_tree().change_scene_to_packed(next_game)
 	pass # Replace with function body.
