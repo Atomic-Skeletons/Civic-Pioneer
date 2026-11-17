@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://y33f026lublf"]
+
+[ext_resource type="Texture2D" uid="uid://cvxw7elxqu7a3" path="res://Badge Work/Pivotal Points in American Hitsory/PivotalPointsTempArt/FullHeartTest.png" id="1_slym2"]
+[ext_resource type="Script" uid="uid://qq0rdi0cb0ck" path="res://Badge Work/Pivotal Points in American Hitsory/intermission_controller.gd" id="1_vjlu7"]
+
+[node name="IntermissionScreen" type="Node2D" unique_id=826097771]
+script = ExtResource("1_vjlu7")
+minigames_folder_path = "res://Badge Work/Pivotal Points in American Hitsory/PivotalPointsMinigames/"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2049230169]
+texture_filter = 1
+offset_left = 88.0
+offset_top = 26.0
+offset_right = 1178.0
+offset_bottom = 284.0
+theme_override_constants/separation = 50
+
+[node name="Heart1" type="TextureRect" parent="HBoxContainer" unique_id=1880116238]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("1_slym2")
+stretch_mode = 5
+
+[node name="Heart2" type="TextureRect" parent="HBoxContainer" unique_id=2039178054]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("1_slym2")
+stretch_mode = 5
+
+[node name="Heart3" type="TextureRect" parent="HBoxContainer" unique_id=1640701836]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("1_slym2")
+stretch_mode = 5
+
+[node name="Heart4" type="TextureRect" parent="HBoxContainer" unique_id=369263789]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("1_slym2")
+stretch_mode = 5
+
+[node name="Timer" type="Timer" parent="." unique_id=2078509894]
+
+[node name="ScoreDisplay" type="Label" parent="." unique_id=1394326946]
+offset_left = 548.0
+offset_top = 518.0
+offset_right = 712.0
+offset_bottom = 655.0
+theme_override_font_sizes/font_size = 100
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ReadyText" type="Label" parent="." unique_id=205147458]
+offset_left = 372.0
+offset_top = 339.0
+offset_right = 891.0
+offset_bottom = 476.0
+theme_override_font_sizes/font_size = 100
+text = "GO!!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
