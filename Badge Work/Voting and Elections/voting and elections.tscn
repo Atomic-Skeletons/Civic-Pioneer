@@ -4,8 +4,9 @@
 [ext_resource type="Script" uid="uid://3r04emm6141e" path="res://Badge Work/Voting and Elections/Town Info/town_variables.gd" id="2_r5qlb"]
 [ext_resource type="Script" uid="uid://c32aflxfoureo" path="res://Badge Work/Voting and Elections/Town Info/town_events.gd" id="3_x02kr"]
 [ext_resource type="Script" uid="uid://lmpb7e01x706" path="res://Badge Work/Voting and Elections/Ballot/ballot_choice_controller.gd" id="4_3eps0"]
-[ext_resource type="Script" uid="uid://dchfam2c1nk3y" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/ballot_button.gd" id="4_6x7ow"]
+[ext_resource type="Script" uid="uid://dchfam2c1nk3y" path="res://Badge Work/Voting and Elections/Ballot/ballot_button.gd" id="4_6x7ow"]
 [ext_resource type="Script" uid="uid://8r1lnmgx42ky" path="res://Badge Work/Voting and Elections/Ballot/voting_ballot_controller.gd" id="5_uj6sv"]
+[ext_resource type="Script" uid="uid://cjxnq5t7fif0v" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/more_money_hospital_less_money_schools.gd" id="7_xkars"]
 
 [node name="Town Controller" type="Node2D" unique_id=1314251985]
 script = ExtResource("1_35tyh")
@@ -40,7 +41,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("4_3eps0")
-ballot_choices_path = "res://Badge Work/Voting and Elections/Ballot/Ballot Choices"
 
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Ballot Controller" unique_id=505911022]
 layout_mode = 1
@@ -55,10 +55,16 @@ theme_override_constants/margin_top = 200
 theme_override_constants/margin_right = 200
 theme_override_constants/margin_bottom = 200
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Ballot Controller/MarginContainer" unique_id=275958992]
+[node name="Ballot Holder" type="HBoxContainer" parent="CanvasLayer/Ballot Controller/MarginContainer" unique_id=275958992]
+unique_name_in_owner = true
 layout_mode = 2
 
-[node name="Button" type="Button" parent="CanvasLayer/Ballot Controller/MarginContainer/HBoxContainer" unique_id=776863990]
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Ballot Controller/MarginContainer/Ballot Holder" unique_id=509411854]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="CanvasLayer/Ballot Controller/MarginContainer/Ballot Holder/CenterContainer" unique_id=776863990]
+custom_minimum_size = Vector2(250, 300)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 29
@@ -67,7 +73,7 @@ text = "
 autowrap_mode = 2
 script = ExtResource("4_6x7ow")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/MarginContainer/HBoxContainer/Button" unique_id=360492806]
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/MarginContainer/Ballot Holder/CenterContainer/Button" unique_id=360492806]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -82,7 +88,12 @@ scroll_active = false
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button2" type="Button" parent="CanvasLayer/Ballot Controller/MarginContainer/HBoxContainer" unique_id=1039181736]
+[node name="CenterContainer2" type="CenterContainer" parent="CanvasLayer/Ballot Controller/MarginContainer/Ballot Holder" unique_id=183499022]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button2" type="Button" parent="CanvasLayer/Ballot Controller/MarginContainer/Ballot Holder/CenterContainer2" unique_id=1039181736]
+custom_minimum_size = Vector2(250, 300)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 29
@@ -90,7 +101,7 @@ text = "
 "
 autowrap_mode = 2
 
-[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/MarginContainer/HBoxContainer/Button2" unique_id=450314297]
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/MarginContainer/Ballot Holder/CenterContainer2/Button2" unique_id=450314297]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -105,7 +116,12 @@ scroll_active = false
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button3" type="Button" parent="CanvasLayer/Ballot Controller/MarginContainer/HBoxContainer" unique_id=413081621]
+[node name="CenterContainer3" type="CenterContainer" parent="CanvasLayer/Ballot Controller/MarginContainer/Ballot Holder" unique_id=1615076557]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button3" type="Button" parent="CanvasLayer/Ballot Controller/MarginContainer/Ballot Holder/CenterContainer3" unique_id=413081621]
+custom_minimum_size = Vector2(250, 300)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 29
@@ -113,7 +129,7 @@ text = "
 "
 autowrap_mode = 2
 
-[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/MarginContainer/HBoxContainer/Button3" unique_id=561621047]
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/MarginContainer/Ballot Holder/CenterContainer3/Button3" unique_id=561621047]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -140,5 +156,40 @@ script = ExtResource("5_uj6sv")
 layout_mode = 2
 text = "show ballot "
 
-[connection signal="pressed" from="CanvasLayer/Ballot Controller/MarginContainer/HBoxContainer/Button" to="CanvasLayer/Ballot Controller/MarginContainer/HBoxContainer/Button" method="_on_pressed"]
+[node name="All Ballot Buttons" type="FlowContainer" parent="CanvasLayer/Ballot Controller" unique_id=1622080130]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 1349.0
+offset_top = 6.0
+offset_right = 2267.0
+offset_bottom = 723.0
+
+[node name="Button" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=8912229]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("7_xkars")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button" unique_id=1678864937]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]More money invested in hospitals, [color=red]but less money invested in schools"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Ballot History" type="HBoxContainer" parent="CanvasLayer/Ballot Controller" unique_id=2048837332]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
 [connection signal="pressed" from="CanvasLayer/Ballot Controller/CenterContainer/Toggle Ballot" to="CanvasLayer/Ballot Controller/CenterContainer" method="_on_toggle_ballot_pressed"]
