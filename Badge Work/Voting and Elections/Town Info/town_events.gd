@@ -21,7 +21,7 @@ func add_school(amount: int):
 #endregion
 
 #region Park functions
-func park_added():
+func add_park():
 	pass
 
 func dirty_park():

@@ -7,6 +7,9 @@
 [ext_resource type="Script" uid="uid://dchfam2c1nk3y" path="res://Badge Work/Voting and Elections/Ballot/ballot_button.gd" id="4_6x7ow"]
 [ext_resource type="Script" uid="uid://8r1lnmgx42ky" path="res://Badge Work/Voting and Elections/Ballot/voting_ballot_controller.gd" id="5_uj6sv"]
 [ext_resource type="Script" uid="uid://cjxnq5t7fif0v" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/more_money_hospital_less_money_schools.gd" id="7_xkars"]
+[ext_resource type="Script" uid="uid://67v2l0inx2kn" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/build_community_tax_increase.gd" id="8_1gur6"]
+[ext_resource type="Script" uid="uid://dtd2a5tnj4y3a" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/minus_taxes_immediate_jail.gd" id="9_80bto"]
+[ext_resource type="Script" uid="uid://divxobgy2kf4h" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/college_free_companies_turn_down.gd" id="10_2vl3h"]
 
 [node name="Town Controller" type="Node2D" unique_id=1314251985]
 script = ExtResource("1_35tyh")
@@ -30,6 +33,8 @@ position = Vector2(640, 360)
 offset_right = 1280.0
 offset_bottom = 720.0
 color = Color(0.45490196, 1, 0.32156864, 1)
+
+[node name="Node2D" type="Node2D" parent="Town" unique_id=117351170]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=822260490]
 
@@ -186,10 +191,91 @@ scroll_active = false
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Button2" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=1269797279]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("8_1gur6")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button2" unique_id=509153424]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Build a community park, [color=red]but taxes are increased."
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button3" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=1321202032]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("9_80bto")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button3" unique_id=1415178148]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]-10% off taxes per person in household, [color=red]but debt immediately sends you to jail"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button4" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=598381542]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("10_2vl3h")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button4" unique_id=1692149740]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]College is free, [color=red]but companies can turn down applicants for any reason 
+
+"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Ballot History" type="HBoxContainer" parent="CanvasLayer/Ballot Controller" unique_id=2048837332]
 visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Ballot Controller" unique_id=718743840]
+layout_mode = 0
+offset_right = 350.0
+offset_bottom = 47.0
+
+[node name="Happiness" type="TextureProgressBar" parent="CanvasLayer/Ballot Controller/VBoxContainer" unique_id=1756297230]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="People" type="TextureProgressBar" parent="CanvasLayer/Ballot Controller/VBoxContainer" unique_id=1744453742]
+layout_mode = 2
+size_flags_vertical = 3
 
 [connection signal="pressed" from="CanvasLayer/Ballot Controller/CenterContainer/Toggle Ballot" to="CanvasLayer/Ballot Controller/CenterContainer" method="_on_toggle_ballot_pressed"]
