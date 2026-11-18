@@ -5,11 +5,9 @@ func _ready():
 	hide()
 
 func _unhandled_input(event):
-	# Prevent pausing in the Main Menu
-	if get_tree().current_scene.scene_file_path == "res://Menu Scenes/Main Menu/Main Menu.tscn":
-		return
-
 	if event.is_action_pressed("pause"):
+		if get_tree().current_scene.scene_file_path == "res://Menu Scenes/Main Menu/Main Menu.tscn":
+			return
 		if get_tree().paused:
 			resume_game()
 		else:
