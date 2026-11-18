@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://b8cnyxjpo21ui"]
+
+[ext_resource type="Texture2D" uid="uid://cd4un1y8ir0e7" path="res://Badge Work/Debating the Constitution/Images/Courtroom.png" id="1_8b8l8"]
+[ext_resource type="Script" uid="uid://bpobdp1vaiij5" path="res://Badge Work/Debating the Constitution/Scripts/courtroom.gd" id="1_ls3hi"]
+[ext_resource type="Texture2D" uid="uid://w0yne0nofal1" path="res://Badge Work/Debating the Constitution/Images/People/Judge.png" id="2_ls3hi"]
+[ext_resource type="Texture2D" uid="uid://cg5aueox86nky" path="res://Badge Work/Debating the Constitution/Images/People/Uncle Sam.png" id="3_i7142"]
+[ext_resource type="Texture2D" uid="uid://lj3otgpwsfq5" path="res://Badge Work/Debating the Constitution/Images/People/Defendant.png" id="4_kebkj"]
+
+[node name="Node2D" type="Node2D" unique_id=1991543265]
+script = ExtResource("1_ls3hi")
+
+[node name="Sprites" type="Node2D" parent="." unique_id=1983475489]
+
+[node name="Background" type="Sprite2D" parent="Sprites" unique_id=578210366]
+position = Vector2(583.55554, 328)
+scale = Vector2(0.6037037, 0.6037037)
+texture = ExtResource("1_8b8l8")
+
+[node name="Judge" type="Sprite2D" parent="Sprites" unique_id=290127626]
+position = Vector2(602, 231)
+scale = Vector2(0.3502994, 0.3502994)
+texture = ExtResource("2_ls3hi")
+
+[node name="Uncle Sam" type="Sprite2D" parent="Sprites" unique_id=34049642]
+position = Vector2(1042, 369)
+rotation = 3.1415927
+scale = Vector2(1, -1)
+texture = ExtResource("3_i7142")
+
+[node name="Defendant" type="Sprite2D" parent="Sprites" unique_id=1739332258]
+position = Vector2(122.000046, 100)
+scale = Vector2(1.5817491, 1.5817491)
+texture = ExtResource("4_kebkj")
+
+[node name="Button" type="Button" parent="." unique_id=116651327]
+offset_left = 347.0
+offset_top = 563.0
+offset_right = 905.0
+offset_bottom = 649.0
+text = "To Decision Page"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

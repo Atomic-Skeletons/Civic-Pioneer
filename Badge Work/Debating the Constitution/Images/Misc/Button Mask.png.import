@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://b72pvyrwrpfhw"
+path="res://.godot/imported/Button Mask.png-cf8856563576d37dd67542f8954f32ad.res"
+
+[deps]
+
+source_file="res://Badge Work/Debating the Constitution/Images/Misc/Button Mask.png"
+dest_files=["res://.godot/imported/Button Mask.png-cf8856563576d37dd67542f8954f32ad.res"]
+
+[params]
+
+create_from=0
+threshold=0.5
