@@ -11,6 +11,27 @@
 [ext_resource type="Script" uid="uid://dtd2a5tnj4y3a" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/minus_taxes_immediate_jail.gd" id="9_80bto"]
 [ext_resource type="Script" uid="uid://divxobgy2kf4h" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/college_free_companies_turn_down.gd" id="10_2vl3h"]
 
+[sub_resource type="Gradient" id="Gradient_2vl3h"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.3083999, 0.3083999, 0.3083999, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_2vl3h"]
+gradient = SubResource("Gradient_2vl3h")
+
+[sub_resource type="Gradient" id="Gradient_kdjf5"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.73333335, 0.5058824, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_kdjf5"]
+gradient = SubResource("Gradient_kdjf5")
+
+[sub_resource type="Gradient" id="Gradient_kfv5s"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_kfv5s"]
+gradient = SubResource("Gradient_kfv5s")
+
 [node name="Town Controller" type="Node2D" unique_id=1314251985]
 script = ExtResource("1_35tyh")
 
@@ -273,9 +294,9 @@ offset_bottom = 47.0
 [node name="Happiness" type="TextureProgressBar" parent="CanvasLayer/Ballot Controller/VBoxContainer" unique_id=1756297230]
 layout_mode = 2
 size_flags_vertical = 3
-
-[node name="People" type="TextureProgressBar" parent="CanvasLayer/Ballot Controller/VBoxContainer" unique_id=1744453742]
-layout_mode = 2
-size_flags_vertical = 3
+nine_patch_stretch = true
+texture_under = SubResource("GradientTexture2D_2vl3h")
+texture_over = SubResource("GradientTexture2D_kdjf5")
+texture_progress = SubResource("GradientTexture2D_kfv5s")
 
 [connection signal="pressed" from="CanvasLayer/Ballot Controller/CenterContainer/Toggle Ballot" to="CanvasLayer/Ballot Controller/CenterContainer" method="_on_toggle_ballot_pressed"]
