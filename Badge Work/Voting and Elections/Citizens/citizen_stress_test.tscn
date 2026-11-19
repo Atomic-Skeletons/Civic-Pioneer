@@ -1,0 +1,397 @@
+[gd_scene format=3 uid="uid://bt5egx183e81t"]
+
+[ext_resource type="Script" uid="uid://bx15pvb5ulk48" path="res://Badge Work/Voting and Elections/Town Info/town_controller.gd" id="1_t3e1v"]
+[ext_resource type="Script" uid="uid://3r04emm6141e" path="res://Badge Work/Voting and Elections/Town Info/town_variables.gd" id="2_h1oh2"]
+[ext_resource type="Script" uid="uid://c32aflxfoureo" path="res://Badge Work/Voting and Elections/Town Info/town_events.gd" id="3_wusd5"]
+[ext_resource type="Texture2D" uid="uid://3qwuq7vhsc47" path="res://Badge Work/Voting and Elections/Town/Art/City_Map_A.png" id="4_c5ffw"]
+[ext_resource type="Texture2D" uid="uid://biahqbk5kwwt" path="res://Badge Work/Voting and Elections/Town/Art/Houses/chimney_house_1.png" id="5_dw161"]
+[ext_resource type="Script" uid="uid://dbxgrjo4pj7yg" path="res://Badge Work/Voting and Elections/Citizens/citizen_stress_test.gd" id="5_h1oh2"]
+[ext_resource type="Texture2D" uid="uid://o4r408g80xpf" path="res://Badge Work/Voting and Elections/Town/Art/Buildings/Grocery Store.png" id="6_asggh"]
+[ext_resource type="PackedScene" uid="uid://cyjvq0h24lvde" path="res://Badge Work/Voting and Elections/Citizens/citizen character.tscn" id="7_a2aef"]
+[ext_resource type="Script" uid="uid://cuxd7xh2g3jj7" path="res://Badge Work/Voting and Elections/Town/new_person_spawn_point.gd" id="8_n5wc6"]
+[ext_resource type="Script" uid="uid://lmpb7e01x706" path="res://Badge Work/Voting and Elections/Ballot/ballot_choice_controller.gd" id="9_0we26"]
+[ext_resource type="Script" uid="uid://dchfam2c1nk3y" path="res://Badge Work/Voting and Elections/Ballot/ballot_button.gd" id="10_e8ai4"]
+[ext_resource type="Script" uid="uid://8r1lnmgx42ky" path="res://Badge Work/Voting and Elections/Ballot/voting_ballot_controller.gd" id="11_b3xmo"]
+[ext_resource type="Script" uid="uid://cjxnq5t7fif0v" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/more_money_hospital_less_money_schools.gd" id="12_2u88u"]
+[ext_resource type="Script" uid="uid://67v2l0inx2kn" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/build_community_tax_increase.gd" id="13_22kea"]
+[ext_resource type="Script" uid="uid://dtd2a5tnj4y3a" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/minus_taxes_immediate_jail.gd" id="14_3we6v"]
+[ext_resource type="Script" uid="uid://divxobgy2kf4h" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/college_free_companies_turn_down.gd" id="15_w5ig8"]
+[ext_resource type="Script" uid="uid://bh8letn838n0m" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/minus_taxes_start_war.gd" id="16_056ti"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdjf5"]
+atlas = ExtResource("4_c5ffw")
+region = Rect2(204, 212, 1693, 1076)
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_kfv5s"]
+vertices = PackedVector2Array(865, 423, 765, 422, 447, 325, 159.03125, 136.00781, 1225.9609, 137.97656, 865, 456, 1224.0391, 622, 160.96094, 622, 764, 456, 345, 320, 343, 378, 445, 379)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4), PackedInt32Array(5, 6, 7, 8), PackedInt32Array(4, 6, 5, 0), PackedInt32Array(3, 2, 9), PackedInt32Array(7, 3, 9, 10), PackedInt32Array(8, 7, 10, 11, 1), PackedInt32Array(11, 2, 1)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(149, 126, 1236, 128, 1234, 632, 151, 632)])
+
+[sub_resource type="Gradient" id="Gradient_2vl3h"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.3083999, 0.3083999, 0.3083999, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_2vl3h"]
+gradient = SubResource("Gradient_2vl3h")
+
+[sub_resource type="Gradient" id="Gradient_kdjf5"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.73333335, 0.5058824, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_kdjf5"]
+gradient = SubResource("Gradient_kdjf5")
+
+[sub_resource type="Gradient" id="Gradient_kfv5s"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_kfv5s"]
+gradient = SubResource("Gradient_kfv5s")
+
+[node name="Town Controller" type="Node2D" unique_id=1314251985]
+script = ExtResource("1_t3e1v")
+
+[node name="Town Variables" type="Node" parent="." unique_id=1151526419 groups=["Town Variables"]]
+unique_name_in_owner = true
+script = ExtResource("2_h1oh2")
+metadata/_custom_type_script = "uid://3r04emm6141e"
+
+[node name="Town Events" type="Node" parent="." unique_id=519207571 groups=["Town Events"]]
+unique_name_in_owner = true
+script = ExtResource("3_wusd5")
+metadata/_custom_type_script = "uid://c32aflxfoureo"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1999181044]
+position = Vector2(640, 360)
+
+[node name="CityMapA" type="Sprite2D" parent="." unique_id=1185051003]
+position = Vector2(692.00006, 379)
+scale = Vector2(0.64973426, 0.47769523)
+texture = SubResource("AtlasTexture_kdjf5")
+
+[node name="Town" type="Node2D" parent="." unique_id=397002361]
+y_sort_enabled = true
+
+[node name="Town Navigation Region" type="NavigationRegion2D" parent="Town" unique_id=1526335775]
+y_sort_enabled = true
+navigation_polygon = SubResource("NavigationPolygon_kfv5s")
+script = ExtResource("5_h1oh2")
+
+[node name="House" type="Node2D" parent="Town/Town Navigation Region" unique_id=1395216922 groups=["House"]]
+position = Vector2(832, 447)
+
+[node name="Sprite2D" type="Sprite2D" parent="Town/Town Navigation Region/House" unique_id=20451385]
+position = Vector2(0, -3.0517578e-05)
+scale = Vector2(0.344, 0.344)
+texture = ExtResource("5_dw161")
+
+[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="Town/Town Navigation Region/House" unique_id=676242060]
+vertices = PackedVector2Array(-67, -25, 33, -24, 33, 9, -68, 9)
+affect_navigation_mesh = true
+carve_navigation_mesh = true
+
+[node name="Grocery Store" type="Node2D" parent="Town/Town Navigation Region" unique_id=411164529 groups=["Grocery Store"]]
+position = Vector2(406, 349)
+
+[node name="Sprite2D" type="Sprite2D" parent="Town/Town Navigation Region/Grocery Store" unique_id=1160797426]
+position = Vector2(0, -3.0517578e-05)
+scale = Vector2(0.344, 0.344)
+texture = ExtResource("6_asggh")
+
+[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="Town/Town Navigation Region/Grocery Store" unique_id=1548311948]
+vertices = PackedVector2Array(-61, -29, 41, -24, 39, 30, -63, 29)
+affect_navigation_mesh = true
+carve_navigation_mesh = true
+
+[node name="Citizen" parent="Town/Town Navigation Region" unique_id=1920521262 instance=ExtResource("7_a2aef")]
+position = Vector2(748, 438)
+
+[node name="New Person Spawn Point" type="Marker2D" parent="Town/Town Navigation Region" unique_id=1771133542]
+unique_name_in_owner = true
+position = Vector2(1228, 399)
+script = ExtResource("8_n5wc6")
+
+[node name="Node2D" type="Node2D" parent="Town" unique_id=117351170]
+y_sort_enabled = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=822260490]
+
+[node name="GUI" type="Control" parent="CanvasLayer" unique_id=1320702523]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/GUI" unique_id=718743840]
+layout_mode = 0
+offset_right = 350.0
+offset_bottom = 47.0
+
+[node name="Happiness" type="TextureProgressBar" parent="CanvasLayer/GUI/VBoxContainer" unique_id=1756297230]
+layout_mode = 2
+size_flags_vertical = 3
+max_value = 10.0
+nine_patch_stretch = true
+texture_under = SubResource("GradientTexture2D_2vl3h")
+texture_over = SubResource("GradientTexture2D_kdjf5")
+texture_progress = SubResource("GradientTexture2D_kfv5s")
+
+[node name="Ballot Controller" type="Control" parent="CanvasLayer" unique_id=897316481]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("9_0we26")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Ballot Controller" unique_id=505911022]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 200
+theme_override_constants/margin_right = 200
+theme_override_constants/margin_bottom = 200
+
+[node name="Ballot Holder" type="HBoxContainer" parent="CanvasLayer/Ballot Controller/MarginContainer" unique_id=275958992]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Ballot Controller/MarginContainer/Ballot Holder" unique_id=509411854]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="CanvasLayer/Ballot Controller/MarginContainer/Ballot Holder/CenterContainer" unique_id=776863990]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 29
+text = "
+"
+autowrap_mode = 2
+script = ExtResource("10_e8ai4")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/MarginContainer/Ballot Holder/CenterContainer/Button" unique_id=360492806]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]More money invested in hospitals, [color=red]but less money invested in schools"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer2" type="CenterContainer" parent="CanvasLayer/Ballot Controller/MarginContainer/Ballot Holder" unique_id=183499022]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button2" type="Button" parent="CanvasLayer/Ballot Controller/MarginContainer/Ballot Holder/CenterContainer2" unique_id=1039181736]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 29
+text = "
+"
+autowrap_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/MarginContainer/Ballot Holder/CenterContainer2/Button2" unique_id=450314297]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]More money invested in schools, [color=red]but less money invested in hospitals"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer3" type="CenterContainer" parent="CanvasLayer/Ballot Controller/MarginContainer/Ballot Holder" unique_id=1615076557]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button3" type="Button" parent="CanvasLayer/Ballot Controller/MarginContainer/Ballot Holder/CenterContainer3" unique_id=413081621]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 29
+text = "
+"
+autowrap_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/MarginContainer/Ballot Holder/CenterContainer3/Button3" unique_id=561621047]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Less ads in public spaces, [color=red]but groceries are more expensive"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Ballot Controller" unique_id=978262563]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 8.0
+grow_horizontal = 2
+script = ExtResource("11_b3xmo")
+
+[node name="Toggle Ballot" type="Button" parent="CanvasLayer/Ballot Controller/CenterContainer" unique_id=1153047804]
+layout_mode = 2
+text = "show ballot "
+
+[node name="All Ballot Buttons" type="FlowContainer" parent="CanvasLayer/Ballot Controller" unique_id=1622080130]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 1349.0
+offset_top = 6.0
+offset_right = 2267.0
+offset_bottom = 723.0
+
+[node name="Button" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=8912229]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("12_2u88u")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button" unique_id=1678864937]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]More money invested in hospitals, [color=red]but less money invested in schools"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button2" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=1269797279]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("13_22kea")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button2" unique_id=509153424]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Build a community park, [color=red]but taxes are increased."
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button3" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=1321202032]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("14_3we6v")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button3" unique_id=1415178148]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]-10% off taxes per person in household, [color=red]but debt immediately sends you to jail"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button4" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=598381542]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("15_w5ig8")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button4" unique_id=1692149740]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]College is free, [color=red]but companies can turn down applicants for any reason 
+
+"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button5" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=763534623]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("16_056ti")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button5" unique_id=1524116568]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Taxes are reduced, [color=red]but go to war
+
+"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Ballot History" type="HBoxContainer" parent="CanvasLayer/Ballot Controller" unique_id=2048837332]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[connection signal="pressed" from="CanvasLayer/Ballot Controller/CenterContainer/Toggle Ballot" to="CanvasLayer/Ballot Controller/CenterContainer" method="_on_toggle_ballot_pressed"]

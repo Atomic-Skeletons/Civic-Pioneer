@@ -15,6 +15,7 @@
 [ext_resource type="Script" uid="uid://dtd2a5tnj4y3a" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/minus_taxes_immediate_jail.gd" id="9_80bto"]
 [ext_resource type="Script" uid="uid://cuxd7xh2g3jj7" path="res://Badge Work/Voting and Elections/Town/new_person_spawn_point.gd" id="9_syrl7"]
 [ext_resource type="Script" uid="uid://divxobgy2kf4h" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/college_free_companies_turn_down.gd" id="10_2vl3h"]
+[ext_resource type="Script" uid="uid://bh8letn838n0m" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/minus_taxes_start_war.gd" id="16_syrl7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kdjf5"]
 atlas = ExtResource("4_kdjf5")
@@ -137,7 +138,6 @@ texture_over = SubResource("GradientTexture2D_kdjf5")
 texture_progress = SubResource("GradientTexture2D_kfv5s")
 
 [node name="Ballot Controller" type="Control" parent="CanvasLayer" unique_id=897316481]
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -352,6 +352,30 @@ mouse_filter = 2
 theme_override_font_sizes/normal_font_size = 30
 bbcode_enabled = true
 text = "[color=green]College is free, [color=red]but companies can turn down applicants for any reason 
+
+"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button5" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=763534623]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("16_syrl7")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button5" unique_id=1524116568]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Taxes are reduced, [color=red]but go to war
 
 "
 scroll_active = false
