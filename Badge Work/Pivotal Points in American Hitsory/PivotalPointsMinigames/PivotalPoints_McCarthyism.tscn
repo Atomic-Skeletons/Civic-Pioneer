@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://cnt6pdu846i3e"]
+
+[ext_resource type="Script" uid="uid://dpibgwig1q624" path="res://Badge Work/Pivotal Points in American Hitsory/PivotalPointsMinigames/McCarthyism.gd" id="1_6lgjj"]
+[ext_resource type="Texture2D" uid="uid://b2wk4htjfj18g" path="res://Badge Work/Pivotal Points in American Hitsory/PivotalPointsTempArt/JudgeSprite.png" id="2_6lgjj"]
+
+[node name="PivotalPointsMcCarthyism" type="Node2D" unique_id=601332603]
+script = ExtResource("1_6lgjj")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1243551439]
+position = Vector2(643, 312)
+scale = Vector2(6.1218023, 6.1218023)
+texture = ExtResource("2_6lgjj")
+
+[node name="Label" type="Label" parent="." unique_id=1606607812]
+offset_left = 734.0
+offset_top = 222.0
+offset_right = 906.0
+offset_bottom = 245.0
+text = "Are you a communist?"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1176484485]
+offset_left = 547.0
+offset_top = 529.0
+offset_right = 747.0
+offset_bottom = 630.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1586159544]
+layout_mode = 2
+text = "Yes, I am a commie."
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=1481059460]
+layout_mode = 2
+text = "No, I am not a commie."
+
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]

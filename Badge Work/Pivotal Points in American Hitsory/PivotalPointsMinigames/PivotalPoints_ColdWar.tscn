@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dcjw2pe3mkqlc"]
 
-[ext_resource type="Script" uid="uid://cggm4h7wiyhpq" path="res://Badge Work/Pivotal Points in American Hitsory/PivotalPointsMinigames/pivotal_points_cold_war.gd" id="1_5j2l2"]
+[ext_resource type="Script" uid="uid://cggm4h7wiyhpq" path="res://Badge Work/Pivotal Points in American Hitsory/PivotalPointsScripts/pivotal_points_cold_war.gd" id="1_5j2l2"]
 
 [node name="PivotalPointsColdWar" type="Node2D" unique_id=1810084552]
 script = ExtResource("1_5j2l2")
