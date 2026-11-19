@@ -16,6 +16,67 @@ tracks/0/keys = {
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.05166598, 0, 0.05166598, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:scale:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.05166598, 0, 0.05166598, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_kir5p"]
+resource_name = "idle"
+length = 1.0021169
+loop_mode = 1
+step = 0.01
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.074246265, -0.23731147),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.05166598, 0, 0.05166598, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:scale:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 2),
+"points": PackedFloat32Array(1, -0.05166598, 0, 0.05166598, 0, 0.8602248, -0.0677927, 0.112248, 0.04732272, 0.18708009, 0.9849448, -0.018333334, -0.014550666, 0, 0),
+"times": PackedFloat32Array(0, 0.21146038, 0.3740328)
+}
 
 [sub_resource type="Animation" id="Animation_syrl7"]
 resource_name = "wobble"
@@ -36,6 +97,7 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_lf6tb"]
 _data = {
 &"RESET": SubResource("Animation_a4xjs"),
+&"idle": SubResource("Animation_kir5p"),
 &"wobble": SubResource("Animation_syrl7")
 }
 
@@ -55,4 +117,7 @@ position = Vector2(0, -17)
 scale = Vector2(0.345, 0.345)
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=546860031]
+target_desired_distance = 60.0
 avoidance_enabled = true
+
+[connection signal="target_reached" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_target_reached"]

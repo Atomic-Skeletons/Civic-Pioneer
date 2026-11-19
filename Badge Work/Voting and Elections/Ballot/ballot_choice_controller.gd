@@ -60,6 +60,6 @@ func clear_ballot():
 
 func clear_ballot_nodes():
 	for child in ballot_holder.get_children():
-		var child_child = child.get_child(0)
-		if child_child:
+		if child.get_children().size() > 0:
+			var child_child = child.get_child(0)
 			child_child.queue_free()
