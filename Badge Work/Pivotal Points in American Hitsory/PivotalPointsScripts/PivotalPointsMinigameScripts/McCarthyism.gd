@@ -24,3 +24,9 @@ func _on_button_2_pressed() -> void:
 	judge_talk.text = "Guilty."
 	get_tree().change_scene_to_packed(PivotalPointsGlobals.INTERMISSION_SCREEN)
 	pass # Replace with function body.
+
+
+func _on_timer_timeout() -> void:
+	PivotalPointsGlobals._lose()
+	judge_talk.text = "Guilty."
+	get_tree().change_scene_to_packed(PivotalPointsGlobals.INTERMISSION_SCREEN)
