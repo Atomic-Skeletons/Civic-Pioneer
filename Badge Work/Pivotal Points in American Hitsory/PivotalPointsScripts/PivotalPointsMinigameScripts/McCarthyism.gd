@@ -15,10 +15,12 @@ func _process(delta: float) -> void:
 func _on_button_3_pressed() -> void:
 	PivotalPointsGlobals._win()
 	judge_talk.text = "You are free to go."
+	get_tree().change_scene_to_packed(PivotalPointsGlobals.INTERMISSION_SCREEN)
 	pass # Replace with function body.
 
 
 func _on_button_2_pressed() -> void:
 	PivotalPointsGlobals._lose()
 	judge_talk.text = "Guilty."
+	get_tree().change_scene_to_packed(PivotalPointsGlobals.INTERMISSION_SCREEN)
 	pass # Replace with function body.
