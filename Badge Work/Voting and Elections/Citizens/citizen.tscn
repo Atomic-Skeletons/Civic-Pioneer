@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://d2a1jcgfy8qao"]
+
+[ext_resource type="Script" uid="uid://u2pwdmicqfcv" path="res://Badge Work/Voting and Elections/Citizens/citizen.gd" id="1_7isy0"]
+[ext_resource type="Texture2D" uid="uid://boslls6pdxry5" path="res://Badge Work/Voting and Elections/Citizens/Textures/Body1.png" id="1_dr2ux"]
+[ext_resource type="Texture2D" uid="uid://cjxkh1sdn8j5n" path="res://Badge Work/Voting and Elections/Citizens/Textures/Joy1.png" id="2_7isy0"]
+[ext_resource type="Texture2D" uid="uid://b1rl2yoj0pemg" path="res://Badge Work/Voting and Elections/Citizens/Textures/Smile.png" id="3_0sx5c"]
+[ext_resource type="Texture2D" uid="uid://qpqdmjmsh6o7" path="res://Badge Work/Voting and Elections/Citizens/Textures/Flat.png" id="4_pj4dn"]
+[ext_resource type="Texture2D" uid="uid://bqrv4c6wq0r3w" path="res://Badge Work/Voting and Elections/Citizens/Textures/Frown.png" id="5_6kjku"]
+[ext_resource type="Texture2D" uid="uid://kshjaol4xiwp" path="res://Badge Work/Voting and Elections/Citizens/Textures/Rage.png" id="6_nwphp"]
+[ext_resource type="Texture2D" uid="uid://ogcs4hligf60" path="res://Badge Work/Voting and Elections/Citizens/Textures/Baseballhat.png" id="7_6by8u"]
+[ext_resource type="Texture2D" uid="uid://b04c3ihp8sqa3" path="res://Badge Work/Voting and Elections/Citizens/Textures/Bowlerhat.png" id="8_drepq"]
+[ext_resource type="Texture2D" uid="uid://dot5iag0tl1u3" path="res://Badge Work/Voting and Elections/Citizens/Textures/Flowerhat.png" id="9_st3hx"]
+[ext_resource type="Texture2D" uid="uid://butf46hreou54" path="res://Badge Work/Voting and Elections/Citizens/Textures/Spinnyhat.png" id="10_1c2cd"]
+[ext_resource type="Texture2D" uid="uid://b3ilcu4dxfnmg" path="res://Badge Work/Voting and Elections/Citizens/Textures/Tophat.png" id="11_3n17b"]
+[ext_resource type="Texture2D" uid="uid://b2g31flomhjlf" path="res://Badge Work/Voting and Elections/Citizens/Textures/Tie.png" id="12_yb18x"]
+[ext_resource type="Texture2D" uid="uid://bsncc6d8lda5v" path="res://Badge Work/Voting and Elections/Citizens/Textures/Shirt1.png" id="13_2cco5"]
+[ext_resource type="Texture2D" uid="uid://dmo0w6rw4yula" path="res://Badge Work/Voting and Elections/Citizens/Textures/Pants1.png" id="14_jw8b8"]
+[ext_resource type="Texture2D" uid="uid://dkuq0emxus167" path="res://Badge Work/Voting and Elections/Citizens/Textures/Bowtie.png" id="15_u5t1h"]
+[ext_resource type="Texture2D" uid="uid://b2bkx87cin4oa" path="res://Badge Work/Voting and Elections/Citizens/Textures/Undies.png" id="16_ehlpi"]
+
+[node name="Citizen" type="Node2D" unique_id=1087789938]
+script = ExtResource("1_7isy0")
+
+[node name="Body" type="Sprite2D" parent="." unique_id=1473094502]
+texture = ExtResource("1_dr2ux")
+
+[node name="Faces" type="Node2D" parent="Body" unique_id=659431336]
+
+[node name="Rage" type="Sprite2D" parent="Body/Faces" unique_id=3924301]
+visible = false
+position = Vector2(-2, -30)
+texture = ExtResource("6_nwphp")
+
+[node name="Frown" type="Sprite2D" parent="Body/Faces" unique_id=844906380]
+visible = false
+position = Vector2(-2, -21)
+texture = ExtResource("5_6kjku")
+
+[node name="Flat" type="Sprite2D" parent="Body/Faces" unique_id=1118227493]
+position = Vector2(-2, -21)
+texture = ExtResource("4_pj4dn")
+
+[node name="Smile" type="Sprite2D" parent="Body/Faces" unique_id=1167011036]
+visible = false
+position = Vector2(-3, -21)
+texture = ExtResource("3_0sx5c")
+
+[node name="Joy" type="Sprite2D" parent="Body/Faces" unique_id=1700128455]
+visible = false
+position = Vector2(-3, -21)
+texture = ExtResource("2_7isy0")
+
+[node name="Outfits" type="Node2D" parent="Body" unique_id=1680432562]
+
+[node name="Tie" type="Sprite2D" parent="Body/Outfits" unique_id=1896110516]
+visible = false
+position = Vector2(-1, 21)
+texture = ExtResource("12_yb18x")
+
+[node name="Shirt1" type="Sprite2D" parent="Body/Outfits" unique_id=2069996560]
+visible = false
+position = Vector2(-3, 20)
+texture = ExtResource("13_2cco5")
+
+[node name="Pants1" type="Sprite2D" parent="Body/Outfits" unique_id=1912039903]
+visible = false
+position = Vector2(-1, 40)
+texture = ExtResource("14_jw8b8")
+
+[node name="Bowtie" type="Sprite2D" parent="Body/Outfits" unique_id=1964884923]
+visible = false
+position = Vector2(-3, 13)
+texture = ExtResource("15_u5t1h")
+
+[node name="Speedo" type="Sprite2D" parent="Body/Outfits" unique_id=2136893801]
+visible = false
+position = Vector2(-2, 38)
+texture = ExtResource("16_ehlpi")
+
+[node name="Hats" type="Node2D" parent="Body" unique_id=1124133016]
+
+[node name="Baseball Hat" type="Sprite2D" parent="Body/Hats" unique_id=332134203]
+visible = false
+position = Vector2(11, -64)
+texture = ExtResource("7_6by8u")
+
+[node name="Bowler Hat" type="Sprite2D" parent="Body/Hats" unique_id=1895595601]
+visible = false
+position = Vector2(-14, -70)
+texture = ExtResource("8_drepq")
+
+[node name="Flower Hat" type="Sprite2D" parent="Body/Hats" unique_id=1386553060]
+visible = false
+position = Vector2(6, -82)
+texture = ExtResource("9_st3hx")
+
+[node name="Spinner Hat" type="Sprite2D" parent="Body/Hats" unique_id=633127787]
+visible = false
+position = Vector2(-24, -75)
+texture = ExtResource("10_1c2cd")
+
+[node name="Top Hat" type="Sprite2D" parent="Body/Hats" unique_id=365367367]
+visible = false
+position = Vector2(-15, -77)
+texture = ExtResource("11_3n17b")
