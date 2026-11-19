@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://s1qwfjfsvb8o" path="res://Badge Work/American Outdoors/PlaceholderAssets/lush-evergreen-conifer-tree-isolated-transparent-background.png" id="7_2noah"]
 [ext_resource type="Texture2D" uid="uid://u6aktunyk5qs" path="res://Resources/Drag and Drop/newspaper transparent.png" id="7_df7fe"]
 [ext_resource type="PackedScene" uid="uid://c2c0jhh5db2ei" path="res://Badge Work/American Outdoors/ground_line.tscn" id="8_2noah"]
+[ext_resource type="Script" uid="uid://0ywm62q5h0cl" path="res://Badge Work/American Outdoors/camera_controller.gd" id="14_vwy87"]
 
 [node name="OutdoorsTest" type="Node2D" unique_id=157864007]
 
@@ -258,6 +259,12 @@ texture = ExtResource("7_df7fe")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Dragging Controller/Trash2/Newspaper Draggable" unique_id=1373035643]
 polygon = PackedVector2Array(-62, 102, -63, 88, -74, 78, -64, -124, 76, -87, 98, 87, 76, 122)
+
+[node name="CameraController" type="Node2D" parent="." unique_id=825139644]
+script = ExtResource("14_vwy87")
+
+[node name="Camera2D" type="Camera2D" parent="CameraController" unique_id=985578210]
+position = Vector2(644, 363)
 
 [connection signal="mouse_entered" from="OutdoorScene/Flower" to="OutdoorScene/Flower" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="OutdoorScene/Flower" to="OutdoorScene/Flower" method="_on_mouse_exited"]
