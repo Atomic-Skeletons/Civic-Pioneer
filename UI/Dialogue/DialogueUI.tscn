@@ -8,6 +8,7 @@
 script = ExtResource("1_gf57d")
 
 [node name="DialogueBox" type="PanelContainer" parent="." unique_id=1535249828]
+unique_name_in_owner = true
 self_modulate = Color(0.28485027, 0.28485027, 0.28485027, 1)
 anchors_preset = 7
 anchor_left = 0.5
@@ -22,17 +23,17 @@ grow_vertical = 0
 theme_override_styles/panel = SubResource("StyleBoxFlat_e5qlt")
 
 [node name="Chatbox_Container" type="VBoxContainer" parent="DialogueBox" unique_id=1899369653]
-unique_name_in_owner = true
 layout_mode = 2
 
 [node name="NameLabel" type="Label" parent="DialogueBox/Chatbox_Container" unique_id=473286402]
 layout_mode = 2
 text = "Character Name"
 
-[node name="DialogueLabel" type="Label" parent="DialogueBox/Chatbox_Container" unique_id=1386569048]
+[node name="DialogueLabel" type="RichTextLabel" parent="DialogueBox/Chatbox_Container" unique_id=906444260]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Dialogue text"
+fit_content = true
 
 [node name="ContinueLabel" type="Label" parent="DialogueBox/Chatbox_Container" unique_id=1592869943]
 layout_mode = 2

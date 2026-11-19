@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://coygrrc52yxcq"]
+
+[ext_resource type="Script" uid="uid://dup2up1xbtmf1" path="res://UI/Dialogue/DialougueTestScene/dialogue_library.gd" id="1_2824o"]
+[ext_resource type="PackedScene" uid="uid://dhberc4edrcj3" path="res://UI/Dialogue/DialogueUI.tscn" id="2_2824o"]
+
+[node name="DialogueLibrary" type="Node" unique_id=1530884662]
+script = ExtResource("1_2824o")
+
+[node name="DialogueUi" parent="." unique_id=292721127 instance=ExtResource("2_2824o")]

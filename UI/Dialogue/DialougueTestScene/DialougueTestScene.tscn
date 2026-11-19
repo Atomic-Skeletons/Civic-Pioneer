@@ -1,46 +1,7 @@
 [gd_scene format=3 uid="uid://byu0kw5eb5e0w"]
 
-[ext_resource type="Script" uid="uid://dup2up1xbtmf1" path="res://UI/Dialogue/DialougueTestScene/dialogue_library.gd" id="1_i1njt"]
-[ext_resource type="Script" uid="uid://dtabs8s7pmqfi" path="res://UI/Dialogue/dialogue_ui.gd" id="2_i1njt"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e5qlt"]
+[ext_resource type="PackedScene" uid="uid://coygrrc52yxcq" path="res://UI/Dialogue/DialougueTestScene/dialogue_library.tscn" id="1_oq4jw"]
 
 [node name="DialougueTestScene" type="Node2D" unique_id=1667752005]
 
-[node name="DialogueLibrary" type="Node" parent="." unique_id=442673779]
-script = ExtResource("1_i1njt")
-
-[node name="DialogueUi" type="CanvasLayer" parent="DialogueLibrary" unique_id=292721127]
-script = ExtResource("2_i1njt")
-
-[node name="DialogueBox" type="PanelContainer" parent="DialogueLibrary/DialogueUi" unique_id=1535249828]
-unique_name_in_owner = true
-self_modulate = Color(0.28485027, 0.28485027, 0.28485027, 1)
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -400.0
-offset_top = -180.0
-offset_right = 400.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_styles/panel = SubResource("StyleBoxFlat_e5qlt")
-
-[node name="Chatbox_Container" type="VBoxContainer" parent="DialogueLibrary/DialogueUi/DialogueBox" unique_id=1899369653]
-layout_mode = 2
-
-[node name="NameLabel" type="Label" parent="DialogueLibrary/DialogueUi/DialogueBox/Chatbox_Container" unique_id=473286402]
-layout_mode = 2
-text = "Character Name"
-
-[node name="DialogueLabel" type="RichTextLabel" parent="DialogueLibrary/DialogueUi/DialogueBox/Chatbox_Container" unique_id=1946529960]
-unique_name_in_owner = true
-layout_mode = 2
-text = "Dialogue text"
-fit_content = true
-
-[node name="ContinueLabel" type="Label" parent="DialogueLibrary/DialogueUi/DialogueBox/Chatbox_Container" unique_id=1592869943]
-layout_mode = 2
-text = "Press Enter to continue"
+[node name="DialogueLibrary" parent="." unique_id=1530884662 instance=ExtResource("1_oq4jw")]
