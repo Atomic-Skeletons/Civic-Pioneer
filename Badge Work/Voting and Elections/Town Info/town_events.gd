@@ -60,3 +60,9 @@ func add_solar_panels():
 func add_center_buildings(amount: int):
 	pass
 #endregion
+
+func start_war():
+	pass
+
+func minus_taxes():
+	pass
