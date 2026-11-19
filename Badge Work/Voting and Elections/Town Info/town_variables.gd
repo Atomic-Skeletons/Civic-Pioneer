@@ -2,7 +2,7 @@ class_name TownVariables
 extends Node
 
 
-var happiness : int = 0
+var happiness : int = 5
 var people : int = 0
 var buildings : int = 0
 
