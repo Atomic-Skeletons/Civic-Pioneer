@@ -7,6 +7,7 @@
 [node name="DefendantDialogue" type="Node2D" unique_id=1883047810]
 
 [node name="Sprites" type="Node2D" parent="." unique_id=583774350]
+scale = Vector2(1.1, 1.1)
 
 [node name="Background" type="Sprite2D" parent="Sprites" unique_id=322019256]
 position = Vector2(583.55554, 328)

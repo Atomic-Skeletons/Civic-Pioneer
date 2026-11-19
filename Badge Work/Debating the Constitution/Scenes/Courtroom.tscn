@@ -10,6 +10,7 @@
 script = ExtResource("1_ls3hi")
 
 [node name="Sprites" type="Node2D" parent="." unique_id=1983475489]
+scale = Vector2(1.1, 1.1)
 
 [node name="Background" type="Sprite2D" parent="Sprites" unique_id=578210366]
 position = Vector2(583.55554, 328)
