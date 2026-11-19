@@ -4,6 +4,7 @@
 
 [node name="PivotalPointsTitleScreen" type="Node2D" unique_id=1585194411]
 script = ExtResource("1_26mmq")
+minigames_folder_path = "res://Badge Work/Pivotal Points in American Hitsory/PivotalPointsMinigames/"
 
 [node name="Label" type="Label" parent="." unique_id=146934361]
 offset_left = 390.0
