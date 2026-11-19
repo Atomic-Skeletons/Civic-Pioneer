@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://cyjvq0h24lvde"]
+
+[ext_resource type="Script" uid="uid://cukig8pvt0bv0" path="res://Badge Work/Voting and Elections/Citizens/citizen_town_controller.gd" id="1_kir5p"]
+[ext_resource type="PackedScene" uid="uid://d2a1jcgfy8qao" path="res://Badge Work/Voting and Elections/Citizens/citizen.tscn" id="2_12b7o"]
+
+[sub_resource type="Animation" id="Animation_a4xjs"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_syrl7"]
+resource_name = "wobble"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2, 0, 2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.074246265, -0.23731147, -0.17453292, -0.017528439, -0.019999165, 0.03789234, 0.04323347, 0.39252472, -0.07368308, -0.027921677, 0.061447978, -0.024944067, 0, -0.058826536, 0.24286065, 0, 0),
+"times": PackedFloat32Array(0, 0.10000001, 0.26346302, 0.4)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lf6tb"]
+_data = {
+&"RESET": SubResource("Animation_a4xjs"),
+&"wobble": SubResource("Animation_syrl7")
+}
+
+[node name="Citizen" type="CharacterBody2D" unique_id=1920521262 node_paths=PackedStringArray("citizen")]
+motion_mode = 1
+script = ExtResource("1_kir5p")
+citizen = NodePath("Wobble Pivot Point/Citizen")
+
+[node name="Wobble Pivot Point" type="Node2D" parent="." unique_id=877582549]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Wobble Pivot Point" unique_id=72487449]
+libraries/ = SubResource("AnimationLibrary_lf6tb")
+autoplay = &"wobble"
+
+[node name="Citizen" parent="Wobble Pivot Point" unique_id=1087789938 instance=ExtResource("2_12b7o")]
+position = Vector2(0, -17)
+scale = Vector2(0.345, 0.345)
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=546860031]
+avoidance_enabled = true
