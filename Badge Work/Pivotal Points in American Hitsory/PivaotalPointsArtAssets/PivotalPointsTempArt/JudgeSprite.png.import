@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2wk4htjfj18g"
-path="res://.godot/imported/JudgeSprite.png-06a9c5df64444c2e1aefeb0b80b738d3.ctex"
+path="res://.godot/imported/JudgeSprite.png-3b6643885d212900e6793483cbca1b4b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Badge Work/Pivotal Points in American Hitsory/PivotalPointsTempArt/JudgeSprite.png"
-dest_files=["res://.godot/imported/JudgeSprite.png-06a9c5df64444c2e1aefeb0b80b738d3.ctex"]
+source_file="res://Badge Work/Pivotal Points in American Hitsory/PivaotalPointsArtAssets/PivotalPointsTempArt/JudgeSprite.png"
+dest_files=["res://.godot/imported/JudgeSprite.png-3b6643885d212900e6793483cbca1b4b.ctex"]
 
 [params]
 
