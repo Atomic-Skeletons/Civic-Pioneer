@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://mrn1qtmgykqp"]
 
+[ext_resource type="Script" uid="uid://c65225tha01qd" path="res://Badge Work/American Outdoors/outdoors_test.gd" id="1_b2tdv"]
 [ext_resource type="Script" uid="uid://ce63d6rg3fnqn" path="res://Badge Work/American Outdoors/Scripts/findable.gd" id="1_k4hh4"]
 [ext_resource type="Texture2D" uid="uid://xnopckmy1dh5" path="res://Badge Work/American Outdoors/PlaceholderAssets/border_TEST-pixelart-UI_icon.jpg.png" id="1_vwy87"]
 [ext_resource type="Texture2D" uid="uid://bil60tn1270y" path="res://Badge Work/American Outdoors/PlaceholderAssets/AdobeStock_029c135b-bf27-44a7-bf62-ab7e6e625c8b.png" id="2_3vxec"]
@@ -17,6 +18,7 @@
 [ext_resource type="Script" uid="uid://0ywm62q5h0cl" path="res://Badge Work/American Outdoors/camera_controller.gd" id="14_vwy87"]
 
 [node name="OutdoorsTest" type="Node2D" unique_id=157864007]
+script = ExtResource("1_b2tdv")
 
 [node name="OutdoorsUI" type="Control" parent="." unique_id=718122533]
 layout_mode = 3
