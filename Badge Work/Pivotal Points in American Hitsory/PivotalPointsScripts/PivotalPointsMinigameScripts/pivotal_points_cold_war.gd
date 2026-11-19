@@ -13,9 +13,11 @@ func _process(delta: float) -> void:
 
 func _on_timer_timeout() -> void:
 	PivotalPointsGlobals._win()
+	get_tree().change_scene_to_packed(PivotalPointsGlobals.INTERMISSION_SCREEN)
 	pass # Replace with function body.
 
 
 func _on_button_pressed() -> void:
 	PivotalPointsGlobals._lose()
+	get_tree().change_scene_to_packed(PivotalPointsGlobals.INTERMISSION_SCREEN)
 	pass # Replace with function body.

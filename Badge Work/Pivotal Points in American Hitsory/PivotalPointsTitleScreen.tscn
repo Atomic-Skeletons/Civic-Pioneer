@@ -16,7 +16,7 @@ American History"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button" type="Button" parent="." unique_id=1429934253]
+[node name="Start" type="Button" parent="." unique_id=1429934253]
 offset_left = 445.0
 offset_top = 340.0
 offset_right = 756.0
@@ -29,3 +29,5 @@ offset_top = 427.0
 offset_right = 759.0
 offset_bottom = 481.0
 text = "Exit"
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
