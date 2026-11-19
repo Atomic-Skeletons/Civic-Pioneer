@@ -1,4 +1,5 @@
 #@tool
+class_name Citizen
 extends Node2D
 
 # DEV Buttons for showing off randomization

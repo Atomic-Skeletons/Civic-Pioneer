@@ -5,11 +5,24 @@
 [ext_resource type="Script" uid="uid://c32aflxfoureo" path="res://Badge Work/Voting and Elections/Town Info/town_events.gd" id="3_x02kr"]
 [ext_resource type="Script" uid="uid://lmpb7e01x706" path="res://Badge Work/Voting and Elections/Ballot/ballot_choice_controller.gd" id="4_3eps0"]
 [ext_resource type="Script" uid="uid://dchfam2c1nk3y" path="res://Badge Work/Voting and Elections/Ballot/ballot_button.gd" id="4_6x7ow"]
+[ext_resource type="Texture2D" uid="uid://3qwuq7vhsc47" path="res://Badge Work/Voting and Elections/Town/Art/City_Map_A.png" id="4_kdjf5"]
+[ext_resource type="Texture2D" uid="uid://biahqbk5kwwt" path="res://Badge Work/Voting and Elections/Town/Art/Houses/chimney_house_1.png" id="5_kfv5s"]
 [ext_resource type="Script" uid="uid://8r1lnmgx42ky" path="res://Badge Work/Voting and Elections/Ballot/voting_ballot_controller.gd" id="5_uj6sv"]
+[ext_resource type="Script" uid="uid://cukig8pvt0bv0" path="res://Badge Work/Voting and Elections/Citizens/citizen_town_controller.gd" id="6_7kl52"]
+[ext_resource type="PackedScene" uid="uid://d2a1jcgfy8qao" path="res://Badge Work/Voting and Elections/Citizens/citizen.tscn" id="6_37jwa"]
 [ext_resource type="Script" uid="uid://cjxnq5t7fif0v" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/more_money_hospital_less_money_schools.gd" id="7_xkars"]
 [ext_resource type="Script" uid="uid://67v2l0inx2kn" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/build_community_tax_increase.gd" id="8_1gur6"]
 [ext_resource type="Script" uid="uid://dtd2a5tnj4y3a" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/minus_taxes_immediate_jail.gd" id="9_80bto"]
 [ext_resource type="Script" uid="uid://divxobgy2kf4h" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/college_free_companies_turn_down.gd" id="10_2vl3h"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdjf5"]
+atlas = ExtResource("4_kdjf5")
+region = Rect2(204, 212, 1693, 1076)
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_kfv5s"]
+vertices = PackedVector2Array(1225.9609, 137.97656, 1224.0391, 622, 160.96094, 622, 159.03125, 136.00781)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(149, 126, 1236, 128, 1234, 632, 151, 632)])
 
 [sub_resource type="Gradient" id="Gradient_2vl3h"]
 offsets = PackedFloat32Array(0)
@@ -48,18 +61,49 @@ metadata/_custom_type_script = "uid://c32aflxfoureo"
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1999181044]
 position = Vector2(640, 360)
 
-[node name="Town" type="Node2D" parent="." unique_id=397002361]
+[node name="CityMapA" type="Sprite2D" parent="." unique_id=1185051003]
+position = Vector2(692.00006, 379)
+scale = Vector2(0.64973426, 0.47769523)
+texture = SubResource("AtlasTexture_kdjf5")
 
-[node name="ColorRect" type="ColorRect" parent="Town" unique_id=1344918504]
-offset_right = 1280.0
-offset_bottom = 720.0
-color = Color(0.45490196, 1, 0.32156864, 1)
+[node name="Town" type="Node2D" parent="." unique_id=397002361]
+y_sort_enabled = true
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="Town" unique_id=1526335775]
+navigation_polygon = SubResource("NavigationPolygon_kfv5s")
 
 [node name="Node2D" type="Node2D" parent="Town" unique_id=117351170]
+y_sort_enabled = true
+
+[node name="House" type="Node2D" parent="Town" unique_id=1395216922]
+position = Vector2(832, 447)
+
+[node name="Sprite2D" type="Sprite2D" parent="Town/House" unique_id=20451385]
+position = Vector2(0, -3.0517578e-05)
+scale = Vector2(0.344, 0.344)
+texture = ExtResource("5_kfv5s")
+
+[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="Town/House" unique_id=676242060]
+radius = 71.86
+vertices = PackedVector2Array(-67, -25, 33, -24, 33, 9, -68, 9)
+affect_navigation_mesh = true
+carve_navigation_mesh = true
+
+[node name="Citizen" type="CharacterBody2D" parent="Town" unique_id=1758939424]
+position = Vector2(745, 460)
+script = ExtResource("6_7kl52")
+
+[node name="Citizen" parent="Town/Citizen" unique_id=1087789938 instance=ExtResource("6_37jwa")]
+position = Vector2(0, -17)
+scale = Vector2(0.345, 0.345)
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="Town/Citizen" unique_id=1343452654]
+avoidance_enabled = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=822260490]
 
 [node name="GUI" type="Control" parent="CanvasLayer" unique_id=1320702523]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -82,6 +126,7 @@ texture_over = SubResource("GradientTexture2D_kdjf5")
 texture_progress = SubResource("GradientTexture2D_kfv5s")
 
 [node name="Ballot Controller" type="Control" parent="CanvasLayer" unique_id=897316481]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -311,4 +356,5 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
+[connection signal="velocity_computed" from="Town/Citizen/NavigationAgent2D" to="Town/Citizen" method="_on_navigation_agent_2d_velocity_computed"]
 [connection signal="pressed" from="CanvasLayer/Ballot Controller/CenterContainer/Toggle Ballot" to="CanvasLayer/Ballot Controller/CenterContainer" method="_on_toggle_ballot_pressed"]
