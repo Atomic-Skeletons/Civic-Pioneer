@@ -26,7 +26,9 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_e5qlt")
 layout_mode = 2
 
 [node name="NameLabel" type="Label" parent="DialogueBox/Chatbox_Container" unique_id=473286402]
+unique_name_in_owner = true
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 text = "Character Name"
 
 [node name="DialogueLabel" type="RichTextLabel" parent="DialogueBox/Chatbox_Container" unique_id=906444260]
@@ -37,4 +39,5 @@ fit_content = true
 
 [node name="ContinueLabel" type="Label" parent="DialogueBox/Chatbox_Container" unique_id=1592869943]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.28118682, 0.28118688, 0.28118682, 1)
 text = "Press Enter to continue"

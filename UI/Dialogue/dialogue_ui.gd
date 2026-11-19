@@ -2,6 +2,7 @@ extends CanvasLayer
 
 @onready var dialogue_box: PanelContainer = %DialogueBox
 @onready var dialogue_label: RichTextLabel = %DialogueLabel
+@onready var name_label: Label = %NameLabel
 
 enum {
 	READY,
@@ -20,6 +21,13 @@ var time = 0.0
 func _ready() -> void:
 	hide_textbox()
 	state = READY
+	
+	if Global.dialogue % 2 == 0:
+		name_label.text = "Cartographer"
+		name_label.add_theme_color_override("font_color", Color.BLUE)
+	else:
+		name_label.text = "Uncle Sam"
+		name_label.add_theme_color_override("font_color", Color.RED)
 
 func set_to_ready():
 	if state == FINISHED: state = READY

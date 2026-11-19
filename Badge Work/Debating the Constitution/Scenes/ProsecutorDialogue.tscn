@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://donhrmk271aqf"]
+
+[ext_resource type="Texture2D" uid="uid://cd4un1y8ir0e7" path="res://Badge Work/Debating the Constitution/Images/Courtroom.png" id="1_lbk20"]
+[ext_resource type="PackedScene" uid="uid://coygrrc52yxcq" path="res://UI/Dialogue/DialougueTestScene/dialogue_library.tscn" id="3_7o4ki"]
+[ext_resource type="Texture2D" uid="uid://cg5aueox86nky" path="res://Badge Work/Debating the Constitution/Images/People/Uncle Sam.png" id="3_lbk20"]
+
+[node name="DefendantDialogue" type="Node2D" unique_id=1883047810]
+
+[node name="Sprites" type="Node2D" parent="." unique_id=583774350]
+
+[node name="Background" type="Sprite2D" parent="Sprites" unique_id=322019256]
+position = Vector2(583.55554, 328)
+scale = Vector2(0.6037037, 0.6037037)
+texture = ExtResource("1_lbk20")
+
+[node name="DialogueLibrary" parent="." unique_id=1530884662 instance=ExtResource("3_7o4ki")]
+
+[node name="Uncle Sam" type="Sprite2D" parent="." unique_id=1455116646]
+position = Vector2(1040.1952, 317.7182)
+rotation = 3.1415927
+scale = Vector2(1.5074719, -1.5074718)
+texture = ExtResource("3_lbk20")

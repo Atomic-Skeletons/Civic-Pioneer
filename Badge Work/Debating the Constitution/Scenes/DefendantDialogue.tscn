@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://biqnydfxwpo6j"]
+
+[ext_resource type="Texture2D" uid="uid://cd4un1y8ir0e7" path="res://Badge Work/Debating the Constitution/Images/Courtroom.png" id="1_eouw1"]
+[ext_resource type="Texture2D" uid="uid://lj3otgpwsfq5" path="res://Badge Work/Debating the Constitution/Images/People/Defendant.png" id="2_6vji5"]
+[ext_resource type="PackedScene" uid="uid://coygrrc52yxcq" path="res://UI/Dialogue/DialougueTestScene/dialogue_library.tscn" id="3_eouw1"]
+
+[node name="DefendantDialogue" type="Node2D" unique_id=1883047810]
+
+[node name="Sprites" type="Node2D" parent="." unique_id=583774350]
+
+[node name="Background" type="Sprite2D" parent="Sprites" unique_id=322019256]
+position = Vector2(583.55554, 328)
+scale = Vector2(0.6037037, 0.6037037)
+texture = ExtResource("1_eouw1")
+
+[node name="Defendant" type="Sprite2D" parent="Sprites" unique_id=1835024962]
+position = Vector2(158.00002, -134.99994)
+scale = Vector2(2.473384, 2.473384)
+texture = ExtResource("2_6vji5")
+
+[node name="DialogueLibrary" parent="." unique_id=1530884662 instance=ExtResource("3_eouw1")]

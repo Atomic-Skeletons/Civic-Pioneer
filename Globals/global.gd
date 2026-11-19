@@ -4,6 +4,7 @@ var timer = 60
 var decision = 0
 var amendment = 0
 var TextboxOpen = false
+var dialogue = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
