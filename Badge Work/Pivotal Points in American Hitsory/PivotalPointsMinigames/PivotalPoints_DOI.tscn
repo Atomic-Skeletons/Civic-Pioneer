@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ce832je3prqmh"]
+
+[ext_resource type="Script" uid="uid://taelj6ssdbfk" path="res://Badge Work/Pivotal Points in American Hitsory/PivotalPointsScripts/PivotalPointsMinigameScripts/pivotal_points_doi.gd" id="1_s2fch"]
+
+[node name="PivotalPointsDoi" type="Node2D" unique_id=1557395610]
+script = ExtResource("1_s2fch")
+
+[node name="Timer" type="Timer" parent="." unique_id=1891891135]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
