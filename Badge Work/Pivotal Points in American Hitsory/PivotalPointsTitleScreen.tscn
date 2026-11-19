@@ -4,4 +4,28 @@
 
 [node name="PivotalPointsTitleScreen" type="Node2D" unique_id=1585194411]
 script = ExtResource("1_26mmq")
-minigames_folder_path = null
+
+[node name="Label" type="Label" parent="." unique_id=146934361]
+offset_left = 390.0
+offset_top = 115.0
+offset_right = 808.0
+offset_bottom = 257.0
+theme_override_font_sizes/font_size = 50
+text = "Pivotal Points in
+American History"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1429934253]
+offset_left = 445.0
+offset_top = 340.0
+offset_right = 756.0
+offset_bottom = 394.0
+text = "Start"
+
+[node name="Button2" type="Button" parent="." unique_id=1470919485]
+offset_left = 448.0
+offset_top = 427.0
+offset_right = 759.0
+offset_bottom = 481.0
+text = "Exit"
