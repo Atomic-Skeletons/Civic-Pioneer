@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvxw7elxqu7a3"
-path="res://.godot/imported/FullHeartTest.png-dabc69b9e3db12b434ca2f13eef2fed3.ctex"
+uid="uid://ct2e540bp1s7a"
+path="res://.godot/imported/Westeuropemap.png-dc397759019ced697bebfd5155e3e64e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Badge Work/Pivotal Points in American Hitsory/PivotalPointsTempArt/FullHeartTest.png"
-dest_files=["res://.godot/imported/FullHeartTest.png-dabc69b9e3db12b434ca2f13eef2fed3.ctex"]
+source_file="res://Badge Work/Pivotal Points in American Hitsory/PivaotalPointsArtAssets/Westeuropemap.png"
+dest_files=["res://.godot/imported/Westeuropemap.png-dc397759019ced697bebfd5155e3e64e.ctex"]
 
 [params]
 

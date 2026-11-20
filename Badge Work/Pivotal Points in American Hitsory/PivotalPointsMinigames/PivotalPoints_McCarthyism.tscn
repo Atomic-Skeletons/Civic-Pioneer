@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cnt6pdu846i3e"]
 
 [ext_resource type="Script" uid="uid://dpibgwig1q624" path="res://Badge Work/Pivotal Points in American Hitsory/PivotalPointsScripts/PivotalPointsMinigameScripts/McCarthyism.gd" id="1_6lgjj"]
-[ext_resource type="Texture2D" uid="uid://b2wk4htjfj18g" path="res://Badge Work/Pivotal Points in American Hitsory/PivotalPointsTempArt/JudgeSprite.png" id="2_6lgjj"]
+[ext_resource type="Texture2D" uid="uid://b2wk4htjfj18g" path="res://Badge Work/Pivotal Points in American Hitsory/PivaotalPointsArtAssets/PivotalPointsTempArt/JudgeSprite.png" id="2_6lgjj"]
 
 [node name="PivotalPointsMcCarthyism" type="Node2D" unique_id=601332603]
 script = ExtResource("1_6lgjj")

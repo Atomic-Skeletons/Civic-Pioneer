@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bp5wlpq8wusq6"
-path="res://.godot/imported/EmptyHeartTest.png-de5a828f78e4bcbd616b9fe7b899dccb.ctex"
+uid="uid://mrdbhft20jt7"
+path="res://.godot/imported/clickabletargetasset.png-843b89cce8ae4103e678ea6048e48ada.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Badge Work/Pivotal Points in American Hitsory/PivotalPointsTempArt/EmptyHeartTest.png"
-dest_files=["res://.godot/imported/EmptyHeartTest.png-de5a828f78e4bcbd616b9fe7b899dccb.ctex"]
+source_file="res://Badge Work/Pivotal Points in American Hitsory/PivaotalPointsArtAssets/clickabletargetasset.png"
+dest_files=["res://.godot/imported/clickabletargetasset.png-843b89cce8ae4103e678ea6048e48ada.ctex"]
 
 [params]
 
