@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://c85n38c0bal1j"]
+
+[ext_resource type="Script" uid="uid://tkka17xjffnv" path="res://Badge Work/Voting and Elections/Tutorial/voting&election_tutorial.gd" id="1_61ky5"]
+[ext_resource type="Texture2D" uid="uid://d1wpwglg42nrq" path="res://Badge Work/Voting and Elections/Tutorial/aged-parchment-paper-texture-background-with-rough-edges-photo.jpeg" id="2_3fjxa"]
+[ext_resource type="FontFile" uid="uid://dap5gwc57sgpy" path="res://Badge Work/Voting and Elections/Tutorial/Grape Squishy.otf" id="3_gdtss"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yf5fn"]
+texture = ExtResource("2_3fjxa")
+modulate_color = Color(0.50534403, 0.5053441, 0.50534403, 1)
+
+[node name="Voting&electionTutorial" type="Control" unique_id=725046140]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_61ky5")
+
+[node name="Background" type="Panel" parent="." unique_id=1847909863]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_yf5fn")
+
+[node name="Instructions" type="Label" parent="." unique_id=32340239]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 95.0
+offset_top = 20.0
+offset_right = -230.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_gdtss")
+theme_override_font_sizes/font_size = 28
+text = "How to Play:
+Each round, you will receive 
+three different voting choices.
+Each choice represents a new bill or law that could change your town. 
+Pick the option you think is best. 
+Every choice has different benefits and drawbacks. 
+
+Your decisions will affect three things: 
+the number of people, 
+the number of buildings, 
+and your town's happiness meter.
+
+You will have up to 15 rounds of voting. 
+If your town's happiness gets too low, the game ends. 
+If you survive all 15 rounds, you win! 
+You will then see how your decisions changed the town.
+
+REMEBER: YOUR VOTE MATTERS!!"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=11734445]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -204.76465
+offset_top = -118.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=1631647110]
+layout_mode = 2
+
+[node name="Start" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1457587123]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("3_gdtss")
+theme_override_font_sizes/font_size = 48
+text = "Start"
+
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Start" to="." method="on_start_pressed"]
