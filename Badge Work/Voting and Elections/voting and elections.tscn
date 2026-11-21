@@ -27,6 +27,21 @@
 [ext_resource type="Script" uid="uid://dns1qbujveny1" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/better_environment_less_food_variety.gd" id="26_mddu2"]
 [ext_resource type="Script" uid="uid://d1ghyfp3dxc6q" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/more_fruit_trees_higher_rent.gd" id="27_mh2vn"]
 [ext_resource type="Script" uid="uid://bdculur8gp4q7" path="res://Badge Work/Voting and Elections/Ballot/ballot_history_controller.gd" id="27_ywet3"]
+[ext_resource type="Script" uid="uid://bvy5esafq3h0n" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/win_400_pay_200.gd" id="28_ywet3"]
+[ext_resource type="Script" uid="uid://cu1hus68vvsg0" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/free_child_vaccines_mandatory_service.gd" id="29_8esw7"]
+[ext_resource type="Script" uid="uid://8jbup8aepwto" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/more_solar_panels_higher_rent.gd" id="30_j4xlc"]
+[ext_resource type="Script" uid="uid://bxy6p7lfyc4th" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/more_jobs_worse_environment.gd" id="31_f1dfy"]
+[ext_resource type="Script" uid="uid://cp0xtvg8wj0y1" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/less_ods_expensive_public_transit.gd" id="32_b14xi"]
+[ext_resource type="Script" uid="uid://b1cy1mntt4y2l" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/better_schools_worse_hospitals.gd" id="33_4d0y1"]
+[ext_resource type="Script" uid="uid://bemfqg4du2mvj" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/free_college_less_voting_spots.gd" id="34_qbe76"]
+[ext_resource type="Script" uid="uid://bhogkl2sitfk5" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/less_guns_longer_prison_time.gd" id="35_pqj5x"]
+[ext_resource type="Script" uid="uid://cvafqsff5oq2f" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/free_healthcare_more_execution.gd" id="36_xw1d6"]
+[ext_resource type="Script" uid="uid://cjtxiqmvo4707" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/less_guns_no_unions.gd" id="37_bd64r"]
+[ext_resource type="Script" uid="uid://d3g5ibhwrx24r" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/stimulus_oil_homes.gd" id="38_pw176"]
+[ext_resource type="Script" uid="uid://nnxt02ixpcwr" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/more_homes_children_are_property.gd" id="39_q1fqj"]
+[ext_resource type="Script" uid="uid://plllptroqhvm" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/debt_erased_worse_environment.gd" id="40_x60kr"]
+[ext_resource type="Script" uid="uid://cyb0t1o0bohmj" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/more_voting_locations_public_voting_data.gd" id="41_3gkog"]
+[ext_resource type="Script" uid="uid://dgp4gvs64tdll" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/better_environment_more_taxes.gd" id="42_f0w5k"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kdjf5"]
 atlas = ExtResource("4_kdjf5")
@@ -621,6 +636,337 @@ disabled = true
 script = ExtResource("27_ywet3")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/Ballot History Controller" unique_id=156353311]
+[node name="Button18" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=1174522936]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("28_ywet3")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button18" unique_id=1411070982]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Each day a random citizen wins $400, [color=red]but two other citizens pay $200"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button19" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=161662752]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("29_8esw7")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button19" unique_id=337495699]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Children get free access to latest vaccines and medicine, [color=red]but must go to war when they turn 18"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button20" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=67991478]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("30_j4xlc")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button20" unique_id=987261939]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Solar panels are installed in public spaces, [color=red]but rent is more expensive"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button21" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=244231325]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("31_f1dfy")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button21" unique_id=1025630656]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Everyone has the right to a fair job, [color=red]but waste is disposed in lakes and rivers"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button22" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=339580132]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("32_b14xi")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button22" unique_id=41646774]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Build overdose prevention centers, [color=red]but public transit becomes more expensive"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button23" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=278416093]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("33_4d0y1")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button23" unique_id=1896024322]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]More money invested in schools, [color=red]but less money invested in hospitals"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button24" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=1351967917]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("34_qbe76")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button24" unique_id=25372750]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]College is free, [color=red]but less voting booths during elections"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button25" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=2057633461]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("35_pqj5x")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button25" unique_id=1125462338]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Stricter gun safety laws, [color=red]but prison sentences are twice as long"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button26" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=904997480]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("36_xw1d6")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button26" unique_id=1280346384]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Free healthcare, [color=red]but death penalty is more common"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button27" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=1287153109]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("37_bd64r")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button27" unique_id=828683863]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Stricter gun safety laws, [color=red]but unions are banned"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button28" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=1523539354]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("38_pw176")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button28" unique_id=545069525]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Receive a $50,000 check from the government, [color=red]but crude oil is poured daily over your house"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button29" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=1320512471]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("39_q1fqj")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button29" unique_id=897261114]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Create housing for homeless population, [color=red]but children are considered their parents’ property"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button30" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=65714672]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("40_x60kr")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button30" unique_id=968237291]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]All debt is erased, [color=red]but the government cuts funds on garbage"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button31" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=375539158]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("41_3gkog")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button31" unique_id=20413626]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]More voting booths, [color=red]but companies can collect your ballot data"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button32" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=688180052]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("42_f0w5k")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button32" unique_id=1414679384]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Lake and rivers are cleaned up, [color=red]but taxes increase"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Ballot History" type="HBoxContainer" parent="CanvasLayer/Ballot Controller" unique_id=2048837332]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
