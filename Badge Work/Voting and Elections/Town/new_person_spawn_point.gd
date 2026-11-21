@@ -1,5 +1,7 @@
 extends Marker2D
 
+signal spawned_citizen()
+
 const CITIZEN_CHARACTER = preload("uid://cyjvq0h24lvde")
 
 var people_spawn_duration = 2
@@ -23,3 +25,4 @@ func spawn_citizen():
 	
 	add_sibling(new_citizen)
 	new_citizen.global_position = global_position
+	spawned_citizen.emit()
