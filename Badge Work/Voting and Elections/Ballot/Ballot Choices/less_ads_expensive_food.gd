@@ -6,9 +6,7 @@ func _ready() -> void:
 	choice_text = ""
 	
 	event_queue = [
-		town_events.less_ads, 
-		func():
-			town_variables.add_people(-2)
-			,
-			town_variables.add_happiness(1)
+		town_events.less_ads,
+		town_variables.add_people.bind(2),
+		town_variables.add_happiness.bind(1)
 			]

@@ -5,8 +5,7 @@ const CITIZEN_CHARACTER = preload("uid://cyjvq0h24lvde")
 var people_spawn_duration = 2
 
 func _ready() -> void:
-	await get_tree().process_frame
-	spawn_people(10)
+	pass
 
 func spawn_people(amount: int):
 	if amount <= 0: return

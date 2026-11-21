@@ -1,12 +1,13 @@
 class_name BallotController
 extends Control
 
+signal selected_ballot(ballot: BallotChoice)
 
-@onready var ballot_history: HBoxContainer = $"Ballot History"
 
 @onready var all_ballot_buttons: FlowContainer = %"All Ballot Buttons"
 @onready var ballot_holder: HBoxContainer = %"Ballot Holder"
 var current_ballot_choices : Array[BallotChoice] = []
+@onready var pass_ballot_button: Button = %"Pass Ballot Button"
 
 @onready var town_controller: TownController = owner
 
@@ -15,6 +16,9 @@ var unpicked_ballot_buttons: Array[PackedScene]
 func _ready() -> void:
 	clear_ballot_nodes()
 	hide()
+
+func _process(_delta: float) -> void:
+	update_ballot_visuals()
 
 func generate_ballot():
 	# randomly pick 3 ballots and spawn them for the player
@@ -30,26 +34,40 @@ func generate_ballot():
 		
 		ballot_button.reparent(child)
 		
-		ballot_button.pressed.connect(
-			func():
-				on_ballot_choice_pressed(ballot_button)
-				)
+		ballot_button.pressed.connect(on_ballot_choice_pressed.bind(ballot_button))
 		
 		current_ballot_choices.append(ballot_button)
 	# make the menu and the button visible
 	show()
 
+var selected_ballot_choice: BallotChoice
 
 func on_ballot_choice_pressed(ballot_choice: BallotChoice):
-	town_controller.event_queue = ballot_choice.event_queue
+	selected_ballot_choice = ballot_choice
+
+func update_ballot_visuals():
+	if not selected_ballot_choice:
+		pass_ballot_button.disabled = true
+		return
+	else:
+		pass_ballot_button.disabled = false
+	
+	for ballot: BallotChoice in current_ballot_choices:
+		ballot.offset_transform_enabled = true
+		if ballot == selected_ballot_choice:
+			ballot.offset_transform_scale = lerp(ballot.offset_transform_scale, Vector2(1.2,1.2), .2)
+		else:
+			ballot.offset_transform_scale = lerp(ballot.offset_transform_scale, Vector2.ONE, .2)
+
+func on_ballot_passed():
+	town_controller.event_queue = selected_ballot_choice.event_queue
 	town_controller.start_time_pass()
 	
-	# save the ballot in the history
-	ballot_choice.reparent(ballot_history)
-	current_ballot_choices.remove_at(current_ballot_choices.find(ballot_choice))
+	#current_ballot_choices.remove_at(current_ballot_choices.find(ballot_choice))
 	
-	
-	clear_ballot()
+	selected_ballot.emit(selected_ballot_choice)
+	town_controller.event_queue.append(clear_ballot)
+	town_controller.event_queue.append(generate_ballot)
 	hide()
 
 func clear_ballot():

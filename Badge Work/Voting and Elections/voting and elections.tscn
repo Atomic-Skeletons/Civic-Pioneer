@@ -26,6 +26,7 @@
 [ext_resource type="Script" uid="uid://clq5vuy4cqaax" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/more_labor_laws_less_jobs.gd" id="25_in2an"]
 [ext_resource type="Script" uid="uid://dns1qbujveny1" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/better_environment_less_food_variety.gd" id="26_mddu2"]
 [ext_resource type="Script" uid="uid://d1ghyfp3dxc6q" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/more_fruit_trees_higher_rent.gd" id="27_mh2vn"]
+[ext_resource type="Script" uid="uid://bdculur8gp4q7" path="res://Badge Work/Voting and Elections/Ballot/ballot_history_controller.gd" id="27_ywet3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kdjf5"]
 atlas = ExtResource("4_kdjf5")
@@ -49,13 +50,6 @@ colors = PackedColorArray(0.73333335, 0.5058824, 0, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_kdjf5"]
 gradient = SubResource("Gradient_kdjf5")
-
-[sub_resource type="Gradient" id="Gradient_kfv5s"]
-offsets = PackedFloat32Array(0)
-colors = PackedColorArray(0, 0, 0, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_kfv5s"]
-gradient = SubResource("Gradient_kfv5s")
 
 [node name="Town Controller" type="Node2D" unique_id=1314251985]
 script = ExtResource("1_35tyh")
@@ -136,7 +130,16 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Happiness" type="TextureProgressBar" parent="CanvasLayer/GUI" unique_id=1756297230]
+[node name="Control" type="Control" parent="CanvasLayer/GUI" unique_id=1542026967]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("8_a4xjs")
+
+[node name="Happiness Bar" type="TextureProgressBar" parent="CanvasLayer/GUI/Control" unique_id=1756297230]
 layout_mode = 0
 offset_left = 14.0
 offset_top = 119.0
@@ -145,15 +148,25 @@ offset_bottom = 638.0
 size_flags_vertical = 3
 max_value = 10.0
 step = 0.1
-value = 5.0
+value = 2.1
 fill_mode = 3
 nine_patch_stretch = true
 texture_under = SubResource("GradientTexture2D_2vl3h")
-texture_over = SubResource("GradientTexture2D_kdjf5")
-texture_progress = SubResource("GradientTexture2D_kfv5s")
-script = ExtResource("8_a4xjs")
+texture_progress = SubResource("GradientTexture2D_kdjf5")
+
+[node name="People Amount" type="Label" parent="CanvasLayer/GUI/Control" unique_id=1720600366]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 599.0
+offset_right = 123.0
+offset_bottom = 634.0
+theme_override_font_sizes/font_size = 25
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Ballot Controller" type="Control" parent="CanvasLayer" unique_id=897316481]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -171,25 +184,39 @@ grow_horizontal = 2
 grow_vertical = 2
 offset_transform_enabled = true
 theme_override_constants/margin_left = 200
-theme_override_constants/margin_top = 200
+theme_override_constants/margin_top = 150
 theme_override_constants/margin_right = 200
-theme_override_constants/margin_bottom = 200
+theme_override_constants/margin_bottom = 150
 
-[node name="Ballot Holder" type="HBoxContainer" parent="CanvasLayer/Ballot Controller/MarginContainer" unique_id=275958992]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Ballot Controller/MarginContainer" unique_id=519185645]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Ballot Holder" type="HBoxContainer" parent="CanvasLayer/Ballot Controller/MarginContainer/VBoxContainer" unique_id=275958992]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_vertical = 3
 
-[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Ballot Controller/MarginContainer/Ballot Holder" unique_id=509411854]
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Ballot Controller/MarginContainer/VBoxContainer/Ballot Holder" unique_id=509411854]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="CenterContainer2" type="CenterContainer" parent="CanvasLayer/Ballot Controller/MarginContainer/Ballot Holder" unique_id=183499022]
+[node name="CenterContainer2" type="CenterContainer" parent="CanvasLayer/Ballot Controller/MarginContainer/VBoxContainer/Ballot Holder" unique_id=183499022]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="CenterContainer3" type="CenterContainer" parent="CanvasLayer/Ballot Controller/MarginContainer/Ballot Holder" unique_id=1615076557]
+[node name="CenterContainer3" type="CenterContainer" parent="CanvasLayer/Ballot Controller/MarginContainer/VBoxContainer/Ballot Holder" unique_id=1615076557]
 layout_mode = 2
 size_flags_horizontal = 3
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Ballot Controller/MarginContainer/VBoxContainer" unique_id=1295756033]
+layout_mode = 2
+
+[node name="Pass Ballot Button" type="Button" parent="CanvasLayer/Ballot Controller/MarginContainer/VBoxContainer/CenterContainer" unique_id=1497094894]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Pass Selected Ballot"
 
 [node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Ballot Controller" unique_id=978262563]
 layout_mode = 1
@@ -208,8 +235,8 @@ unique_name_in_owner = true
 layout_mode = 0
 offset_left = 1349.0
 offset_top = 6.0
-offset_right = 2267.0
-offset_bottom = 723.0
+offset_right = 2889.0
+offset_bottom = 914.0
 
 [node name="Button" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=8912229]
 custom_minimum_size = Vector2(250, 300)
@@ -586,19 +613,44 @@ scroll_active = false
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Ballot History" type="VBoxContainer" parent="CanvasLayer/Ballot Controller" unique_id=1474016955]
-unique_name_in_owner = true
+[node name="Ballot History Controller" type="Button" parent="CanvasLayer" unique_id=1382092596]
+offset_left = 162.0
+offset_top = 8.0
+offset_right = 473.0
+offset_bottom = 108.0
+disabled = true
+script = ExtResource("27_ywet3")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/Ballot History Controller" unique_id=156353311]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 162.0
-offset_top = 8.0
-offset_right = -790.0
-offset_bottom = -612.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
-theme_override_constants/separation = -10
+horizontal_scroll_mode = 0
 
+[node name="Ballot History" type="VBoxContainer" parent="CanvasLayer/Ballot History Controller/ScrollContainer" unique_id=1474016955]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_constants/separation = 4
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot History Controller/ScrollContainer/Ballot History" unique_id=372253132]
+layout_mode = 2
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+autowrap_mode = 2
+
+[connection signal="happiness_added" from="Town Variables" to="CanvasLayer/GUI/Control" method="update_happiness_bar"]
+[connection signal="happiness_removed" from="Town Variables" to="CanvasLayer/GUI/Control" method="update_happiness_bar"]
+[connection signal="people_added" from="Town Variables" to="Town/Town Navigation Region/New Person Spawn Point" method="spawn_people"]
+[connection signal="people_added" from="Town Variables" to="CanvasLayer/GUI/Control" method="update_people_amount"]
+[connection signal="people_removed" from="Town Variables" to="CanvasLayer/GUI/Control" method="update_people_amount"]
+[connection signal="selected_ballot" from="CanvasLayer/Ballot Controller" to="CanvasLayer/Ballot Controller/CenterContainer" method="_on_toggle_ballot_pressed"]
+[connection signal="selected_ballot" from="CanvasLayer/Ballot Controller" to="CanvasLayer/Ballot History Controller" method="_add_ballot_to_history"]
+[connection signal="pressed" from="CanvasLayer/Ballot Controller/MarginContainer/VBoxContainer/CenterContainer/Pass Ballot Button" to="CanvasLayer/Ballot Controller" method="on_ballot_passed"]
 [connection signal="pressed" from="CanvasLayer/Ballot Controller/CenterContainer/Toggle Ballot" to="CanvasLayer/Ballot Controller/CenterContainer" method="_on_toggle_ballot_pressed"]

@@ -10,5 +10,6 @@ func _ready() -> void:
 		func():
 			town_variables.add_people(4)
 			,
+		func():
 			town_variables.add_happiness(-5)
 			]

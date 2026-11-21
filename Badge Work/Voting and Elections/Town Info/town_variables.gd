@@ -3,15 +3,23 @@ extends Node
 
 signal people_added(amount: int)
 signal people_removed(amount: int)
+signal happiness_added(amount: int)
+signal happiness_removed(amount: int)
 
-var happiness : int = 5
+var happiness := 5
+var max_happiness := 20
 var people : int = 0
 var buildings : int = 0
 
+func _ready() -> void:
+	add_people(10)
 
 func add_happiness(amount: int):
 	happiness += amount
-	print(happiness)
+	if amount > 0:
+		happiness_added.emit(amount)
+	elif amount < 0:
+		happiness_removed.emit(amount)
 
 func add_people(amount: int):
 	var new_people = people + amount
