@@ -6,11 +6,11 @@ func _ready() -> void:
 	choice_text = ""
 	
 	event_queue = [
-		town_events.start_war, 
+		#town_events.start_war, 
 		func():
 			town_variables.add_people(-3)
 			,
-		town_events.minus_taxes, 
+		#town_events.minus_taxes, 
 		func():
 			town_variables.add_happiness(1)
 			]

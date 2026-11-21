@@ -16,6 +16,17 @@
 [ext_resource type="Script" uid="uid://cuxd7xh2g3jj7" path="res://Badge Work/Voting and Elections/Town/new_person_spawn_point.gd" id="9_syrl7"]
 [ext_resource type="Script" uid="uid://divxobgy2kf4h" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/college_free_companies_turn_down.gd" id="10_2vl3h"]
 [ext_resource type="Script" uid="uid://bh8letn838n0m" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/minus_taxes_start_war.gd" id="16_syrl7"]
+[ext_resource type="Script" uid="uid://b7pskqgyyatqc" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/medic_free_more_ads.gd" id="17_lf6tb"]
+[ext_resource type="Script" uid="uid://c6lv4jglobolw" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/cheap_rent_one_language.gd" id="18_yp86b"]
+[ext_resource type="Script" uid="uid://4cbh0yde464p" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/more_rich_tax_more_coup_risk.gd" id="19_d7cqg"]
+[ext_resource type="Script" uid="uid://d3pxky03eq42w" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/anti_corruption_harsher_drug_laws.gd" id="20_nvi2e"]
+[ext_resource type="Script" uid="uid://bhhurrvbqt8om" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/less_ads_expensive_food.gd" id="21_t111m"]
+[ext_resource type="Script" uid="uid://clajfvi5w7h14" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/cheaper_food_more_guns.gd" id="22_jcffi"]
+[ext_resource type="Script" uid="uid://4ig2vevs7lal" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/more_languages_worse_environment.gd" id="23_0roc6"]
+[ext_resource type="Script" uid="uid://cwllalcpov3qk" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/better_environment_more_emissions.gd" id="24_hjrj4"]
+[ext_resource type="Script" uid="uid://clq5vuy4cqaax" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/more_labor_laws_less_jobs.gd" id="25_in2an"]
+[ext_resource type="Script" uid="uid://dns1qbujveny1" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/better_environment_less_food_variety.gd" id="26_mddu2"]
+[ext_resource type="Script" uid="uid://d1ghyfp3dxc6q" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/more_fruit_trees_higher_rent.gd" id="27_mh2vn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kdjf5"]
 atlas = ExtResource("4_kdjf5")
@@ -351,9 +362,7 @@ grow_vertical = 2
 mouse_filter = 2
 theme_override_font_sizes/normal_font_size = 30
 bbcode_enabled = true
-text = "[color=green]College is free, [color=red]but companies can turn down applicants for any reason 
-
-"
+text = "[color=green]College is free, [color=red]but companies can turn down applicants for any reason "
 scroll_active = false
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -375,9 +384,272 @@ grow_vertical = 2
 mouse_filter = 2
 theme_override_font_sizes/normal_font_size = 30
 bbcode_enabled = true
-text = "[color=green]Taxes are reduced, [color=red]but go to war
+text = "[color=green]Taxes are reduced, [color=red]but go to war"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
 
-"
+[node name="Button6" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=103291777]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("17_lf6tb")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button6" unique_id=512243714]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Certain medications and medical procedures are free, [color=red]but more ads in public spaces"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button7" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=1811593917]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("18_yp86b")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button7" unique_id=985389306]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Rent is cheaper, [color=red]but only one language is legal in all public spaces"
+scroll_active = false
+autowrap_trim_flags = 128
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button8" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=1873862999]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("19_d7cqg")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button8" unique_id=1917841244]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]More taxes on the bourgeoise, [color=red]but risk of coup increases"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button9" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=2036566551]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("20_nvi2e")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button9" unique_id=1950286399]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]More anti-corruption laws put into practice, [color=red]but possession of drugs is a lifetime sentence"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button10" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=1421019352]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("20_nvi2e")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button10" unique_id=719133617]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]More anti-corruption laws put into practice, [color=red]but possession of drugs is a lifetime sentence"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button11" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=812274516]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("21_t111m")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button11" unique_id=1981364035]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Less ads in public spaces, [color=red]but groceries are more expensive"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button12" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=607592343]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("22_jcffi")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button12" unique_id=1714382727]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Groceries are less expensive, [color=red]but less gun safety laws"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button13" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=1718699749]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("23_0roc6")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button13" unique_id=1636555545]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]More languages on all signage, [color=red]but less money invested in agriculture"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button14" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=1225493472]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("24_hjrj4")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button14" unique_id=1258611655]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]More money invested in agriculture, [color=red]but more C02 emissions"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button15" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=1727032461]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("25_in2an")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button15" unique_id=1572370084]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]More union protection laws, [color=red]but companies are less likely to hire"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button16" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=557332757]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("26_mddu2")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button16" unique_id=467950469]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Restore forests and lakes, [color=red]but less different types of groceries at the store"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button17" type="Button" parent="CanvasLayer/Ballot Controller/All Ballot Buttons" unique_id=239955274]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+autowrap_mode = 2
+script = ExtResource("27_mh2vn")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Ballot Controller/All Ballot Buttons/Button17" unique_id=1602616265]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]Fruit trees are grown in public spaces, [color=red]but rent becomes more expensive"
 scroll_active = false
 horizontal_alignment = 1
 vertical_alignment = 1

@@ -9,4 +9,8 @@ func _ready() -> void:
 		town_events.add_park, 
 		func():
 			town_variables.add_people(2)
+			,
+		#town_events.more_taxes, 
+		func():
+			town_variables.add_happiness(-1)
 			]
