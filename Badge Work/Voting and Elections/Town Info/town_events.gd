@@ -59,10 +59,22 @@ func add_solar_panels():
 
 func add_center_buildings(amount: int):
 	pass
+
+func more_ads():
+	pass
+	
+func less_ads():
+	pass
+
+func more_guns():
+	pass
 #endregion
 
-func start_war():
-	pass
-
-func minus_taxes():
-	pass
+#func start_war():
+	#pass
+#
+#func minus_taxes():
+	#pass
+#
+#func medic_free():
+	#pass
