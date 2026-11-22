@@ -8,16 +8,28 @@
 [ext_resource type="Texture2D" uid="uid://biahqbk5kwwt" path="res://Badge Work/Voting and Elections/Town/Art/Houses/chimney_house_1.png" id="5_kfv5s"]
 [ext_resource type="Script" uid="uid://8r1lnmgx42ky" path="res://Badge Work/Voting and Elections/Ballot/voting_ballot_controller.gd" id="5_uj6sv"]
 [ext_resource type="Texture2D" uid="uid://o4r408g80xpf" path="res://Badge Work/Voting and Elections/Town/Art/Buildings/Grocery Store.png" id="6_a4xjs"]
+[ext_resource type="Texture2D" uid="uid://c5u7c8h2k547u" path="res://Badge Work/Voting and Elections/Town/Art/Houses/chimney_house_2.png" id="6_i303f"]
+[ext_resource type="Script" uid="uid://dy3mbo33nw5wn" path="res://Badge Work/Voting and Elections/Town/house_controller.gd" id="6_janmq"]
+[ext_resource type="Texture2D" uid="uid://tmdjsjdals6o" path="res://Badge Work/Voting and Elections/Town/Art/Buildings/Lake Dirty.png" id="7_4e643"]
+[ext_resource type="Texture2D" uid="uid://7vt4opsbu74u" path="res://Badge Work/Voting and Elections/Town/Art/Houses/chimney_house_3.png" id="7_janmq"]
+[ext_resource type="Texture2D" uid="uid://dsgrcrmoe2316" path="res://Badge Work/Voting and Elections/Town/Art/Buildings/Lake.png" id="7_qvq3v"]
 [ext_resource type="Script" uid="uid://cjxnq5t7fif0v" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/more_money_hospital_less_money_schools.gd" id="7_xkars"]
 [ext_resource type="Script" uid="uid://67v2l0inx2kn" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/build_community_tax_increase.gd" id="8_1gur6"]
 [ext_resource type="Script" uid="uid://bka42i8ytlhnt" path="res://Badge Work/Voting and Elections/UI/happiness_bar.gd" id="8_a4xjs"]
+[ext_resource type="Texture2D" uid="uid://ddde8tou5ndhg" path="res://Badge Work/Voting and Elections/Town/Art/Houses/small_house_1png(1).png" id="8_x78tw"]
+[ext_resource type="Texture2D" uid="uid://crp0si2k1e76d" path="res://Badge Work/Voting and Elections/Town/Art/Buildings/Hospital.png" id="9_8e2of"]
 [ext_resource type="Script" uid="uid://dtd2a5tnj4y3a" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/minus_taxes_immediate_jail.gd" id="9_80bto"]
+[ext_resource type="Texture2D" uid="uid://waxarpyajp2r" path="res://Badge Work/Voting and Elections/Town/Art/Houses/small_house_1png.png" id="9_e0rjd"]
 [ext_resource type="Script" uid="uid://cuxd7xh2g3jj7" path="res://Badge Work/Voting and Elections/Town/new_person_spawn_point.gd" id="9_syrl7"]
 [ext_resource type="Script" uid="uid://divxobgy2kf4h" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/college_free_companies_turn_down.gd" id="10_2vl3h"]
+[ext_resource type="Texture2D" uid="uid://64m6e8ldm3ko" path="res://Badge Work/Voting and Elections/Town/Art/Houses/small_house_2.png" id="10_05xo1"]
+[ext_resource type="Texture2D" uid="uid://dkxml8tst6an3" path="res://Badge Work/Voting and Elections/Town/Art/Buildings/Hospital Fancy.png" id="10_hk3q0"]
+[ext_resource type="Texture2D" uid="uid://g25cnyns2tqj" path="res://Badge Work/Voting and Elections/Town/Art/Houses/small_house_3.png" id="11_ehikg"]
 [ext_resource type="Script" uid="uid://bh8letn838n0m" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/minus_taxes_start_war.gd" id="16_syrl7"]
 [ext_resource type="Script" uid="uid://b7pskqgyyatqc" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/medic_free_more_ads.gd" id="17_lf6tb"]
 [ext_resource type="Script" uid="uid://c6lv4jglobolw" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/cheap_rent_one_language.gd" id="18_yp86b"]
 [ext_resource type="Script" uid="uid://4cbh0yde464p" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/more_rich_tax_more_coup_risk.gd" id="19_d7cqg"]
+[ext_resource type="Texture2D" uid="uid://re8s6bt4oxhh" path="res://Badge Work/Voting and Elections/Town/Art/Trees/tree_1.png" id="19_x78tw"]
 [ext_resource type="Script" uid="uid://d3pxky03eq42w" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/anti_corruption_harsher_drug_laws.gd" id="20_nvi2e"]
 [ext_resource type="Script" uid="uid://bhhurrvbqt8om" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/less_ads_expensive_food.gd" id="21_t111m"]
 [ext_resource type="Script" uid="uid://clajfvi5w7h14" path="res://Badge Work/Voting and Elections/Ballot/Ballot Choices/cheaper_food_more_guns.gd" id="22_jcffi"]
@@ -48,9 +60,43 @@ atlas = ExtResource("4_kdjf5")
 region = Rect2(204, 212, 1693, 1076)
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_kfv5s"]
-vertices = PackedVector2Array(865, 423, 765, 422, 447, 325, 159.03125, 136.00781, 1225.9609, 137.97656, 865, 456, 1224.0391, 622, 160.96094, 622, 764, 456, 345, 320, 343, 378, 445, 379)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4), PackedInt32Array(5, 6, 7, 8), PackedInt32Array(4, 6, 5, 0), PackedInt32Array(3, 2, 9), PackedInt32Array(7, 3, 9, 10), PackedInt32Array(8, 7, 10, 11, 1), PackedInt32Array(11, 2, 1)])
+vertices = PackedVector2Array(159.03125, 136.00781, 610.08594, 136.83594, 575, 145, 986, 326, 1088, 534, 988, 533, 865, 456, 865, 423, 959, 324, 1088, 567, 1224.0391, 622, 160.96094, 622, 987, 567, 706, 147, 685.5, 136.97656, 1225.9609, 137.97656, 764, 456, 472, 547, 469, 504, 740, 182, 987, 312, 961, 312, 445, 379, 447, 325, 564, 292, 609, 308, 639, 331, 747, 224, 546, 187, 753, 276, 528, 221, 345, 320, 343, 378, 326, 503, 326, 545, 713, 314, 765, 422, 680, 335)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2), PackedInt32Array(3, 4, 5, 6, 7, 8), PackedInt32Array(9, 10, 11, 12), PackedInt32Array(13, 14, 15), PackedInt32Array(16, 6, 5, 12, 17, 18), PackedInt32Array(19, 13, 15, 20, 21), PackedInt32Array(22, 23, 24, 25, 26, 18), PackedInt32Array(27, 19, 21), PackedInt32Array(3, 20, 15, 10, 4), PackedInt32Array(0, 2, 28), PackedInt32Array(29, 27, 21, 8, 7), PackedInt32Array(0, 28, 30, 23, 31), PackedInt32Array(30, 24, 23), PackedInt32Array(11, 0, 31, 32, 33), PackedInt32Array(17, 12, 11, 34), PackedInt32Array(35, 36, 16, 18, 37), PackedInt32Array(10, 9, 4), PackedInt32Array(29, 7, 36, 35), PackedInt32Array(26, 37, 18), PackedInt32Array(22, 18, 33, 32), PackedInt32Array(11, 33, 34)])
 outlines = Array[PackedVector2Array]([PackedVector2Array(149, 126, 1236, 128, 1234, 632, 151, 632)])
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_kfv5s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_i303f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_janmq")
+}],
+"loop": 1,
+"name": &"random chimney house",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_x78tw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_e0rjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_05xo1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ehikg")
+}],
+"loop": 1,
+"name": &"random house",
+"speed": 5.0
+}]
 
 [sub_resource type="Gradient" id="Gradient_2vl3h"]
 offsets = PackedFloat32Array(0)
@@ -89,51 +135,127 @@ metadata/_custom_type_script = "uid://c32aflxfoureo"
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1999181044]
 position = Vector2(640, 360)
 
-[node name="CityMapA" type="Sprite2D" parent="." unique_id=1185051003]
+[node name="City Map" type="Sprite2D" parent="." unique_id=905543235]
+clip_children = 2
 position = Vector2(692.00006, 379)
 scale = Vector2(0.64973426, 0.47769523)
 texture = SubResource("AtlasTexture_kdjf5")
 
-[node name="Town" type="Node2D" parent="." unique_id=397002361]
+[node name="Town" type="Node2D" parent="City Map" unique_id=397002361]
 y_sort_enabled = true
+position = Vector2(-1065.0509, -793.3929)
+scale = Vector2(1.5390908, 2.093385)
 
-[node name="Town Navigation Region" type="NavigationRegion2D" parent="Town" unique_id=1526335775]
+[node name="Town Navigation Region" type="NavigationRegion2D" parent="City Map/Town" unique_id=1526335775]
+unique_name_in_owner = true
 y_sort_enabled = true
 navigation_polygon = SubResource("NavigationPolygon_kfv5s")
 
-[node name="House" type="Node2D" parent="Town/Town Navigation Region" unique_id=1395216922 groups=["House"]]
-position = Vector2(832, 447)
+[node name="Lake" type="Node2D" parent="City Map/Town/Town Navigation Region" unique_id=1801922890 groups=["Lake"]]
 
-[node name="Sprite2D" type="Sprite2D" parent="Town/Town Navigation Region/House" unique_id=20451385]
+[node name="Node2D" type="Node2D" parent="City Map/Town/Town Navigation Region/Lake" unique_id=704035726]
+position = Vector2(649, 161)
+
+[node name="Normal Lake" type="Sprite2D" parent="City Map/Town/Town Navigation Region/Lake/Node2D" unique_id=755742857]
+unique_name_in_owner = true
 position = Vector2(0, -3.0517578e-05)
 scale = Vector2(0.344, 0.344)
-texture = ExtResource("5_kfv5s")
+texture = ExtResource("7_qvq3v")
 
-[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="Town/Town Navigation Region/House" unique_id=676242060]
+[node name="Dirty Lake" type="Sprite2D" parent="City Map/Town/Town Navigation Region/Lake/Node2D" unique_id=1702909441]
+unique_name_in_owner = true
+visible = false
+position = Vector2(0, -3.0517578e-05)
+scale = Vector2(0.344, 0.344)
+texture = ExtResource("7_4e643")
+
+[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="City Map/Town/Town Navigation Region/Lake/Node2D" unique_id=601656757]
+vertices = PackedVector2Array(-107, -54, -78, -96, 8, -116, 53, -94, 87, -59, 94, -17, 100, 35, 60, 73, 27, 94, -14, 90, -44, 67, -89, 51, -125, -20)
+affect_navigation_mesh = true
+carve_navigation_mesh = true
+
+[node name="House" type="Node2D" parent="City Map/Town/Town Navigation Region" unique_id=1395216922 groups=["House"]]
+position = Vector2(832, 447)
+script = ExtResource("6_janmq")
+
+[node name="House Sprites" type="AnimatedSprite2D" parent="City Map/Town/Town Navigation Region/House" unique_id=2118980396]
+scale = Vector2(0.344, 0.344)
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+animation = &"random chimney house"
+
+[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="City Map/Town/Town Navigation Region/House" unique_id=676242060]
 vertices = PackedVector2Array(-67, -25, 33, -24, 33, 9, -68, 9)
 affect_navigation_mesh = true
 carve_navigation_mesh = true
 
-[node name="Grocery Store" type="Node2D" parent="Town/Town Navigation Region" unique_id=411164529 groups=["Grocery Store"]]
+[node name="House2" type="Node2D" parent="City Map/Town/Town Navigation Region" unique_id=1928595125 groups=["House"]]
+position = Vector2(1055, 558)
+script = ExtResource("6_janmq")
+
+[node name="House Sprites" type="AnimatedSprite2D" parent="City Map/Town/Town Navigation Region/House2" unique_id=600913547]
+scale = Vector2(0.344, 0.344)
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+animation = &"random chimney house"
+
+[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="City Map/Town/Town Navigation Region/House2" unique_id=393623127]
+vertices = PackedVector2Array(-67, -25, 33, -24, 33, 9, -68, 9)
+affect_navigation_mesh = true
+carve_navigation_mesh = true
+
+[node name="Grocery Store" type="Node2D" parent="City Map/Town/Town Navigation Region" unique_id=411164529 groups=["Grocery Store"]]
 position = Vector2(406, 349)
 
-[node name="Sprite2D" type="Sprite2D" parent="Town/Town Navigation Region/Grocery Store" unique_id=1160797426]
+[node name="Sprite2D" type="Sprite2D" parent="City Map/Town/Town Navigation Region/Grocery Store" unique_id=1160797426]
 position = Vector2(0, -3.0517578e-05)
 scale = Vector2(0.344, 0.344)
 texture = ExtResource("6_a4xjs")
 
-[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="Town/Town Navigation Region/Grocery Store" unique_id=1548311948]
+[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="City Map/Town/Town Navigation Region/Grocery Store" unique_id=1548311948]
 vertices = PackedVector2Array(-61, -29, 41, -24, 39, 30, -63, 29)
 affect_navigation_mesh = true
 carve_navigation_mesh = true
 
-[node name="New Person Spawn Point" type="Marker2D" parent="Town/Town Navigation Region" unique_id=1771133542]
+[node name="Hospital" type="Node2D" parent="City Map/Town/Town Navigation Region" unique_id=39884268 groups=["Lake"]]
+y_sort_enabled = true
+position = Vector2(408, 508)
+
+[node name="Normal Hospital" type="Sprite2D" parent="City Map/Town/Town Navigation Region/Hospital" unique_id=864461990]
+unique_name_in_owner = true
+position = Vector2(0, -3.0517578e-05)
+scale = Vector2(0.344, 0.344)
+texture = ExtResource("9_8e2of")
+
+[node name="Fancy Hospital" type="Sprite2D" parent="City Map/Town/Town Navigation Region/Hospital" unique_id=1089408242]
+unique_name_in_owner = true
+visible = false
+position = Vector2(0, -3.0517578e-05)
+scale = Vector2(0.344, 0.344)
+texture = ExtResource("10_hk3q0")
+
+[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="City Map/Town/Town Navigation Region/Hospital" unique_id=60411379]
+vertices = PackedVector2Array(-82, -5, 61, -4, 64, 39, -82, 37)
+affect_navigation_mesh = true
+carve_navigation_mesh = true
+
+[node name="New Person Spawn Point" type="Marker2D" parent="City Map/Town/Town Navigation Region" unique_id=1771133542]
 unique_name_in_owner = true
 position = Vector2(1228, 399)
 script = ExtResource("9_syrl7")
 
-[node name="Node2D" type="Node2D" parent="Town" unique_id=117351170]
+[node name="Trees" type="Node2D" parent="City Map/Town/Town Navigation Region" unique_id=600645799 groups=["House"]]
 y_sort_enabled = true
+position = Vector2(976, 316)
+
+[node name="House Sprites" type="Sprite2D" parent="City Map/Town/Town Navigation Region/Trees" unique_id=1142234907]
+position = Vector2(5, -8)
+scale = Vector2(0.189, 0.189)
+texture = ExtResource("19_x78tw")
+
+[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="City Map/Town/Town Navigation Region/Trees/House Sprites" unique_id=125452947]
+scale = Vector2(5.2910056, 5.2910056)
+vertices = PackedVector2Array(-20, 4, 6, 4, 5, 18, -22, 16)
+affect_navigation_mesh = true
+carve_navigation_mesh = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=822260490]
 
@@ -990,7 +1112,7 @@ autowrap_mode = 2
 
 [connection signal="happiness_added" from="Town Variables" to="CanvasLayer/GUI/Control" method="update_happiness_bar"]
 [connection signal="happiness_removed" from="Town Variables" to="CanvasLayer/GUI/Control" method="update_happiness_bar"]
-[connection signal="people_added" from="Town Variables" to="Town/Town Navigation Region/New Person Spawn Point" method="spawn_people"]
+[connection signal="people_added" from="Town Variables" to="City Map/Town/Town Navigation Region/New Person Spawn Point" method="spawn_people"]
 [connection signal="people_added" from="Town Variables" to="CanvasLayer/GUI/Control" method="update_people_amount"]
 [connection signal="people_removed" from="Town Variables" to="CanvasLayer/GUI/Control" method="update_people_amount"]
 [connection signal="selected_ballot" from="CanvasLayer/Ballot Controller" to="CanvasLayer/Ballot Controller/CenterContainer" method="_on_toggle_ballot_pressed"]

@@ -3,10 +3,12 @@ extends Node
 
 #region Hospital functions
 func fancy_hospital():
-	print("hospital is now fancy")
+	%"Fancy Hospital".show()
+	%"Normal Hospital".hide()
 
 func worse_hospital():
-	pass
+	%"Normal Hospital".show()
+	%"Fancy Hospital".hide()
 
 func minus_hospital(amount: int):
 	pass
@@ -47,13 +49,13 @@ func colorful_trees():
 
 #region Lake functions
 func clean_lake():
-	pass
+	%"Dirty Lake".hide()
 
 func dirty_lake():
-	pass
+	%"Dirty Lake".show()
 
 func add_lake():
-	pass
+	%"Normal Lake".show()
 #endregion
 
 #region Home functions

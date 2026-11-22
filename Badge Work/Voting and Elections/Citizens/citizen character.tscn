@@ -38,6 +38,28 @@ tracks/2/keys = {
 "points": PackedFloat32Array(1, -0.05166598, 0, 0.05166598, 0),
 "times": PackedFloat32Array(0)
 }
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:position:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.2, 0, 0.2, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:position:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.2, 0, 0.2, 0),
+"times": PackedFloat32Array(0)
+}
 
 [sub_resource type="Animation" id="Animation_kir5p"]
 resource_name = "idle"
@@ -80,8 +102,8 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id="Animation_syrl7"]
 resource_name = "wobble"
-length = 0.4
-loop_mode = 1
+length = 0.3
+loop_mode = 2
 tracks/0/type = "bezier"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -89,9 +111,53 @@ tracks/0/path = NodePath(".:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"handle_modes": PackedInt32Array(0, 2, 0, 2),
-"points": PackedFloat32Array(0, -0.25, 0, 0.074246265, -0.23731147, -0.17453292, -0.017528439, -0.019999165, 0.03789234, 0.04323347, 0.39252472, -0.07368308, -0.027921677, 0.061447978, -0.024944067, 0, -0.058826536, 0.24286065, 0, 0),
-"times": PackedFloat32Array(0, 0.10000001, 0.26346302, 0.4)
+"handle_modes": PackedInt32Array(0, 2, 2),
+"points": PackedFloat32Array(0.17744994, -0.07368308, -0.027921677, 0.061447978, -0.024944067, 0.04115762, -0.06666667, 0.09513469, 0, 0, -0.2066879, -0.06666666, 0.061844677, 0, 0),
+"times": PackedFloat32Array(0.033333335, 0.16666667, 0.3)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(1.0411576, -0.03333333, 0.0007619858, 0.067819655, 0.010453701, 1.1056249, -0.03218034, -0.052481413, 0.034486324, -0.050949335, 1.0411576, -0.06551367, 0.010453701, 0, 0),
+"times": PackedFloat32Array(0.06666668, 0.16666667, 0.26666668)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:scale:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(1.0411576, -0.029770643, -0.010994494, 0.07022938, 0.0012625456, 0.9911576, -0.029770613, 0.04973048, 0.03689605, 0.054326832, 1.0411576, -0.063103944, 0.0012625456, 0.07022938, 0.0012625456),
+"times": PackedFloat32Array(0.06666668, 0.16666667, 0.26666668)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:position:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(2),
+"points": PackedFloat32Array(0.04115762, -0.06666667, 0, 0, 0),
+"times": PackedFloat32Array(0.16666667)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:position:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(-1.9472389, -0.050000004, 0, 0.10000001, 0.041229844, 0.04115762, -0.03333333, -0.9370382, 0, 0, -1.94724, -0.06666669, 0, 0.065, 0),
+"times": PackedFloat32Array(0.033333343, 0.16666667, 0.30000004)
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_lf6tb"]
@@ -113,7 +179,7 @@ libraries/ = SubResource("AnimationLibrary_lf6tb")
 autoplay = &"wobble"
 
 [node name="Citizen" parent="Wobble Pivot Point" unique_id=1087789938 instance=ExtResource("2_12b7o")]
-position = Vector2(0, -17)
+position = Vector2(0, -20)
 scale = Vector2(0.345, 0.345)
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=546860031]

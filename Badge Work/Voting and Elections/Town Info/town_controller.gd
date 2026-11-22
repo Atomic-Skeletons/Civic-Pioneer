@@ -27,5 +27,5 @@ func start_next_ballot():
 func start_time_pass():
 	#event_queue.append(start_next_ballot)
 	for event in event_queue:
-		event.call()
 		await get_tree().create_timer(event_delay_seconds).timeout
+		event.call()
