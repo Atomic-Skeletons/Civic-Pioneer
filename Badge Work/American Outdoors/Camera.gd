@@ -1,21 +1,23 @@
 extends Camera2D
 
-@export var min_zoom := 0.1
+@export var min_zoom := 1.0
 @export var max_zoom := 5.0
 @export var zoom_factor := 0.1
 @export var zoom_duration := 0.2
 var zoom_level: float = 1
 var position_before_drag
 var position_before_drag2
-
+var camera_origin:Vector2
 
 func _ready():
 	#GlobalEvents.center_camera.connect(center_on_tables)
-	pass
+	camera_origin = self.global_position
 
 
-#func _unhandled_input(event):
-	
+func _process(delta: float) -> void:
+	if self.zoom.x <= min_zoom + 0.05:
+		self.position = camera_origin
+		
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("zoom_in"):
