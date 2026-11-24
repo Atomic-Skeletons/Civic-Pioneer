@@ -6,14 +6,19 @@ extends CharacterBody2D
 @export var move_speed: float = 50
 @onready var animation_player: AnimationPlayer = $"Wobble Pivot Point/AnimationPlayer"
 var pathfinding = false
+var leaving = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	citizen.randomize_outfit()
 	citizen.randomize_hat()
 	
+	# Randomize movement speeds
+	var random_scale = randf_range(0.9, 1.1)
+	move_speed *= random_scale
+	animation_player.speed_scale *= random_scale
+	
 	set_new_random_position()
-	#nav_agent.target_position = $"../Grocery Store".global_position
 
 func _physics_process(_delta: float) -> void:
 	if pathfinding:
@@ -22,10 +27,15 @@ func _physics_process(_delta: float) -> void:
 		velocity = dir * move_speed
 		move_and_slide()
 
-func set_new_random_position():
-	await get_tree().process_frame
+func start_moving():
 	pathfinding = true
 	animation_player.play("wobble")
+
+func set_new_random_position():
+	if leaving: return
+	await get_tree().process_frame
+	nav_agent.target_desired_distance = 5
+	start_moving()
 	
 	var map_rid: RID = nav_agent.get_navigation_map()
 	
@@ -35,9 +45,19 @@ func set_new_random_position():
 	nav_agent.target_position = random_pos
 
 func _on_navigation_agent_2d_target_reached() -> void:
+	if leaving:
+		queue_free()
+		return
 	animation_player.play("idle")
 	pathfinding = false
 	
 	var wait_tween = create_tween()
 	wait_tween.tween_interval(randf_range(5,15))
 	wait_tween.tween_callback(set_new_random_position)
+
+func leave():
+	leaving = true
+	move_speed *= 1.5
+	animation_player.speed_scale *= 1.5
+	nav_agent.target_desired_distance = 5
+	start_moving()

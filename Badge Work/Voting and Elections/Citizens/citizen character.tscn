@@ -167,7 +167,7 @@ _data = {
 &"wobble": SubResource("Animation_syrl7")
 }
 
-[node name="Citizen" type="CharacterBody2D" unique_id=1920521262 node_paths=PackedStringArray("citizen")]
+[node name="Citizen" type="CharacterBody2D" unique_id=1920521262 node_paths=PackedStringArray("citizen") groups=["Citizen"]]
 motion_mode = 1
 script = ExtResource("1_kir5p")
 citizen = NodePath("Wobble Pivot Point/Citizen")

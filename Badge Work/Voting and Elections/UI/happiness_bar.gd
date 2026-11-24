@@ -18,8 +18,11 @@ func _ready() -> void:
 	happiness_bar.max_value = town_variables.max_happiness
 	happiness_bar.value = town_variables.happiness
 	
-	people_amount_counter = town_variables.people
+	people_amount_counter = 0
 
+func _physics_process(_delta: float) -> void:
+	var citizen_count = get_tree().get_node_count_in_group("Citizen")
+	people_amount_counter = citizen_count
 
 func update_happiness_bar(_amount: int):
 	happiness_bar.max_value = town_variables.max_happiness
