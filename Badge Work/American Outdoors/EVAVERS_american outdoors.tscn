@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://deib0gxkqmt72"]
+
+[ext_resource type="PackedScene" uid="uid://mrn1qtmgykqp" path="res://Badge Work/American Outdoors/OutdoorsTest.tscn" id="1_wc04f"]
+
+[node name="AmericanOutdoors" type="Node2D" unique_id=354968399]
+
+[node name="OutdoorsTest" parent="." unique_id=157864007 instance=ExtResource("1_wc04f")]
