@@ -1,0 +1,304 @@
+[gd_scene format=3 uid="uid://bl5plvckbuwua"]
+
+[ext_resource type="Texture2D" uid="uid://cyc8ucnt5utov" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0001.png" id="1_86yyj"]
+[ext_resource type="Texture2D" uid="uid://c1o1qn8ei8y36" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0002.png" id="2_uth7f"]
+[ext_resource type="Texture2D" uid="uid://cfj8xog72u00p" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0003.png" id="3_aivol"]
+[ext_resource type="Texture2D" uid="uid://bty7femsckvkc" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0004.png" id="4_wj4q6"]
+[ext_resource type="Texture2D" uid="uid://bk1b58nxvcbl" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0005.png" id="5_kbdrg"]
+[ext_resource type="Texture2D" uid="uid://d0d3un65sfb6p" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0006.png" id="6_mmrhj"]
+[ext_resource type="Texture2D" uid="uid://fxt2wvf81l12" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0007.png" id="7_5s626"]
+[ext_resource type="Texture2D" uid="uid://yctpmhm3mrvq" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0008.png" id="8_4xfvd"]
+[ext_resource type="Texture2D" uid="uid://bmubinhar3h0q" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0009.png" id="9_u2l06"]
+[ext_resource type="Texture2D" uid="uid://hiawv86ao6b6" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0010.png" id="10_6rpp8"]
+[ext_resource type="Texture2D" uid="uid://c08hg45sfx1gn" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0011.png" id="11_oy2ml"]
+[ext_resource type="Texture2D" uid="uid://hshtxu07fbd7" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0012.png" id="12_5jxos"]
+[ext_resource type="Texture2D" uid="uid://f3ai8jlkgdi1" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0013.png" id="13_kojij"]
+[ext_resource type="Texture2D" uid="uid://d2xti7t20xmv5" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0014.png" id="14_5uxt2"]
+[ext_resource type="Texture2D" uid="uid://cy2jfs3gcxi8k" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0015.png" id="15_t6gv5"]
+[ext_resource type="Texture2D" uid="uid://bi72st4xkjjdp" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0016.png" id="16_q3lwn"]
+[ext_resource type="Texture2D" uid="uid://bwiidpmow41i1" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0017.png" id="17_ccnep"]
+[ext_resource type="Texture2D" uid="uid://bb333ew2lfsxh" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0018.png" id="18_2oqsf"]
+[ext_resource type="Texture2D" uid="uid://bcu7by0dipnbb" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0019.png" id="19_q8j6x"]
+[ext_resource type="Texture2D" uid="uid://cbqlw7hktg4mh" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0020.png" id="20_kktu8"]
+[ext_resource type="Texture2D" uid="uid://dvnchearsg2fr" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0021.png" id="21_57ogu"]
+[ext_resource type="Texture2D" uid="uid://o3ddcye5cxw1" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0022.png" id="22_0pcpn"]
+[ext_resource type="Texture2D" uid="uid://b3i0sqw277ca7" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0023.png" id="23_bcp50"]
+[ext_resource type="Texture2D" uid="uid://dw6sk7kcndtdo" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0024.png" id="24_k21hu"]
+[ext_resource type="Texture2D" uid="uid://bpbytmc42wpjm" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0025.png" id="25_61mod"]
+[ext_resource type="Texture2D" uid="uid://bk2abujabc1iu" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0026.png" id="26_6li6k"]
+[ext_resource type="Texture2D" uid="uid://bifl8xhhouj7a" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0027.png" id="27_71nys"]
+[ext_resource type="Texture2D" uid="uid://snqnji3jo1u5" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0028.png" id="28_w5ynq"]
+[ext_resource type="Texture2D" uid="uid://rvympupou2bg" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0029.png" id="29_io6di"]
+[ext_resource type="Texture2D" uid="uid://dpimss42xyiqv" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0030.png" id="30_iakp4"]
+[ext_resource type="Texture2D" uid="uid://dvc7dwyrcpv8i" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0031.png" id="31_n6nuj"]
+[ext_resource type="Texture2D" uid="uid://1fuwdpc3klvj" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0032.png" id="32_bj2ji"]
+[ext_resource type="Texture2D" uid="uid://2nm0mm758c4e" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0033.png" id="33_ubtso"]
+[ext_resource type="Texture2D" uid="uid://blb1m5pi6jwg0" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0034.png" id="34_25eye"]
+[ext_resource type="Texture2D" uid="uid://hcmrqunojcpi" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0035.png" id="35_5s14h"]
+[ext_resource type="Texture2D" uid="uid://c5jq20rce4rup" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0036.png" id="36_if5hn"]
+[ext_resource type="Texture2D" uid="uid://i2sviuruqebn" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0037.png" id="37_i7edt"]
+[ext_resource type="Texture2D" uid="uid://3aqjsr28pyxk" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0038.png" id="38_m2gas"]
+[ext_resource type="Texture2D" uid="uid://tbbuobwe65wd" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0039.png" id="39_jipau"]
+[ext_resource type="Texture2D" uid="uid://babkm4eextgy7" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0040.png" id="40_vphgw"]
+[ext_resource type="Texture2D" uid="uid://div8w50qeikgd" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0041.png" id="41_j2eh4"]
+[ext_resource type="Texture2D" uid="uid://bswcksq4kjvfq" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0042.png" id="42_0aeah"]
+[ext_resource type="Texture2D" uid="uid://bfg5o4rp5fu1e" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0043.png" id="43_k1mbs"]
+[ext_resource type="Texture2D" uid="uid://bfpiwr6nphgiu" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/ArcticPeregrineFalcon/03_FALCON-anim0044.png" id="44_kaqhr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x5ihe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_86yyj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_uth7f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_aivol")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_wj4q6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_kbdrg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_mmrhj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5s626")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_4xfvd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_u2l06")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_6rpp8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_oy2ml")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_5jxos")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_kojij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_5uxt2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_t6gv5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_q3lwn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ccnep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_2oqsf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_q8j6x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_kktu8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_57ogu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_0pcpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_bcp50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_k21hu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_61mod")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_6li6k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_71nys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_w5ynq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_io6di")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_iakp4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_n6nuj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_bj2ji")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_ubtso")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_25eye")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_5s14h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_if5hn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_i7edt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_m2gas")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_jipau")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_vphgw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_j2eh4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_0aeah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_k1mbs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_kaqhr")
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": 1,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="FalconAnim" type="Node2D" unique_id=903625003]
+
+[node name="ArcticPeregrineFalcon" type="Node2D" parent="." unique_id=1113651032]
+scale = Vector2(1.429, 1.429)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="ArcticPeregrineFalcon" unique_id=771476450]
+sprite_frames = SubResource("SpriteFrames_x5ihe")
+autoplay = "default"
+frame = 18
+frame_progress = 0.82650894
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ArcticPeregrineFalcon/AnimatedSprite2D" unique_id=1243034426]

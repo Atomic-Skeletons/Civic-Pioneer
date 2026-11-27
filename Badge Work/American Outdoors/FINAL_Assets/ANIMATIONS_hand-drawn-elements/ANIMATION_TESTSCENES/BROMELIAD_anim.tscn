@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://c0iyjkmochfs8"]
+
+[ext_resource type="Texture2D" uid="uid://dfqmia3tu21qo" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Tillandsia Paucifolia/03_BROMELIAD-anim0001.png" id="1_5uh6n"]
+[ext_resource type="Texture2D" uid="uid://crk7hby20yvwj" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Tillandsia Paucifolia/03_BROMELIAD-anim0002.png" id="2_rrjmv"]
+[ext_resource type="Texture2D" uid="uid://d0pc61xys13f5" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Tillandsia Paucifolia/03_BROMELIAD-anim0003.png" id="3_h5tdo"]
+[ext_resource type="Texture2D" uid="uid://b4042qdatdk6j" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Tillandsia Paucifolia/03_BROMELIAD-anim0004.png" id="4_wtqw4"]
+[ext_resource type="Texture2D" uid="uid://i740b7ogfqi3" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Tillandsia Paucifolia/03_BROMELIAD-anim0005.png" id="5_8d52i"]
+[ext_resource type="Texture2D" uid="uid://pvdstutjx8gr" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Tillandsia Paucifolia/03_BROMELIAD-anim0006.png" id="6_4byng"]
+[ext_resource type="Texture2D" uid="uid://xjbbq33e7cjr" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Tillandsia Paucifolia/03_BROMELIAD-anim0007.png" id="7_886pa"]
+[ext_resource type="Texture2D" uid="uid://cp8al3kmcaac0" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Tillandsia Paucifolia/03_BROMELIAD-anim0008.png" id="8_a1iq7"]
+[ext_resource type="Texture2D" uid="uid://dev0rtx1vujkx" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Tillandsia Paucifolia/03_BROMELIAD-anim0009.png" id="9_n8qkh"]
+[ext_resource type="Texture2D" uid="uid://bb5j1uorxcbvn" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Tillandsia Paucifolia/03_BROMELIAD-anim0010.png" id="10_07fup"]
+[ext_resource type="Texture2D" uid="uid://qkt30ooo4xd6" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Tillandsia Paucifolia/03_BROMELIAD-anim0011.png" id="11_g64a7"]
+[ext_resource type="Texture2D" uid="uid://c7mo7ff1263c4" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Tillandsia Paucifolia/03_BROMELIAD-anim0012.png" id="12_pob7x"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hsea2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5uh6n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_rrjmv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_h5tdo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_wtqw4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8d52i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_4byng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_886pa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_a1iq7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_n8qkh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_07fup")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_g64a7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_pob7x")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="BromeliadAnim" type="Node2D" unique_id=394407981]
+
+[node name="Tillandsia Paucifolia" type="Node2D" parent="." unique_id=720324542]
+scale = Vector2(1.429, 1.429)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Tillandsia Paucifolia" unique_id=1612397011]
+sprite_frames = SubResource("SpriteFrames_hsea2")
+autoplay = "default"
+frame = 10
+frame_progress = 0.2315197
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Tillandsia Paucifolia/AnimatedSprite2D" unique_id=1153387593]

@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://rryno8f454tu"]
+
+[ext_resource type="PackedScene" uid="uid://da68y2wej220f" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/ANIMATION_TESTSCENES/ANOLE_anim.tscn" id="1_cs4cm"]
+[ext_resource type="PackedScene" uid="uid://uj26gg74pk3x" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/ANIMATION_TESTSCENES/CROC_anim.tscn" id="2_akh3w"]
+[ext_resource type="Texture2D" uid="uid://d08ys0iqxre53" path="res://Badge Work/American Outdoors/FINAL_Assets/HIGH_QUAL-bgphotograph/cropped_mangrove-biome_highres_everglades.jpg" id="2_d2c2p"]
+[ext_resource type="PackedScene" uid="uid://c0iyjkmochfs8" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/ANIMATION_TESTSCENES/BROMELIAD_anim.tscn" id="2_jhx5l"]
+[ext_resource type="PackedScene" uid="uid://bl5plvckbuwua" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/ANIMATION_TESTSCENES/FALCON_anim.tscn" id="4_d2c2p"]
+[ext_resource type="PackedScene" uid="uid://d14ivhyawfcxg" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/ANIMATION_TESTSCENES/MANGROVE_anim.tscn" id="5_ds7db"]
+[ext_resource type="PackedScene" uid="uid://bt3pwt0sk3ygs" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/ANIMATION_TESTSCENES/SAWGRASS_anim.tscn" id="6_x0kon"]
+[ext_resource type="PackedScene" uid="uid://cb7lta8d2h4gb" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/ANIMATION_TESTSCENES/SPOONBILL_anim.tscn" id="7_ncf6o"]
+
+[node name="AmericanOutdoors" type="Node2D" unique_id=354968399]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=380462799]
+offset_right = 6564.0
+offset_bottom = 3404.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=575303554]
+handle_input_locally = false
+size = Vector2i(6564, 3404)
+render_target_update_mode = 4
+
+[node name="photograph_bg" type="Sprite2D" parent="SubViewportContainer/SubViewport" unique_id=424652665]
+texture = ExtResource("2_d2c2p")
+centered = false
+
+[node name="ANIMATED_ELEMENTS" type="Node" parent="SubViewportContainer/SubViewport" unique_id=1648460327]
+
+[node name="BromeliadAnim" parent="SubViewportContainer/SubViewport/ANIMATED_ELEMENTS" unique_id=394407981 instance=ExtResource("2_jhx5l")]
+position = Vector2(3283, 1702)
+
+[node name="CrocAnim" parent="SubViewportContainer/SubViewport/ANIMATED_ELEMENTS" unique_id=862015891 instance=ExtResource("2_akh3w")]
+position = Vector2(3283, 1702)
+
+[node name="FalconAnim" parent="SubViewportContainer/SubViewport/ANIMATED_ELEMENTS" unique_id=903625003 instance=ExtResource("4_d2c2p")]
+position = Vector2(3283, 1702)
+
+[node name="MangroveAnim" parent="SubViewportContainer/SubViewport/ANIMATED_ELEMENTS" unique_id=76189694 instance=ExtResource("5_ds7db")]
+position = Vector2(3283, 1702)
+
+[node name="SpoonbillAnim" parent="SubViewportContainer/SubViewport/ANIMATED_ELEMENTS" unique_id=944059372 instance=ExtResource("7_ncf6o")]
+position = Vector2(3283, 1702)
+
+[node name="AnoleAnim" parent="SubViewportContainer/SubViewport/ANIMATED_ELEMENTS" unique_id=1313162581 instance=ExtResource("1_cs4cm")]
+position = Vector2(3283, 1702)
+
+[node name="SawgrassAnim" parent="SubViewportContainer/SubViewport/ANIMATED_ELEMENTS" unique_id=686736624 instance=ExtResource("6_x0kon")]
+position = Vector2(3283, 1702)

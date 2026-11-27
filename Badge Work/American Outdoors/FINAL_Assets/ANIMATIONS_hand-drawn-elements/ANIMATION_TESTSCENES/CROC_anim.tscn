@@ -1,0 +1,251 @@
+[gd_scene format=3 uid="uid://uj26gg74pk3x"]
+
+[ext_resource type="Texture2D" uid="uid://f25fiexjx2w4" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0001.png" id="1_i06n7"]
+[ext_resource type="Texture2D" uid="uid://bp68w44v8l7ko" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0002.png" id="2_s0nv0"]
+[ext_resource type="Texture2D" uid="uid://bl1ohy8315ty0" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0003.png" id="3_11s2g"]
+[ext_resource type="Texture2D" uid="uid://b762h3urnjyre" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0004.png" id="4_f0c5j"]
+[ext_resource type="Texture2D" uid="uid://c74smvba1qevt" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0005.png" id="5_w2wty"]
+[ext_resource type="Texture2D" uid="uid://co1wac3bexsy5" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0006.png" id="6_xbtqg"]
+[ext_resource type="Texture2D" uid="uid://bgiobttl5a1lf" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0007.png" id="7_icvap"]
+[ext_resource type="Texture2D" uid="uid://5l65tkpqv4t8" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0008.png" id="8_nahfy"]
+[ext_resource type="Texture2D" uid="uid://bk5pm7mwdkdlj" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0009.png" id="9_2fydn"]
+[ext_resource type="Texture2D" uid="uid://cxgrd0ctal2ik" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0010.png" id="10_c3tko"]
+[ext_resource type="Texture2D" uid="uid://bnaswbield2d8" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0011.png" id="11_boa5n"]
+[ext_resource type="Texture2D" uid="uid://disn1c6wr65se" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0012.png" id="12_31utk"]
+[ext_resource type="Texture2D" uid="uid://bp5qlkn58thm5" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0013.png" id="13_meyp1"]
+[ext_resource type="Texture2D" uid="uid://cuvcb3nenqleu" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0014.png" id="14_iw7rn"]
+[ext_resource type="Texture2D" uid="uid://c1gvf2n1f5bg3" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0015.png" id="15_jyo0d"]
+[ext_resource type="Texture2D" uid="uid://cgqjirh7q77la" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0016.png" id="16_5y7ti"]
+[ext_resource type="Texture2D" uid="uid://cj1gbu1r0ocmq" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0017.png" id="17_x6kio"]
+[ext_resource type="Texture2D" uid="uid://cdhq13bxj8by" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0018.png" id="18_4lkhc"]
+[ext_resource type="Texture2D" uid="uid://t6u6kx4o2sec" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0019.png" id="19_1nwep"]
+[ext_resource type="Texture2D" uid="uid://bnmilw3cg7f1x" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0020.png" id="20_wttpe"]
+[ext_resource type="Texture2D" uid="uid://cdos5bx5p6mrs" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0021.png" id="21_48cqb"]
+[ext_resource type="Texture2D" uid="uid://brsht2rclpaw8" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0022.png" id="22_bbqtf"]
+[ext_resource type="Texture2D" uid="uid://bt7qrxwjtslim" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0023.png" id="23_tptnx"]
+[ext_resource type="Texture2D" uid="uid://q6lwj0dy5gfs" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0024.png" id="24_5xkdb"]
+[ext_resource type="Texture2D" uid="uid://bwy2sdpi8eenl" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0025.png" id="25_nduwp"]
+[ext_resource type="Texture2D" uid="uid://dagkeexe65k65" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0026.png" id="26_gckw1"]
+[ext_resource type="Texture2D" uid="uid://p8dgrgwlnqlb" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0027.png" id="27_64l1m"]
+[ext_resource type="Texture2D" uid="uid://bqtn0py4m2dtv" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0028.png" id="28_i7bfm"]
+[ext_resource type="Texture2D" uid="uid://cllvvtmdave1m" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0029.png" id="29_rwapv"]
+[ext_resource type="Texture2D" uid="uid://c6ars8b8btspt" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0030.png" id="30_i645h"]
+[ext_resource type="Texture2D" uid="uid://7p5uciv15i10" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0031.png" id="31_f8j0t"]
+[ext_resource type="Texture2D" uid="uid://cdpjda3qau7v3" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0032.png" id="32_a1ows"]
+[ext_resource type="Texture2D" uid="uid://cx5ksdcljfyfg" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0033.png" id="33_psxr2"]
+[ext_resource type="Texture2D" uid="uid://b605o7kfrq8hh" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0034.png" id="34_x2bea"]
+[ext_resource type="Texture2D" uid="uid://dxnhijts45mlr" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0035.png" id="35_y2ydk"]
+[ext_resource type="Texture2D" uid="uid://ds6m126ywry34" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0036.png" id="36_e864k"]
+[ext_resource type="Texture2D" uid="uid://bfp7xree4iysj" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0037.png" id="37_5slxk"]
+[ext_resource type="Texture2D" uid="uid://5ogoewi20prj" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0038.png" id="38_acto1"]
+[ext_resource type="Texture2D" uid="uid://xd0q0d08135j" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0039.png" id="39_wb0qg"]
+[ext_resource type="Texture2D" uid="uid://lrjl117ftwgb" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0040.png" id="40_aeely"]
+[ext_resource type="Texture2D" uid="uid://dak63pw1fxshl" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0041.png" id="41_gpmkw"]
+[ext_resource type="Texture2D" uid="uid://75ynee2utugf" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0042.png" id="42_4bd1f"]
+[ext_resource type="Texture2D" uid="uid://c8jna0g13johh" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0043.png" id="43_cv80t"]
+[ext_resource type="Texture2D" uid="uid://dd866j74c3grf" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0044.png" id="44_p7rsh"]
+[ext_resource type="Texture2D" uid="uid://jrt5cggip00" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0045.png" id="45_huyyq"]
+[ext_resource type="Texture2D" uid="uid://wt27jx3k4hgn" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0046.png" id="46_xxsld"]
+[ext_resource type="Texture2D" uid="uid://demce5bfjaj18" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0047.png" id="47_ii2vk"]
+[ext_resource type="Texture2D" uid="uid://cih8uwxwjbqgi" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0048.png" id="48_lacyu"]
+[ext_resource type="Texture2D" uid="uid://bt6s0wv6vnpi5" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0049.png" id="49_d15v2"]
+[ext_resource type="Texture2D" uid="uid://nw1j3b0lso4s" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0050.png" id="50_4rkjo"]
+[ext_resource type="Texture2D" uid="uid://cjohj8wva40k2" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0051.png" id="51_w730l"]
+[ext_resource type="Texture2D" uid="uid://bhi2qpyth1ddx" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0052.png" id="52_s4nle"]
+[ext_resource type="Texture2D" uid="uid://dy2lvv1cfqla0" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0053.png" id="53_7cxpb"]
+[ext_resource type="Texture2D" uid="uid://c3s3m8l75w0pm" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0054.png" id="54_gt0qp"]
+[ext_resource type="Texture2D" uid="uid://jrfh8x2r4vg7" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0055.png" id="55_yben2"]
+[ext_resource type="Texture2D" uid="uid://cvqcyyejw8gq" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/AmericanCrocodile/03_CROC-anim0056.png" id="56_jk8b6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3nali"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_i06n7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_s0nv0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_11s2g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_f0c5j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_w2wty")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_xbtqg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_icvap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_nahfy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_2fydn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_c3tko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_boa5n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_31utk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_meyp1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_iw7rn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_jyo0d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_5y7ti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_x6kio")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_4lkhc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_1nwep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_wttpe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_48cqb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_bbqtf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_tptnx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_5xkdb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_nduwp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_gckw1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_64l1m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_i7bfm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_rwapv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_i645h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_f8j0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_a1ows")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_psxr2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_x2bea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_y2ydk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_e864k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_5slxk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_acto1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_wb0qg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_aeely")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_gpmkw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_4bd1f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_cv80t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_p7rsh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_huyyq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_xxsld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_ii2vk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_lacyu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_d15v2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_4rkjo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_w730l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_s4nle")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_7cxpb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_gt0qp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_yben2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_jk8b6")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="GDScript" id="GDScript_i06n7"]
+
+[node name="CrocAnim" type="Node2D" unique_id=862015891]
+
+[node name="AmericanCrocodile" type="Node2D" parent="." unique_id=2001349028]
+position = Vector2(0, -2)
+scale = Vector2(1.429, 1.429)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AmericanCrocodile" unique_id=550023650]
+sprite_frames = SubResource("SpriteFrames_3nali")
+autoplay = "default"
+frame = 52
+frame_progress = 0.2903116
+script = SubResource("GDScript_i06n7")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AmericanCrocodile/AnimatedSprite2D" unique_id=1293841739]

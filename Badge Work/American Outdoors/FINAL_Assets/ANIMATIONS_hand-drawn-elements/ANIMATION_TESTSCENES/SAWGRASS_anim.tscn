@@ -1,0 +1,118 @@
+[gd_scene format=3 uid="uid://bt3pwt0sk3ygs"]
+
+[ext_resource type="Texture2D" uid="uid://c1xah57yny8c4" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0001.png" id="1_4uf85"]
+[ext_resource type="Texture2D" uid="uid://bd8pw6l0txy8s" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0002.png" id="2_xurbw"]
+[ext_resource type="Texture2D" uid="uid://cfsoj7eihrad1" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0003.png" id="3_hajbv"]
+[ext_resource type="Texture2D" uid="uid://cb3k0labh8174" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0004.png" id="4_g6dsx"]
+[ext_resource type="Texture2D" uid="uid://dfu27lw7k25ba" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0005.png" id="5_1v2ea"]
+[ext_resource type="Texture2D" uid="uid://d36xx38cqaep6" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0006.png" id="6_fqkph"]
+[ext_resource type="Texture2D" uid="uid://dt0ilrwuouhb2" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0007.png" id="7_l136p"]
+[ext_resource type="Texture2D" uid="uid://cmr6fnm5ara0x" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0008.png" id="8_kfdjy"]
+[ext_resource type="Texture2D" uid="uid://dh1xyvs52pei1" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0009.png" id="9_660f6"]
+[ext_resource type="Texture2D" uid="uid://c15bvtf5d8t62" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0010.png" id="10_uyouj"]
+[ext_resource type="Texture2D" uid="uid://dw2rklewo3svf" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0011.png" id="11_vk5tc"]
+[ext_resource type="Texture2D" uid="uid://i6iiuvye4dmm" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0012.png" id="12_yh2lg"]
+[ext_resource type="Texture2D" uid="uid://bdym854ti16mw" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0013.png" id="13_a0ume"]
+[ext_resource type="Texture2D" uid="uid://bu4p6nqy1wom0" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0014.png" id="14_unyet"]
+[ext_resource type="Texture2D" uid="uid://bwv66cis6yd3e" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0015.png" id="15_7d20f"]
+[ext_resource type="Texture2D" uid="uid://cydyjel6qrcuk" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0016.png" id="16_uegk3"]
+[ext_resource type="Texture2D" uid="uid://d2qkf73yi7qbl" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0017.png" id="17_1mum2"]
+[ext_resource type="Texture2D" uid="uid://xfm428ailrs4" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0018.png" id="18_d1sa7"]
+[ext_resource type="Texture2D" uid="uid://pbhlnqr26o2k" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0019.png" id="19_o8ntf"]
+[ext_resource type="Texture2D" uid="uid://bwy66124t6ybj" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0020.png" id="20_kloyl"]
+[ext_resource type="Texture2D" uid="uid://cspft8nm2oy01" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0021.png" id="21_do065"]
+[ext_resource type="Texture2D" uid="uid://cp06ddrbu6yi0" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0022.png" id="22_ujtru"]
+[ext_resource type="Texture2D" uid="uid://dj08lgg435vlj" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0023.png" id="23_8he1w"]
+[ext_resource type="Texture2D" uid="uid://b0npvn6c2xvmo" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/Sawgrass/03_sawgrass-anim0024.png" id="24_l3u8j"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hsea2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4uf85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_xurbw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hajbv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_g6dsx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_1v2ea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_fqkph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_l136p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_kfdjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_660f6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_uyouj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_vk5tc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_yh2lg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_a0ume")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_unyet")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_7d20f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_uegk3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_1mum2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_d1sa7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_o8ntf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_kloyl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_do065")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ujtru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_8he1w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_l3u8j")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="SawgrassAnim" type="Node2D" unique_id=686736624]
+
+[node name="Sawgrass" type="Node2D" parent="." unique_id=1689273243]
+scale = Vector2(1.429, 1.429)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Sawgrass" unique_id=780603418]
+sprite_frames = SubResource("SpriteFrames_hsea2")
+autoplay = "default"
+frame_progress = 0.66515034
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sawgrass/AnimatedSprite2D" unique_id=96392656]

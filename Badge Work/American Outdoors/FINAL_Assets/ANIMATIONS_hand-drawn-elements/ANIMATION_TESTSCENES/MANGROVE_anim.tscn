@@ -1,0 +1,176 @@
+[gd_scene format=3 uid="uid://d14ivhyawfcxg"]
+
+[ext_resource type="Texture2D" uid="uid://cc1o7387cf3n4" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/TRUNK_base_mangrovetree.png" id="1_5wqai"]
+[ext_resource type="Texture2D" uid="uid://ctd8trq4sr7y1" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_LEAVES-mangrove-anim0001.png" id="2_5wqai"]
+[ext_resource type="Texture2D" uid="uid://1nw5m6ctbaoh" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_LEAVES-mangrove-anim0002.png" id="3_104jk"]
+[ext_resource type="Texture2D" uid="uid://dw6fonnpisrhp" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_LEAVES-mangrove-anim0003.png" id="4_2k6qa"]
+[ext_resource type="Texture2D" uid="uid://8cpdombgjihy" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_LEAVES-mangrove-anim0004.png" id="5_3y2qe"]
+[ext_resource type="Texture2D" uid="uid://00pr10hi4re7" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_LEAVES-mangrove-anim0005.png" id="6_q0dmy"]
+[ext_resource type="Texture2D" uid="uid://2ttgsgd4npf4" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_LEAVES-mangrove-anim0006.png" id="7_jgy32"]
+[ext_resource type="Texture2D" uid="uid://dtayuponmn8g1" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_LEAVES-mangrove-anim0007.png" id="8_2dvge"]
+[ext_resource type="Texture2D" uid="uid://j3ru8bnl6dr7" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_LEAVES-mangrove-anim0008.png" id="9_f28pg"]
+[ext_resource type="Texture2D" uid="uid://duqqmm5vu6lwt" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_LEAVES-mangrove-anim0009.png" id="10_5e6c7"]
+[ext_resource type="Texture2D" uid="uid://c7nipeqn6vs5w" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_LEAVES-mangrove-anim0010.png" id="11_7ll2p"]
+[ext_resource type="Texture2D" uid="uid://7ug6lpduat7i" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_LEAVES-mangrove-anim0011.png" id="12_ddvse"]
+[ext_resource type="Texture2D" uid="uid://ctnp7oc8vb0i1" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_LEAVES-mangrove-anim0012.png" id="13_gpeve"]
+[ext_resource type="Texture2D" uid="uid://bwkadqfww8vpg" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_LEAVES-mangrove-anim0013.png" id="14_3ou6r"]
+[ext_resource type="Texture2D" uid="uid://vmfy8sndrlqk" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_LEAVES-mangrove-anim0014.png" id="15_qjdo4"]
+[ext_resource type="Texture2D" uid="uid://bqw6oe2ss71le" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_LEAVES-mangrove-anim0015.png" id="16_7whlu"]
+[ext_resource type="Texture2D" uid="uid://bqxg871xdg63a" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_LEAVES-mangrove-anim0016.png" id="17_c5dgs"]
+[ext_resource type="Texture2D" uid="uid://ejkoq5t0so2h" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_REFLECTIONS_mangrove-anim0001.png" id="18_0ngio"]
+[ext_resource type="Texture2D" uid="uid://de3y16nneisog" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_REFLECTIONS_mangrove-anim0002.png" id="19_l2cjc"]
+[ext_resource type="Texture2D" uid="uid://dmlw8j87ly7x4" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_REFLECTIONS_mangrove-anim0003.png" id="20_kbc1c"]
+[ext_resource type="Texture2D" uid="uid://c04rtxlcdnxxo" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_REFLECTIONS_mangrove-anim0004.png" id="21_wm3fl"]
+[ext_resource type="Texture2D" uid="uid://d22yy8o3531j5" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_REFLECTIONS_mangrove-anim0005.png" id="22_hesh1"]
+[ext_resource type="Texture2D" uid="uid://daojiox3lq8ga" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_REFLECTIONS_mangrove-anim0006.png" id="23_b11l5"]
+[ext_resource type="Texture2D" uid="uid://d1p6lrejv7jjm" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_REFLECTIONS_mangrove-anim0007.png" id="24_ec0rx"]
+[ext_resource type="Texture2D" uid="uid://btbbiv1sg7oy3" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_REFLECTIONS_mangrove-anim0008.png" id="25_s1dur"]
+[ext_resource type="Texture2D" uid="uid://dvyudvwmhltsf" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_REFLECTIONS_mangrove-anim0009.png" id="26_l6cgq"]
+[ext_resource type="Texture2D" uid="uid://by54xqweb72c2" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_REFLECTIONS_mangrove-anim0010.png" id="27_llxnt"]
+[ext_resource type="Texture2D" uid="uid://6ohdng6gpbjb" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_REFLECTIONS_mangrove-anim0011.png" id="28_yhyfk"]
+[ext_resource type="Texture2D" uid="uid://d307w040koadh" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_REFLECTIONS_mangrove-anim0012.png" id="29_ibw36"]
+[ext_resource type="Texture2D" uid="uid://qijpmkbtk8t8" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_REFLECTIONS_mangrove-anim0013.png" id="30_u2j48"]
+[ext_resource type="Texture2D" uid="uid://b8pt28m46txn6" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_REFLECTIONS_mangrove-anim0014.png" id="31_xyvn5"]
+[ext_resource type="Texture2D" uid="uid://biey1x0affgmw" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_REFLECTIONS_mangrove-anim0015.png" id="32_dr6vb"]
+[ext_resource type="Texture2D" uid="uid://cr7ddfgtyed00" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RedMangroveTree/03_REFLECTIONS_mangrove-anim0016.png" id="33_hocq6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hsea2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_5wqai")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_104jk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2k6qa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_3y2qe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_q0dmy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_jgy32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_2dvge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_f28pg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_5e6c7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_7ll2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ddvse")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_gpeve")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_3ou6r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_qjdo4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_7whlu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_c5dgs")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gxo3d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_0ngio")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_l2cjc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_kbc1c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_wm3fl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_hesh1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_b11l5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ec0rx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_s1dur")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_l6cgq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_llxnt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_yhyfk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ibw36")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_u2j48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_xyvn5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_dr6vb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_hocq6")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="MangroveAnim" type="Node2D" unique_id=76189694]
+
+[node name="RedMangroveTree" type="Node2D" parent="." unique_id=2063770093]
+
+[node name="TRUNK_mangrove" type="Sprite2D" parent="RedMangroveTree" unique_id=967648891]
+texture = ExtResource("1_5wqai")
+
+[node name="LEAVES" type="Node2D" parent="RedMangroveTree" unique_id=679793552]
+scale = Vector2(1.429, 1.429)
+
+[node name="LEAVES_mangrove" type="AnimatedSprite2D" parent="RedMangroveTree/LEAVES" unique_id=1623873614]
+sprite_frames = SubResource("SpriteFrames_hsea2")
+autoplay = "default"
+frame = 10
+frame_progress = 0.78754675
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="RedMangroveTree/LEAVES/LEAVES_mangrove" unique_id=1909136468]
+
+[node name="REFLECTION" type="Node2D" parent="RedMangroveTree" unique_id=1033912148]
+scale = Vector2(1.429, 1.429)
+
+[node name="REFLECTION_mangrove" type="AnimatedSprite2D" parent="RedMangroveTree/REFLECTION" unique_id=425736799]
+sprite_frames = SubResource("SpriteFrames_gxo3d")
+autoplay = "default"
+frame = 11
+frame_progress = 0.18266816
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="RedMangroveTree/REFLECTION/REFLECTION_mangrove" unique_id=777300303]

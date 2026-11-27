@@ -1,0 +1,230 @@
+[gd_scene format=3 uid="uid://da68y2wej220f"]
+
+[ext_resource type="Texture2D" uid="uid://docj78h8ybckh" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0001.png" id="1_4p11s"]
+[ext_resource type="Texture2D" uid="uid://b81rqgbay3oth" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0002.png" id="2_5k6i1"]
+[ext_resource type="Texture2D" uid="uid://xsawsl3366af" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0003.png" id="3_10y2w"]
+[ext_resource type="Texture2D" uid="uid://c78i5kuw3noqv" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0004.png" id="4_3qor1"]
+[ext_resource type="Texture2D" uid="uid://dw272evfjhujn" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0005.png" id="5_ty66l"]
+[ext_resource type="Texture2D" uid="uid://dop1qyhb1e7ub" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0006.png" id="6_q3k6d"]
+[ext_resource type="Texture2D" uid="uid://dyj1gxdvtv66e" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0007.png" id="7_b827q"]
+[ext_resource type="Texture2D" uid="uid://bcv7n7v6ljun6" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0008.png" id="8_5pl0y"]
+[ext_resource type="Texture2D" uid="uid://dtarribm6p5tu" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0009.png" id="9_kc412"]
+[ext_resource type="Texture2D" uid="uid://cq8x84dk1ij2v" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0010.png" id="10_0spk2"]
+[ext_resource type="Texture2D" uid="uid://sjrf04g57mew" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0011.png" id="11_qvk7w"]
+[ext_resource type="Texture2D" uid="uid://dhn65i51wiiqx" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0012.png" id="12_6d44a"]
+[ext_resource type="Texture2D" uid="uid://dlurk2ek25j11" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0013.png" id="13_bdfye"]
+[ext_resource type="Texture2D" uid="uid://dkn4hupdbi41b" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0014.png" id="14_dya1y"]
+[ext_resource type="Texture2D" uid="uid://d18soihp4tqar" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0015.png" id="15_1idt1"]
+[ext_resource type="Texture2D" uid="uid://d2mh8lhscdvyl" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0016.png" id="16_1m6jl"]
+[ext_resource type="Texture2D" uid="uid://dvs87asr4jwvk" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0017.png" id="17_7kq5w"]
+[ext_resource type="Texture2D" uid="uid://gvgudyv16fj0" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0018.png" id="18_7r0ab"]
+[ext_resource type="Texture2D" uid="uid://cwdlkfhd6ymg0" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0019.png" id="19_8ucwh"]
+[ext_resource type="Texture2D" uid="uid://q75xek1d0yo4" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0020.png" id="20_bjowf"]
+[ext_resource type="Texture2D" uid="uid://b1lln4wkpjdtc" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0021.png" id="21_u0gki"]
+[ext_resource type="Texture2D" uid="uid://8xux7t5ofee2" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0022.png" id="22_d75wr"]
+[ext_resource type="Texture2D" uid="uid://dlsab7dfo3epk" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0023.png" id="23_nbcvf"]
+[ext_resource type="Texture2D" uid="uid://r31touvelhi7" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0024.png" id="24_7em0t"]
+[ext_resource type="Texture2D" uid="uid://by8dm2to5x6c4" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0025.png" id="25_cldof"]
+[ext_resource type="Texture2D" uid="uid://dal6my2vphom8" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0026.png" id="26_5c4pn"]
+[ext_resource type="Texture2D" uid="uid://d1eefwcbmrcnk" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0027.png" id="27_e0ck4"]
+[ext_resource type="Texture2D" uid="uid://g28npnonn2c2" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0028.png" id="28_kd8ym"]
+[ext_resource type="Texture2D" uid="uid://bcstahjaxd5vh" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0029.png" id="29_ud75r"]
+[ext_resource type="Texture2D" uid="uid://dvl21imkyi8ql" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0030.png" id="30_cmi3j"]
+[ext_resource type="Texture2D" uid="uid://b6imnnysa0dk8" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0031.png" id="31_dd2q8"]
+[ext_resource type="Texture2D" uid="uid://n23wh2ktefek" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0032.png" id="32_0cwqp"]
+[ext_resource type="Texture2D" uid="uid://cu0rpgixvewq2" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0033.png" id="33_pl13p"]
+[ext_resource type="Texture2D" uid="uid://dtwj6jqk3rq35" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0034.png" id="34_13wdc"]
+[ext_resource type="Texture2D" uid="uid://th3new4xhtlx" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0035.png" id="35_x4do2"]
+[ext_resource type="Texture2D" uid="uid://cvu0uy04xeg31" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0036.png" id="36_wv5yp"]
+[ext_resource type="Texture2D" uid="uid://bsk2dwlky7ban" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0037.png" id="37_smvrh"]
+[ext_resource type="Texture2D" uid="uid://bwt8b01li72d7" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0038.png" id="38_jb6rq"]
+[ext_resource type="Texture2D" uid="uid://bm4x161rw07x7" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0039.png" id="39_p360y"]
+[ext_resource type="Texture2D" uid="uid://cethgdp0trisv" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0040.png" id="40_w4ciy"]
+[ext_resource type="Texture2D" uid="uid://cnnmst1qq6da6" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0041.png" id="41_1dri1"]
+[ext_resource type="Texture2D" uid="uid://bil40c6x4duyr" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0042.png" id="42_xshwg"]
+[ext_resource type="Texture2D" uid="uid://cx8cj2h6lch4g" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0043.png" id="43_3dawb"]
+[ext_resource type="Texture2D" uid="uid://b3u7miyloyy6f" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0044.png" id="44_2mt2y"]
+[ext_resource type="Texture2D" uid="uid://bfrceisi5fxix" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0045.png" id="45_745uo"]
+[ext_resource type="Texture2D" uid="uid://d0o3sray2wlfc" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0046.png" id="46_6f7qo"]
+[ext_resource type="Texture2D" uid="uid://dcxkuof6dqfgj" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0047.png" id="47_7fqob"]
+[ext_resource type="Texture2D" uid="uid://dge6nwxu0dk4v" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0048.png" id="48_i5u0u"]
+[ext_resource type="Texture2D" uid="uid://b32mrkwl15l1a" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0049.png" id="49_gsawd"]
+[ext_resource type="Texture2D" uid="uid://b5xj0mrchk6m3" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0050.png" id="50_esoc6"]
+[ext_resource type="Texture2D" uid="uid://x58bqus11u1b" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0051.png" id="51_c7ub3"]
+[ext_resource type="Texture2D" uid="uid://dt4bgva3h8rr4" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/GreenAnole/03_ANOL-anim0052.png" id="52_mjela"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hsea2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4p11s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_5k6i1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_10y2w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3qor1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ty66l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_q3k6d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_b827q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5pl0y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_kc412")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_0spk2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_qvk7w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_6d44a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_bdfye")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_dya1y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_1idt1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_1m6jl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_7kq5w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7r0ab")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_8ucwh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_bjowf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_u0gki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_d75wr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_nbcvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_7em0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_cldof")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_5c4pn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_e0ck4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_kd8ym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ud75r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_cmi3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_dd2q8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_0cwqp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_pl13p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_13wdc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_x4do2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_wv5yp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_smvrh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_jb6rq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_p360y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_w4ciy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_1dri1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_xshwg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_3dawb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_2mt2y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_745uo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_6f7qo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_7fqob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_i5u0u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_gsawd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_esoc6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_c7ub3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_mjela")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="AnoleAnim" type="Node2D" unique_id=1313162581]
+
+[node name="GreenAnole" type="Node2D" parent="." unique_id=426693191]
+scale = Vector2(1.429, 1.429)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="GreenAnole" unique_id=1328496056]
+sprite_frames = SubResource("SpriteFrames_hsea2")
+autoplay = "default"
+frame_progress = 0.6645855
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="GreenAnole/AnimatedSprite2D" unique_id=561120445]

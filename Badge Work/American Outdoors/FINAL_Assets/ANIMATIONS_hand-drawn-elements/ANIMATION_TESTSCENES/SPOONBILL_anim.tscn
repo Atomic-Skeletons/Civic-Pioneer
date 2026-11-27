@@ -1,0 +1,167 @@
+[gd_scene format=3 uid="uid://cb7lta8d2h4gb"]
+
+[ext_resource type="Texture2D" uid="uid://c7l5mrxmoywww" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0001.png" id="1_ouo4l"]
+[ext_resource type="Texture2D" uid="uid://dxayg36t7x48r" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0002.png" id="2_3ieg2"]
+[ext_resource type="Texture2D" uid="uid://df5gwg5jqi2d3" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0003.png" id="3_f2n86"]
+[ext_resource type="Texture2D" uid="uid://crx08fsuh1ikp" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0004.png" id="4_x8yrq"]
+[ext_resource type="Texture2D" uid="uid://dy5tnwhjtxv8v" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0005.png" id="5_bldxf"]
+[ext_resource type="Texture2D" uid="uid://dj5fiysdhgpek" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0006.png" id="6_dw1so"]
+[ext_resource type="Texture2D" uid="uid://2pnx4pkv5kvq" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0007.png" id="7_jgv8l"]
+[ext_resource type="Texture2D" uid="uid://ct6oxjj1eborr" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0008.png" id="8_mj0ie"]
+[ext_resource type="Texture2D" uid="uid://brdfevqnj7ai2" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0009.png" id="9_cnifr"]
+[ext_resource type="Texture2D" uid="uid://wgdah0a4l0rd" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0010.png" id="10_o4aog"]
+[ext_resource type="Texture2D" uid="uid://be6h8pan6288y" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0011.png" id="11_k8vk5"]
+[ext_resource type="Texture2D" uid="uid://ct7grha6pmwt3" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0012.png" id="12_kgyxq"]
+[ext_resource type="Texture2D" uid="uid://rgdiipsd78ar" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0013.png" id="13_s7amc"]
+[ext_resource type="Texture2D" uid="uid://ct6tda3yh0ooj" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0014.png" id="14_yat7a"]
+[ext_resource type="Texture2D" uid="uid://dv1hvhq1x83vx" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0015.png" id="15_qhp74"]
+[ext_resource type="Texture2D" uid="uid://wk56e74vwmf2" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0016.png" id="16_ad80v"]
+[ext_resource type="Texture2D" uid="uid://b4fn8p10o4udq" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0017.png" id="17_kw8ib"]
+[ext_resource type="Texture2D" uid="uid://56hw02k7lr2n" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0018.png" id="18_ldneo"]
+[ext_resource type="Texture2D" uid="uid://c8lkcqc1vy0v8" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0019.png" id="19_xhvf8"]
+[ext_resource type="Texture2D" uid="uid://cv2hmgblg0pey" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0020.png" id="20_slty8"]
+[ext_resource type="Texture2D" uid="uid://b8su3igxh8cc8" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0021.png" id="21_6m4na"]
+[ext_resource type="Texture2D" uid="uid://bv6nmxc5ho6mg" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0022.png" id="22_l20br"]
+[ext_resource type="Texture2D" uid="uid://bgg84g5654w3s" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0023.png" id="23_rttmo"]
+[ext_resource type="Texture2D" uid="uid://dst8mevx7lmvf" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0024.png" id="24_av58p"]
+[ext_resource type="Texture2D" uid="uid://cg8kfvnfx700n" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0025.png" id="25_xe4d2"]
+[ext_resource type="Texture2D" uid="uid://dj4tl5ddsol86" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0026.png" id="26_ofb15"]
+[ext_resource type="Texture2D" uid="uid://112s3bb43af3" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0027.png" id="27_xpas6"]
+[ext_resource type="Texture2D" uid="uid://cytgi10310mph" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0028.png" id="28_h1r5v"]
+[ext_resource type="Texture2D" uid="uid://bldlf6fo0hw6j" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0029.png" id="29_7samb"]
+[ext_resource type="Texture2D" uid="uid://q1v31tgc8jtk" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0030.png" id="30_7m4my"]
+[ext_resource type="Texture2D" uid="uid://c33qvh0r8cw1q" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0031.png" id="31_e8lej"]
+[ext_resource type="Texture2D" uid="uid://b0asd1kctycf5" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0032.png" id="32_e4lb4"]
+[ext_resource type="Texture2D" uid="uid://b2ubeovjf3gc4" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0033.png" id="33_ryg1u"]
+[ext_resource type="Texture2D" uid="uid://b5dlp774nijwu" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0034.png" id="34_7577d"]
+[ext_resource type="Texture2D" uid="uid://dvun1qvhkb1xg" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0035.png" id="35_yguk2"]
+[ext_resource type="Texture2D" uid="uid://do5ramocsw7bk" path="res://Badge Work/American Outdoors/FINAL_Assets/ANIMATIONS_hand-drawn-elements/PNG_SEQUENCES/EVERGLADES/RoseateSpoonbill/03_SPOONBILL-anim0036.png" id="36_yvrkl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hsea2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ouo4l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_3ieg2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_f2n86")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_x8yrq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_bldxf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_dw1so")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_jgv8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_mj0ie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_cnifr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_o4aog")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_k8vk5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_kgyxq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_s7amc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_yat7a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_qhp74")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ad80v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_kw8ib")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ldneo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_xhvf8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_slty8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_6m4na")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_l20br")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_rttmo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_av58p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_xe4d2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_ofb15")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_xpas6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_h1r5v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_7samb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_7m4my")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_e8lej")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_e4lb4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_ryg1u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_7577d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_yguk2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_yvrkl")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="SpoonbillAnim" type="Node2D" unique_id=944059372]
+
+[node name="RoseateSpoonbill" type="Node2D" parent="." unique_id=1094942609]
+scale = Vector2(1.429, 1.429)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="RoseateSpoonbill" unique_id=982693995]
+sprite_frames = SubResource("SpriteFrames_hsea2")
+autoplay = "default"
+frame = 23
+frame_progress = 0.7914887
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="RoseateSpoonbill/AnimatedSprite2D" unique_id=2074511937]
